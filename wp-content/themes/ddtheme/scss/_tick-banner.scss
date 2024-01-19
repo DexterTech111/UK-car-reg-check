@@ -1,0 +1,41 @@
+.tick-banner {
+    background: $light-grey;
+    text-align: center;
+
+    .tick-banner-items {
+        @include reset-list;
+        ;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @include lg {
+            flex-direction: row;
+        }
+
+        .tick-item {
+            display: block;
+            color: $black;
+            font-weight: 700;
+            font-size: 22px;
+            position: relative;
+            padding-right: 15px;
+            margin: 10px 0;
+
+            @include lg {
+                display: inline-block;
+                margin: 0;
+            }
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+
+            .blue-tick {
+                width: 20px;
+                height: 18px;
+            }
+        }
+    }
+}

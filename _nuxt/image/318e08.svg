@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Social-IconsFacebook">
+    <path d="M0 0L48 0L48 48L0 48L0 0Z" id="Social-IconsFacebook" fill="none" fill-rule="evenodd" stroke="none" />
+    <g id="Group-7" transform="matrix(1 -1.7484555E-07 1.7484555E-07 1 -4.196293E-06 4.196293E-06)">
+      <path d="M24 0C10.745 0 0 10.745 0 24C0 37.255 10.745 48 24 48C37.255 48 48 37.255 48 24C48 10.745 37.255 0 24 0M24 2.56C35.8221 2.56 45.44 12.1779 45.44 24C45.44 35.8221 35.8221 45.44 24 45.44C12.1779 45.44 2.56 35.8221 2.56 24C2.56 12.1779 12.1779 2.56 24 2.56" id="Fill-1" fill="#70ED9B" fill-rule="evenodd" stroke="none" />
+      <path d="M28.6181 24.4898L18.6122 24.4898L18.6122 19.5918L29.3878 19.5918L28.6181 24.4898Z" id="Fill-3" fill="#70ED9B" fill-rule="evenodd" stroke="none" />
+      <path d="M20.5717 17.2721L20.5717 35.2653L25.3706 35.2653L25.3706 17.9922C25.3706 17.4991 25.6715 17.2412 26.1741 17.2412L29.3878 17.2412L29.3878 12.7347L25.6877 12.7347C20.4476 12.7347 20.5717 16.6832 20.5717 17.2721" id="Fill-5" fill="#70ED9B" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+.icon-banner {
+    @include background-gradient-blue-purple;
+
+    .icon-banner-items {
+        @include reset-list;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @include lg {
+            flex-direction: row;
+        }
+
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: $white;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            position: relative;
+            padding-right: 15px;
+            margin: 15px 0;
+            text-align: center;
+
+            @include lg {
+                flex-direction: row;
+                padding-right: 0;
+                margin: 0;
+                width: 32%;
+                text-align: left;
+            }
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+
+            .icon {
+                width: 80px;
+                height: 60px;
+                object-fit: contain;
+                object-position: center;
+                margin: 0 0 10px 0;
+
+                @include lg {
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+    }
+}

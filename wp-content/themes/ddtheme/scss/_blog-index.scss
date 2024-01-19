@@ -1,0 +1,451 @@
+//mobile slider
+.latest-posts {
+    .text-divider-mobile-slider {
+        margin: -20px 20px 30px !important;
+    }
+}
+
+.wp-block-post-featured-image {
+    a {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    img {
+        border-radius: 5px 5px 0 0;
+        height: 260px;
+
+        @include lg {
+            height: 220px;
+        }
+    }
+
+    &:after {
+        box-shadow: inset 0px -150px 62px -40px rgba(0, 0, 0, 0.75);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.post-block-content {
+    position: relative;
+    letter-spacing: 1.5px;
+    padding-top: 0 !important;
+
+    a:not(.taxonomy-category a) {
+        text-decoration: underline;
+    }
+}
+
+.taxonomy-category {
+    padding-bottom: 10px;
+    border-bottom: solid 1px $light-grey;
+    margin-bottom: 10px;
+
+    a {
+        display: block;
+        color: $black;
+        font-size: 14px;
+
+        &:hover {
+            color: $gs-green;
+        }
+
+        &:before {
+            content: "[ ";
+        }
+
+        &:after {
+            content: " ]";
+        }
+    }
+}
+
+.wp-block-post-terms__separator{
+    display: none;
+}
+
+.wp-block-post-date,
+.wp-block-post-author__name {
+    font-size: 16px;
+    color: $mid-grey;
+    font-weight: normal;
+
+    p {
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+
+.wp-block-post-title {
+    line-height: 1.2;
+
+    a {
+        font-family: "Norms Pro Serif", 'Times New Roman', Times, serif;
+        text-decoration: none !important;
+        color: $black;
+
+        &:hover {
+            color: $gs-green;
+        }
+    }
+}
+
+.wp-block-post-excerpt__excerpt {
+    font-size: 18px;
+    line-height: 1.2;
+    color: $mid-grey;
+    margin-bottom: 20px !important;
+}
+
+.wp-block-post-date {
+    padding-right: 10px;
+    border-right: solid 2px $light-grey;
+}
+
+.wp-block-post-template .wp-block-post {
+    padding: 0 !important;
+    margin-bottom: 40px !important;
+}
+
+.blog-index-posts {
+    box-sizing: border-box;
+    flex-basis: 64%;
+
+    @include xl {
+        padding-right: 40px;
+        border-right: solid 3px $light-grey;
+    }
+
+    ul {
+        li {
+            border-radius: 5px;
+        }
+    }
+
+    a {
+        color: $black;
+
+        &:hover {
+            color: $gs-blue;
+        }
+    }
+}
+
+.blog-index-sidebar {
+    letter-spacing: 1.5px;
+    flex-basis: 33%;
+
+    .search-container,
+    .category-container {
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 5px;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    a {
+        color: $gs-blue;
+        text-decoration: underline;
+
+        &:hover {
+            color: $gs-green;
+        }
+    }
+
+    .search-container {
+        color: $white;
+        box-shadow: 0 4px 16px -8px rgb(0 0 0 / 40%);
+
+        .wp-block-search__label {
+            font-weight: bold;
+        }
+
+        .wp-block-search__inside-wrapper {
+            margin-top: 20px;
+        }
+
+        .wp-block-search__input {
+            width: 100%;
+            border: solid thin $white;
+            border-radius: 5px;
+            letter-spacing: 1.5px;
+            font-size: 20px;
+            color: $black;
+        }
+
+        .wp-block-search__button {
+            line-height: 0;
+            position: absolute;
+            width: 40px;
+            right: 45px;
+            border-radius: 0 5px 5px 0;
+            height: 43.5px;
+            outline: 0;
+            border: solid thin $white;
+            color: white;
+        }
+    }
+}
+
+.wp-block-query-pagination {
+    border-top: solid 2px $light-grey;
+    border-bottom: solid 2px $light-grey;
+    padding: 50px 0px;
+
+    a {
+        @include transition(all .3s ease-in-out);
+    }
+}
+
+.page-numbers:not(.dots) {
+    background: $gs-blue;
+    color: $white !important;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+
+    &:hover {
+        background: $gs-green;
+    }
+
+    &.current {
+        background: $light-grey;
+        color: $mid-grey !important;
+    }
+}
+
+// Archive
+.content-area {
+    display: block;
+    width: 100%;
+
+    @include lg {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.25em;
+    }
+}
+
+.archive-wrapper {
+    display: block;
+
+    @include md {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.25em;
+
+        .blog-index-posts,
+        .blog-index-sidebar{
+            width: calc(33.33% - 0.625em);
+        }
+    }
+
+    .archive-item {
+        display: block;
+        @extend .shadow;
+
+        @include md {
+            width: calc(50% - 0.625em);
+        }
+    }
+}
+
+.archive-thumbnail {
+    img {
+        width: 100%;
+    }
+}
+
+.archive-content {
+    padding: 0 30px 30px;
+}
+
+// Search & Categories
+.index-cover {
+    margin-bottom: 80px;
+}
+
+.wp-pagenavi {
+    border-top: solid 2px #deded8;
+    border-bottom: solid 2px #deded8;
+    padding: 50px 0px;
+    margin-bottom: 50px;
+    position: relative;
+
+    .pages {
+        display: none;
+    }
+
+    span.current {
+        background: #deded8;
+        color: #888 !important;
+        padding: 5px 10px !important;
+        font-weight: bold !important;
+        border-radius: 5px !important;
+        border: none !important;
+    }
+
+    a,
+    .wp-pagenavi span {
+        background: #4280ff;
+        color: #fff !important;
+        padding: 5px 10px !important;
+        font-weight: bold !important;
+        border-radius: 5px !important;
+        border: none !important;
+    }
+
+    .nextpostslink {
+        background: transparent;
+        color: #000 !important;
+        font-weight: normal !important;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: $gs-blue !important;
+        }
+    }
+}
+
+//blog
+.blog,
+.latest-posts {
+    .wp-block-post {
+        @extend .shadow;
+    }
+}
+
+.wp-block-cover.blog-banner {
+    padding: 1em !important;
+
+    @include md {
+        padding: 0 !important;
+    }
+}
+
+.wp-block-post-template.is-flex-container {
+    gap: 1em !important;
+}
+
+.blog-post-banner {
+    position: relative;
+    height: 315px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-post-banner:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+}
+
+.blog-post-info {
+    max-width: 850px;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+
+    h1 {
+        color: $white;
+    }
+
+    p {
+        color: $light-grey;
+    }
+}
+
+//author
+.author {
+    .author-posts {
+        margin: 40px 0 80px;
+    }
+
+    .author-profile {
+        padding: 50px;
+        background: url('../img/author-bg.svg') no-repeat center center;
+        background-size: cover;
+        margin-bottom: 80px;
+
+        @include lg {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        >div {
+            @include lg {
+                box-sizing: border-box;
+                padding: 0 50px;
+            }
+
+            &.author-image {
+                margin-bottom: 40px;
+
+                @include lg {
+                    flex-basis: 55%;
+                    margin-bottom: 0;
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            &.author-bio {
+                @include lg {
+                    flex-basis: 45%;
+                }
+
+                h2,
+                p {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .archive-wrapper {
+        .archive-item {
+            width: calc(100% - 0.625em);
+            @extend .shadow;
+
+            @include md {
+                width: calc(50% - 0.625em);
+            }
+
+            @include lg {
+                width: calc(50% - 0.625em);
+            }
+        }
+    }
+}

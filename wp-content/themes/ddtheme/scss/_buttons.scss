@@ -1,0 +1,242 @@
+.button-center a{
+    margin: 0 auto;
+}
+
+.button-right a{
+    margin: 0 0 0 auto;
+}
+
+button,
+.button {
+    border-radius: 40px;
+    font-family: "Norms Pro Serif", 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1D1E2C;
+    letter-spacing: 0.64px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 40px;
+
+    &.get-a-quote {
+        justify-content: right;
+        font-weight: 600;
+        font-size: 22px !important;
+        width: 270px;
+
+        &.button-center{
+            margin: 0 auto;
+        }
+
+        &.button-right{
+            margin: 0 0 0 auto;
+        }
+
+        &::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90%;
+            height: 100%;
+            content: 'Get a Quote Now';
+            transition: all .3s;
+        }
+
+        .link-arrow-small{
+            width: 20px !important;
+            height: 20px !important;
+            max-width: 20px !important;
+            right: 25px !important;
+        }
+
+        &::after {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 85%;
+            height: 100%;
+            content: 'Be on your way!';
+            transition: all .3s;
+            font-style: italic;
+        }
+
+        &:hover {
+            &::before {
+                top: -60px;
+            }
+
+            &::after {
+                top: 0;
+            }
+        }
+    }
+
+    &.sign-in {
+        justify-content: right;
+        font-weight: 600;
+        font-size: 22px !important;
+        width: 270px;
+
+        &.button-center{
+            margin: 0 auto;
+        }
+
+        &.button-right{
+            margin: 0 0 0 auto;
+        }
+
+        &::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90%;
+            height: 100%;
+            content: 'Sign In';
+            transition: all .5s;
+        }
+
+        .link-user-button-icon{
+            background: transparent url('../img/icons/icon-user.svg') no-repeat center center;
+            background-size: contain;
+            position: relative !important;
+            width: 16px !important;
+            height: 18px !important;
+            max-width: 16px !important;
+            right: 75px !important;
+            transition: all .3s;
+        }
+
+        &::after {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 85%;
+            height: 100%;
+            content: 'Your GoShorty';
+            transition: all .3s;
+        }
+
+        &:hover {
+            &::before {
+                top: -60px;
+            }
+
+            .link-user-button-icon{
+                background: transparent url('../img/icons/icon-user-white.svg') no-repeat center center;
+                background-size: contain;
+                height: 18px !important;
+                right: 35px !important;
+            }
+
+            &::after {
+                top: 0;
+            }
+        }
+    }
+
+    &.shadow {
+        box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.64);
+
+        &:hover {
+            box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.40);
+        }
+    }
+
+    &.green {
+        background: $gs-green;
+        border: 4px solid $gs-light-green;
+
+        &:hover {
+            background: $gs-light-green;
+        }
+    }
+
+    &.blue {
+        background: $white;
+        border: 4px solid $gs-blue;
+
+        &:hover {
+            background: $gs-blue;
+            color: $white;
+        }
+    }
+
+    &.orange {
+        background: $gs-orange;
+        color: #fff;
+        font-weight: bold;
+
+        &:hover {
+            background: $gs-purple;
+        }
+    }
+
+    &.arrow {
+        &:after {
+            display: block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background: transparent url('../img/icons/icon-arrow-right-circle-black.svg') no-repeat center center;
+            background-size: contain;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+        }
+    }
+
+    .link-arrow {
+        width: 32px !important;
+        height: 32px !important;
+        max-width: 32px !important;
+        margin-left: 25px;
+        transition: transform 0.5s;
+    }
+
+    .link-arrow-small {
+        width: 16px !important;
+        height: 16px !important;
+        max-width: 16px !important;
+        position: relative;
+        right: 15px;
+        transition: transform 0.5s;
+    }
+
+    &:hover {
+
+        .link-arrow,
+        .link-arrow-small {
+            transform: translateX(20%);
+        }
+    }
+}
+
+.wp-block-button__link {
+    transition: background-color 0.5s;
+    margin-bottom: 20px;
+    font-family: "Norms Pro Serif", 'Times New Roman', Times, serif;
+
+    &:hover {
+        color: $gs-dark-blue !important;
+        background: $gs-green !important;
+    }
+}
+

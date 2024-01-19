@@ -1,0 +1,228 @@
+.footer-main {
+    background: $gs-dark-blue;
+    color: $white;
+    border-top: solid 8px $light-grey;
+
+    @include xl {
+        padding: 80px 0;
+    }
+
+    p {
+        color: $white;
+    }
+
+    .button-green {
+        width: 70px;
+
+        @include lg {
+            width: 100px;
+        }
+    }
+}
+
+.footer-right {
+    .cols {
+        padding: 0;
+    }
+}
+
+.footer-menus {
+    border-bottom: solid 1px $light-grey;
+
+    @include lg {
+        border-bottom: none;
+    }
+
+    p.footer-menu-nav-title {
+        font-weight: bold;
+        padding-bottom: 10px;
+        border-bottom: solid 1px $light-grey;
+        margin-bottom: 10px;
+    }
+
+    .footer-menu ul {
+        @include reset-list;
+
+        li {
+            border-bottom: solid 1px rgba(222, 222, 216, 0.5);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+
+            &:last-of-type {
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+
+            >a {
+                color: $white;
+                font-size: 15px;
+                line-height: 19px;
+                letter-spacing: 0.8px;
+                color: $white;
+                font-weight: 100;
+
+                &:hover {
+                    color: $gs-green;
+                }
+            }
+        }
+    }
+
+    .footer-left{
+        display: flex;
+        justify-content: space-between;
+
+        @include lg{
+            display: block;
+        }
+    }
+}
+
+.footer-logo {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-bottom: 32px;
+}
+
+.smallprint small {
+    display: block;
+    letter-spacing: 1px;
+    font-size: 11px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-weight: thin;
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: flex-start;
+    margin-bottom: 5px;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+
+        @include md {
+            width: 50%;
+        }
+
+        @include lg {
+            width: 100%;
+        }
+    }
+}
+
+.socials {
+    @include reset-list;
+    display: flex;
+
+    li {
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+        }
+
+        a:hover {
+            background: none;
+        }
+    }
+}
+
+.buttons {
+    padding: 0;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+
+    @include lg {
+        max-width: 50%;
+    }
+}
+
+.button-green {
+    background-color: transparent;
+    color: $gs-green;
+    border: 2px solid $gs-green;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+    &:visited {
+        color: $gs-green;
+    }
+
+    &:hover {
+        color: $gs-dark-blue;
+    }
+}
+
+.button-green:hover {
+    background-color: $gs-green;
+    color: #1D1E2C;
+
+    a {
+        color: $gs-dark-blue;
+    }
+}
+
+@media (max-width: 600px) {
+    .button-wrapper {
+        justify-content: space-between;
+    }
+
+    .button-green {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+}
+
+.accordion-container {
+    margin-bottom: 50px;
+
+    .col {
+        padding: 0 0 !important;
+    }
+}
+
+.accordion-item {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+
+.accordion-item.active {
+    max-height: 500px;
+}
+
+.accordion-header {
+    .footer-menu-nav-title {
+        position: relative;
+        padding: 0;
+
+        &:after {
+            content: "";
+            background: url('../img/accordion-more.svg') no-repeat center center;
+            width: 87px;
+            height: 18px;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &.active .footer-menu-nav-title:after {
+        content: "";
+        background: url('../img/accordion-less.svg') no-repeat center center;
+    }
+}
