@@ -1,0 +1,43 @@
+       .cover-details-container {
+           background-color: #fff;
+           /* Adjust the background color as needed */
+           border-radius: 8px;
+          /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+           padding: 1rem;
+           margin-top: 2rem;
+       }
+
+       .cover-details-header {
+           font-weight: bold;
+           margin-bottom: 1rem;
+          /* text-align: center;*/
+       }
+
+       .vehicle-details {
+           background-color: #f0f0f0;
+           /* Adjust the background color as needed */
+           padding: 1rem;
+           border-radius: 8px;
+           margin-bottom: 1rem;
+       }
+
+       .btn-duration {
+           width: 100%;
+           /* Make buttons full width */
+           margin-bottom: 0.5rem;
+           /* Spacing between buttons */
+       }
+
+       /* More custom styles as needed */
+
+
+         /* Default styles for #step5 (for screens less than 600px) */
+         /* No specific width is set, so it will take the default width */
+    
+         /* Media query for screens wider than 600px */
+         @media screen and (min-width: 600px) {
+             #step5 {
+                 width: 1000px;
+                 /* Add any other styles you want for #step5 when the screen is wider than 600px */
+             }
+         }

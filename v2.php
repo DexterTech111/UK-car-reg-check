@@ -51,6 +51,7 @@ curl_close($curl);
   <link rel="stylesheet" type="text/css" href="styles.css"
     data-vue-ssr-id="d377a398:0 4d712f29:0 12efc3fb:0 3793b0ca:0 2690702c:0 3c5b6726:0 2b58e4b2:0 5d4c93ae:0 49484a70:0 9b8fdcf0:0 16191f7a:0 0266779e:0 314cea4f:0 19dbdb11:0 8b480f8e:0 14fdb664:0 75d9d316:0 5932e966:0 32cdb29c:0 7615c920:0 35ad0744:0 315e86dc:0 2b389df6:0 2697d5c2:0 b95c8a74:0 234e07d2:0 dd13877e:0 3567d272:0 c2a6fc3c:0">
   <link rel="stylesheet" type="text/css" href="styles1.css">
+  <link rel="stylesheet" type="text/css" href="mine.css">
 
 
   <!--<link rel="preload" href="_nuxt/static/1705401445/state.js" as="script">
@@ -184,7 +185,7 @@ curl_close($curl);
                       <div class="v-progress-linear__background brandGreen"
                         style="opacity: 0.3; left: 20%; width: 80%;"></div>
                       <div class="v-progress-linear__buffer"></div>
-                      <div class="v-progress-linear__determinate brandGreen" style="width: 20%;">
+                      <div class="v-progress-linear__determinate brandGreen" id="progressbar1" style="width: 20%;">
                       </div>
                     </div>
                   </div>
@@ -527,38 +528,1283 @@ curl_close($curl);
                           <div class="row align-center justify-center">
                             <div class="vehicle-details-container__title-col pb-0 pb-md-4 col-sm-7 col-12">
                               <h1
-                                class="vehicle-details-container__title-col__title font-weight-regular font-weight-normal">
+                                class="mb-4 vehicle-details-container__title-col__title font-weight-regular font-weight-normal">
                                 About the Vehicle you want to insure
 
                               </h1>
                             </div>
                           </div>
                           <!--CAR DETAILS-->
-                          <div class="row mt-0 mt-md-2 text-body-2 text-md-body-1 align-center justify-center mx-16">
-                            <div>
+                          <div class="row mt-0 mt-md-2 text-body-2 text-md-body-1 align-center justify-center mx-md-16"
+                            style="border: 0px solid red;">
+                            <div class="cover-details-container__cover-details-col pt-6 col-sm-12 col-md-8 col-xl-6 col-12 " id="outer1" >
+                               <div class="row justify-content-center align-items-center flex-colmn pb-5"  >
+                             
+                                           
+      
+      <!--CAR DETAILS-->
+                         
+                  <!--CAR DETAILS-->
+                                
+            
+        
+        
+        
+        <style>
+          .form-step {
+    display: none; /* Hide all steps by default */
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+}
+#step1 {
+    display: flex;
+}
+
+.btn-success{
+  background-color: #70ed9b;
+  color:black;
+}
+.btn-primary{
+  background-color: #fff;
+  color:black;
+}
+
+</style>
+
+        <form class="v-form white--text text-left mx-auto " id="multiStepForm" style="border: 0px solid red;">
+        <!-- Step 1 -->
+<div id="step1" class="form-step flex-column mx-1 ">
+     <h1 data-v-4f3c6938="" class="mx-auto white--text text-md-h5 text-body-1 text-center pb-6 pb-md-8 pt-md-2" >
+        Your Cover Details
+      </h1>
+  <div data-v-cd6e8740="" data-v-4f3c6938="" width="95%" class="mt-n6">
+                           <div data-v-cd6e8740="" class="d-flex flex-column align-start my-4 px-4 pb-4 v-card v-card--flat v-sheet theme--light rounded-0">
+                             <div data-v-cd6e8740="" class="row" style="width: 100%;">
+                               <div data-v-cd6e8740="" class="vehicle-details-container__vehicle-details-col reg-container">
+                                 <div class="registration-header__form-container__registration-input">
+                                   <img src="imgs/veh-reg-uk.png" alt="Vehicle Registration Logo" class="registration-header__form-container__registration-input__image">
+                                   <div class="v-input registration-header__form-container__registration-input__input v-input--is-label-active v-input--is-dirty v-input--is-readonly theme--light v-text-field v-text-field--is-booted v-text-field--placeholder">
+                                     <div class="v-input__control">
+                                       <div class="v-input__slot">
+                                         <div class="v-text-field__slot">
+                                           <input required="required" autocomplete="off" data-zuko-id="zuko--registrationForm-registration-number" id="gtm--registrationForm-registration-number" placeholder="<?php echo $_GET['reg']; ?>"
+                      readonly="readonly" type="text">
+                  </div>
+                </div>
+                <div class="v-text-field__details">
+                  <div class="v-messages theme--light">
+                    <div class="v-messages__wrapper"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-v-cd6e8740="" class="d-flex flex-column py-0 py-md-3 col-sm-auto col-12">
+          <div data-v-cd6e8740="" class="v-card__title font-weight-bold pt-0 mt-2 px-0 card-detail"><?php
+          // echo $response;
+          // Decode the JSON string into a PHP object
+          $decodedJson = json_decode($response);
+
+          /* Iterate through the object and echo each value
+          foreach ($decodedJson as $key => $value) {
+            echo $key . ': ' . $value . ' ';
+            //echo $value . ' ';
+          } */
+          echo $decodedJson->make . ' ' . $decodedJson->yearOfManufacture . ' ' . $decodedJson->co2Emissions;
+          ?>
+          </div>
+          <div data-v-cd6e8740="" class="v-card__subtitle font-weight-bold pb-2 px-0"><?php echo $decodedJson->make . ' ' . $decodedJson->yearOfManufacture . ' ' . $decodedJson->co2Emissions . ' ' . $decodedJson->fuelType . ' Exp ' . $decodedJson->motExpiryDate; ?>
+        </div>
+        </div>
+        <div data-v-cd6e8740="" class="d-flex align-end justify-end py-0 py-md-3 col col-auto">
+          <a data-v-cd6e8740="" href="./index.php" color="primary" text="" id="gtm--coverDetailsForm-change-vehicle"
+            data-zuko-id="zuko--coverDetailsForm-change-vehicle"
+            class="text-decoration-underline font-weight-bold px-0 px-md-0 text-body-1 mb-2">Change Vehicle</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Form fields for step 1 -->
+    <div data-v-0d86b310="" class="cover-details-container-label formLabel"> Reason for cover </div>
+ <div class="row mb-3 mt-2">
+            <div class="col" style=" ">
+                <select class="form-select px-5 " style="border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" >
+                    <!-- Options here -->
+                    <option>- select -</option>
+                      <option value="Borrowing a Car">Borrowing a Car</option>
+  <option value="Drive Away Cover">Drive Away Cover</option>
+  <option value="Learning to Drive in someone else's Car">Learning to Drive in someone else's Car</option>
+  <option value="Learning to Drive in your own Car">Learning to Drive in your own Car</option>
+  <option value="Obtain Road Tax">Obtain Road Tax</option>
+  <option value="Need cover in an Emergency">Need cover in an Emergency</option>
+  <option value="Reason for cover">Reason for cover</option>
+  <option value="Problem with Annual Policy">Problem with Annual Policy</option>
+  <option value="Sharing Driving on a Long Trip">Sharing Driving on a Long Trip</option>
+  <option value="Test Drive">Test Drive</option>
+  <option value="Temp Cover for Business Use">Temp Cover for Business Use</option>
+  <option value="Moving House">Moving House</option>
+  <option value="Back from or going to University, College, School">Back from or going to University, College, School</option>
+  <option value="Courtesy Vehicle">Courtesy Vehicle</option>
+  <option value="Pre-Booked MOT">Pre-Booked MOT</option>
+  <option value="Drive Own Vehicle">Drive Own Vehicle</option>
+  <option value="Add a Driver">Add a Driver</option>
+  <option value="Buying a Vehicle">Buying a Vehicle</option>
+  <option value="Impounded Vehicle Release">Impounded Vehicle Release</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Row 2: Buttons (Hours, Days, Weeks) -->
+           <div data-v-0d86b310="" class="cover-details-container-label formLabel">Duration type?</div>
+        <div class="row mb-3">
+            <div class="col btnGroup d-flex justify-space-between transparent mt-2 mb-1 v-item-group theme--light v-btn-toggle">
+                <button type="button" class="  btn btn-success brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px; width: 30%;" id="hoursBtn">Hours</button>
+                <button type="button" class=" btn btn-primary  brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;  width: 30%;"  id="daysBtn">Days</button>
+                <button type="button" class="  btn btn-primary  brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;  width: 30%;" id="weeksBtn">Weeks</button>
+            </div>
+        </div>
+
+        <!-- Row 3: 4 Buttons -->
+         <div data-v-0d86b310="" class="cover-details-container-label formLabel">How long do you need cover for?</div>
+        <div class="row mb-3" id="timeOptions">
+            <div class="col btnGroup d-flex justify-space-between transparent mt-2 mb-1 v-item-group theme--light v-btn-toggle">
+                <button type="button" class="  btn btn-primary brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;  width: 23%;" id="a1">1 Hour</button>
+                <button type="button" class=" btn btn-success brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;  width: 23%;"  id="a2">2 Hours</button>
+                <button type="button" class=" btn btn-primary brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;  width: 23%;"  id="a3">3 Hours</button>
+                <button type="button" class="  btn btn-primary brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;  width: 23%;"  id="a4">5 Hours</button>
+            </div>
+        </div>
+
+        <!-- Row 4: Select Input -->
+           <div data-v-0d86b310="" class="cover-details-container-label formLabel">Start date?</div>
+        <div class="row">
+            <div class="col">
+               <select id="dateSelect" class="form-select px-5 " style="border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;"></select>
+
+            </div>
+        </div>
+</div>
+
+<!-- Step 2 -->
+<div id="step2" class="form-step flex-column mx-1 " style="border:0px solid blue;  " >
+    <!-- Form fields for step 2 -->
+     <h1 data-v-4f3c6938="" class="mx-auto white--text text-md-h5 text-body-1 text-center pb-6 pb-md-8 pt-md-2 mb-5" >
+        Please enter the details of the driver to be insured
+      </h1>
+ 
+    <!-- Row 3: 4 Buttons -->
+         <div data-v-0d86b310="" class="cover-details-container-label formLabel" style="width: 100%;" >Title</div>
+        <div class="row mb-3" id="titleOptions" >
+            <div class="col btnGroup d-flex justify-space-between transparent mt-2 mb-1 v-item-group theme--light v-btn-toggle">
+                <button type="button" class="  btn btn-primary brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;  width: 23%;" id="t1">Mr</button>
+                <button type="button" class=" btn btn-success brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;  width: 23%;"  id="t2">Mrs</button>
+                <button type="button" class=" btn btn-primary brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;  width: 23%;"  id="t3">Miss</button>
+                <button type="button" class="  btn btn-primary brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;  width: 23%;"  id="t4">Ms</button>
+            </div>
+        </div>
+
+
+        <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >First Name</div>
+        <div>
+          <input type="text" name="fname" placeholder="First name" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px;width: 100%;  border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+
+        <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Surname</div>
+        <div>
+          <input type="text" name="sname" placeholder="Surname" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+
+      <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Postcode</div>
+        <div>
+          <input type="text" name="postcode" placeholder="Postcode" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+
+         <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Street Line 1</div>
+        <div>
+          <input type="text" name="address1" placeholder="Street" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+         <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >State</div>
+        <div>
+          <input type="text" name="state" placeholder="state" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+          <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >City</div>
+        <div>
+          <input type="text" name="city" placeholder="city" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+
+         <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Date of birth</div>
+        <div>
+          <input type="date" name="dob" placeholder="DD/MM/YYYY" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+
+         <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >What do you do for a living?</div>
+        <div>
+          <input type="text" name="occupation" placeholder="Type your occupation" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+
+
+
+    
+</div>
+
+<!-- Step 3 -->
+<div id="step3" class="form-step flex-column mx-1" style="border:0px solid blue;  ">
+     <!-- Form fields for step 2 -->
+     <h1 data-v-4f3c6938="" class="mx-auto white--text text-md-h5 text-body-1 text-center pb-6 pb-md-8 pt-md-2 mb-5" >
+      
+      </h1> 
+ 
+    <!-- Row 3: 4 Buttons -->
+         <div data-v-0d86b310="" class="cover-details-container-label formLabel" style="width: 100%;" >Issuing Country</div>
+        <div class="row mb-3" id="countryOptions" >
+            <div class="col btnGroup d-flex justify-space-between transparent mt-2 mb-1 v-item-group theme--light v-btn-toggle">
+                <button type="button" class=" btn btn-primary brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px; width: 45%;" id="c1">Mr</button>
+                <button type="button" class=" btn btn-success brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;  width: 45%;"  id="c2">Mrs</button>
+             </div>
+        </div>
+
+
+        <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Licence Type</div>
+        <div>
+          <button type="button" class="col-12 ml-1 btn btn-success brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px;"  id="">Provisional</button>
+        </div>
+
+
+        <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Whose vehicle are you learning to drive in?</div>
+        <div class="row mb-3" id="ownerOptions" >
+            <div class="col btnGroup d-flex flex-column justify-space-between transparent mt-2 mb-1 v-item-group theme--light v-btn-toggle">
+                <button type="button" class="  btn btn-primary brandDarkestGrey--text px-0 mb-2 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px; width: 100%;" id="o1">My Car</button>
+                <button type="button" class=" btn btn-success brandDarkestGrey--text px-0 mb-1 widthClass v-btn  v-btn--active v-btn--is-elevated  v-size--default" style="border-radius: 5px; width: 100%;"  id="o2">Someone Else's Car</button>
+             </div>
+        </div>
+
+
+      <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Driving licence number</div>
+        <div class="d-flex justify-space-between" >
+          <div class="" style="width: 30%;" >
+          <input type="text" name="d1" placeholder="" class="mt-1"  style="padding: 10px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+          <span class="text-right" style="float: right;" >0/5</span>
+          </div>
+          <div class="" style="width: 30%;" >
+          <input type="text" name="d2" placeholder="" class="mt-1"  style="padding: 10px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+         <span class="text-right" style="float: right;" >0/6</span>
+          </div>
+          <div class="" style="width: 30%;" >
+          <input type="text" name="d3" placeholder="" class="mt-1"  style="padding: 10px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+          <span class="text-right" style="float: right;" >0/5</span>
+          </div>
+      </div>
+
+
+         <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Name and address of the person that owns the car that you are learning to driver in?
+</div>
+<div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Car owner first name</div>
+        <div>
+          <input type="text" name="cfname" placeholder="First name" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px;width: 100%;  border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+
+        <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Car owner surname</div>
+        <div>
+          <input type="text" name="csname" placeholder="Surname" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+
+      <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Car owner postcode</div>
+        <div>
+          <input type="text" name="cpostcode" placeholder="Postcode" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+
+         <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Car owner street line 1</div>
+        <div>
+          <input type="text" name="caddress1" placeholder="Street" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+         <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Car owner state</div>
+        <div>
+          <input type="text" name="cstate" placeholder="state" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+          <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Car owner city</div>
+        <div>
+          <input type="text" name="ccity" placeholder="city" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
 
 
 
 
 
+          <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Is the vehicle insured annually?</div>
+         <div class="col" style=" ">
+                <select name="isinsured" class="form-select px-5 " style="border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" >
+                    <!-- Options here -->
+                    <option>- select -</option>
+                      <option value="Borrowing a Car">Yes</option>
+  <option value="Drive Away Cover">No</option>
+                </select>
+            </div>
 
-                            </div>
-                            <div data-v-4f3c6938="" class="col col-12">
-                              <div data-v-4f3c6938="" class="row d-flex justify-center"></div>
-                            </div>
-                          </div>
+
+         <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Mobile number</div>
+        <div>
+          <input type="text" name="ctel" placeholder="07xxxxxxxxx" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+
+
+         <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >What is your email address? </div>
+        <div>
+          <input type="text" name="email" placeholder="Please enter your email" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+       <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >Confirm your email address </div>
+        <div>
+          <input type="text" name="email2" placeholder="Please enter your email" class="mt-1"  style="padding-left: 20px; border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;" />
+      </div>
+        <div data-v-0d86b310="" class="mt-5 mb-3 cover-details-container-label formLabel" >By clicking Get Quotes you agree to our Terms & Conditions and Privacy Policy.</div>
+
+
+
+</div>
+
+<!-- Step 4 -->
+<div id="step4" class="form-step">
+<div data-v-6404c5fc="" data-zuko-id="zuko--quoteForm" class=" d-flex white--text align-center justify-center mt-4 quoteFormContainer container--fluid" id="gtm--quoteForm"><div data-v-6404c5fc="" class="col col-12"><div data-v-6404c5fc="" class="row d-none d-md-flex"><div data-v-6404c5fc="" class="col col-3"><div data-v-6404c5fc="" class="text-body-1 font-weight-bold"><i data-v-6404c5fc="" aria-hidden="true" class="v-icon notranslate brandGreen--text pb-1 pr-1 mdi mdi-check-circle theme--light"></i>
+            Drivers aged 18-75
+          </div></div> <div data-v-6404c5fc="" class="col col-3"><div data-v-6404c5fc="" class="text-body-1 font-weight-bold"><i data-v-6404c5fc="" aria-hidden="true" class="v-icon notranslate brandGreen--text pb-1 pr-1 mdi mdi-check-circle theme--light"></i>Instant Cover available online
+          </div></div> <div data-v-6404c5fc="" class="col col-3"><div data-v-6404c5fc="" class="text-body-1 font-weight-bold text-center"><i data-v-6404c5fc="" aria-hidden="true" class="v-icon notranslate brandGreen--text pb-1 pr-1 mdi mdi-check-circle theme--light"></i>From 1hr - 28 days
+          </div></div> <div data-v-6404c5fc="" class="col col-3"><div data-v-6404c5fc="" class="text-body-1 font-weight-bold"><i data-v-6404c5fc="" aria-hidden="true" class="v-icon notranslate brandGreen--text pb-1 pr-1 mdi mdi-check-circle theme--light"></i>Flexible Pay as you Go cover
+          </div></div></div> <div data-v-6404c5fc="" class="row"><div data-v-6404c5fc="" class="col"><div data-v-6404c5fc="" class="text-h5 text-sm-h4 text-center">
+            Fully Comprehensive Cover for
+            4 weeks
+          </div> <!----></div></div> <div data-v-6404c5fc="" id="gtm--quoteForm-served" data-zuko-id="zuko--quoteForm-served" class="row text-center quote-step--quote-options-quotes-served"><div data-v-6404c5fc="" class="col col-12"><div data-v-62c809ee="" data-v-6404c5fc="" class="row quote-card-container my-1"><div data-v-62c809ee="" class="col-sm-12 col-lg-12 col-12"><div data-v-62c809ee="" class="quote-card py-3 v-card v-sheet theme--light" fill-height=""><div data-v-62c809ee="" class="row px-3 align-center"><div data-v-62c809ee="" align="center" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="v-image v-responsive theme--light" style="height: 100px; max-height: 100px; max-width: 140px;"><div class="v-responsive__sizer" style="padding-bottom: 28.5714%;"></div><div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://cdn.goshorty.co.uk/Strata/Insurer_logos/Granite_Underwriting_Logo_350px.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content" style="width: 350px;"></div></div></div> <div data-v-62c809ee="" class="text-h5 text-xs-h4 text-sm-h3 font-weight-bold brandLightBlue white--text text-center d-flex align-center justify-center col col-6 align-self-stretch" style="flex: 1 0 20%;"><span data-v-62c809ee="">£168.97</span></div> <div data-v-62c809ee="" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="vehicle-value-label text-body-1 text-md-h6 text-center mb-0">
+            Max Vehicle Value
+          </div> <div data-v-62c809ee="" class="text-h6 text-xs-h5 brandDarkGrey--text font-weight-bold text-center">
+            £40,000
+          </div></div> <hr data-v-62c809ee="" role="separator" aria-orientation="vertical" class="my-7 v-divider v-divider--inset v-divider--vertical theme--light"> <div data-v-62c809ee="" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="compulsory-excess-label text-body-1 text-md-h6 text-center">
+            Compulsory Excess
+          </div> <div data-v-62c809ee="" class="text-h6 text-xs-h5 brandDarkGrey--text font-weight-bold text-center">
+            £350
+          </div></div> <div data-v-62c809ee="" class="col col-12" style="flex: 1 0 20%;"><button data-v-62c809ee="" type="button" class="brandGreen brandDarkestGrey--text mb-2 v-btn v-btn--block v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default" id="nextBtn1" data-zuko-id="zuko--quoteForm-quote-HR-buy"><span class="v-btn__content">Buy Now
+
+            <i data-v-62c809ee="" aria-hidden="true" class="v-icon notranslate ml-2 mdi mdi-arrow-right-circle-outline theme--light"></i></span></button> <a data-v-62c809ee="" id="gtm--quoteForm-quote-HR-more-information" data-zuko-id="zuko--quoteForm-quote-HR-more-information" class="black--text font-weight-bold text-decoration-underline">More Information</a></div></div></div></div></div></div><div data-v-6404c5fc="" class="col col-12"><div data-v-62c809ee="" data-v-6404c5fc="" class="row quote-card-container my-1"><div data-v-62c809ee="" class="col-sm-12 col-lg-12 col-12"><div data-v-62c809ee="" class="quote-card py-3 v-card v-sheet theme--light" fill-height=""><div data-v-62c809ee="" class="row px-3 align-center"><div data-v-62c809ee="" align="center" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="v-image v-responsive theme--light" style="height: 100px; max-height: 100px; max-width: 140px;"><div class="v-responsive__sizer" style="padding-bottom: 40.8163%;"></div><div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://cdn.goshorty.co.uk/Strata/Insurer_logos/LV.png&quot;); background-position: center center;"></div><div class="v-responsive__content" style="width: 98px;"></div></div></div> <div data-v-62c809ee="" class="text-h5 text-xs-h4 text-sm-h3 font-weight-bold brandLightBlue white--text text-center d-flex align-center justify-center col col-6 align-self-stretch" style="flex: 1 0 20%;"><span data-v-62c809ee="">£188.70</span></div> <div data-v-62c809ee="" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="vehicle-value-label text-body-1 text-md-h6 text-center mb-0">
+            Max Vehicle Value
+          </div> <div data-v-62c809ee="" class="text-h6 text-xs-h5 brandDarkGrey--text font-weight-bold text-center">
+            £65,000
+          </div></div> <hr data-v-62c809ee="" role="separator" aria-orientation="vertical" class="my-7 v-divider v-divider--inset v-divider--vertical theme--light"> <div data-v-62c809ee="" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="compulsory-excess-label text-body-1 text-md-h6 text-center">
+            Compulsory Excess
+          </div> <div data-v-62c809ee="" class="text-h6 text-xs-h5 brandDarkGrey--text font-weight-bold text-center">
+            £250
+          </div></div> <div data-v-62c809ee="" class="col col-12" style="flex: 1 0 20%;"><button data-v-62c809ee="" type="button" class="brandGreen brandDarkestGrey--text mb-2 v-btn v-btn--block v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default" id="nextBtn2" data-zuko-id="zuko--quoteForm-quote-GU-buy"><span class="v-btn__content">Buy Now
+
+            <i data-v-62c809ee="" aria-hidden="true" class="v-icon notranslate ml-2 mdi mdi-arrow-right-circle-outline theme--light"></i></span></button> <a data-v-62c809ee="" id="gtm--quoteForm-quote-GU-more-information" data-zuko-id="zuko--quoteForm-quote-GU-more-information" class="black--text font-weight-bold text-decoration-underline">More Information</a></div></div></div></div></div></div><div data-v-6404c5fc="" class="col col-12"><div data-v-62c809ee="" data-v-6404c5fc="" class="row quote-card-container my-1"><div data-v-62c809ee="" class="col-sm-12 col-lg-12 col-12"><div data-v-62c809ee="" class="quote-card py-3 v-card v-sheet theme--light" fill-height=""><div data-v-62c809ee="" class="row px-3 align-center"><div data-v-62c809ee="" align="center" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="v-image v-responsive theme--light" style="height: 100px; max-height: 100px; max-width: 140px;"><div class="v-responsive__sizer" style="padding-bottom: 52%;"></div><div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://cdn.goshorty.co.uk/Strata/Email_assets/haven-logo.png&quot;); background-position: center center;"></div><div class="v-responsive__content" style="width: 300px;"></div></div></div> <div data-v-62c809ee="" class="text-h5 text-xs-h4 text-sm-h3 font-weight-bold brandLightBlue white--text text-center d-flex align-center justify-center col col-6 align-self-stretch" style="flex: 1 0 20%;"><span data-v-62c809ee="">£289.02</span></div> <div data-v-62c809ee="" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="vehicle-value-label text-body-1 text-md-h6 text-center mb-0">
+            Max Vehicle Value
+          </div> <div data-v-62c809ee="" class="text-h6 text-xs-h5 brandDarkGrey--text font-weight-bold text-center">
+            £40,000
+          </div></div> <hr data-v-62c809ee="" role="separator" aria-orientation="vertical" class="my-7 v-divider v-divider--inset v-divider--vertical theme--light"> <div data-v-62c809ee="" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="compulsory-excess-label text-body-1 text-md-h6 text-center">
+            Compulsory Excess
+          </div> <div data-v-62c809ee="" class="text-h6 text-xs-h5 brandDarkGrey--text font-weight-bold text-center">
+            £350
+          </div></div> <div data-v-62c809ee="" class="col col-12" style="flex: 1 0 20%;"><button data-v-62c809ee="" type="button" class="brandGreen brandDarkestGrey--text mb-2 v-btn v-btn--block v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default" id="nextBtn3" data-zuko-id="zuko--quoteForm-quote-HR-buy"><span class="v-btn__content">Buy Now
+
+            <i data-v-62c809ee="" aria-hidden="true" class="v-icon notranslate ml-2 mdi mdi-arrow-right-circle-outline theme--light"></i></span></button> <a data-v-62c809ee="" id="gtm--quoteForm-quote-HR-more-information" data-zuko-id="zuko--quoteForm-quote-HR-more-information" class="black--text font-weight-bold text-decoration-underline">More Information</a></div></div></div></div></div></div><div data-v-6404c5fc="" class="col col-12"><div data-v-62c809ee="" data-v-6404c5fc="" class="row quote-card-container my-1"><div data-v-62c809ee="" class="col-sm-12 col-lg-12 col-12"><div data-v-62c809ee="" class="quote-card py-3 v-card v-sheet theme--light" fill-height=""><div data-v-62c809ee="" class="row px-3 align-center"><div data-v-62c809ee="" align="center" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="v-image v-responsive theme--light" style="height: 100px; max-height: 100px; max-width: 140px;"><div class="v-responsive__sizer" style="padding-bottom: 31.5186%;"></div><div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://cdn.goshorty.co.uk/Strata/Insurer_logos/KGM.png&quot;); background-position: center center;"></div><div class="v-responsive__content" style="width: 349px;"></div></div></div> <div data-v-62c809ee="" class="text-h5 text-xs-h4 text-sm-h3 font-weight-bold brandLightBlue white--text text-center d-flex align-center justify-center col col-6 align-self-stretch" style="flex: 1 0 20%;"><span data-v-62c809ee="">£312.59</span></div> <div data-v-62c809ee="" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="vehicle-value-label text-body-1 text-md-h6 text-center mb-0">
+            Max Vehicle Value
+          </div> <div data-v-62c809ee="" class="text-h6 text-xs-h5 brandDarkGrey--text font-weight-bold text-center">
+            £50,000
+          </div></div> <hr data-v-62c809ee="" role="separator" aria-orientation="vertical" class="my-7 v-divider v-divider--inset v-divider--vertical theme--light"> <div data-v-62c809ee="" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="compulsory-excess-label text-body-1 text-md-h6 text-center">
+            Compulsory Excess
+          </div> <div data-v-62c809ee="" class="text-h6 text-xs-h5 brandDarkGrey--text font-weight-bold text-center">
+            £500
+          </div></div> <div data-v-62c809ee="" class="col col-12" style="flex: 1 0 20%;"><button data-v-62c809ee="" type="button" class="brandGreen brandDarkestGrey--text mb-2 v-btn v-btn--block v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default" id="nextBtn4" data-zuko-id="zuko--quoteForm-quote-BF-buy"><span class="v-btn__content">Buy Now
+
+            <i data-v-62c809ee="" aria-hidden="true" class="v-icon notranslate ml-2 mdi mdi-arrow-right-circle-outline theme--light"></i></span></button> <a data-v-62c809ee="" id="gtm--quoteForm-quote-BF-more-information" data-zuko-id="zuko--quoteForm-quote-BF-more-information" class="black--text font-weight-bold text-decoration-underline">More Information</a></div></div></div></div></div></div><div data-v-6404c5fc="" class="col col-12"><div data-v-62c809ee="" data-v-6404c5fc="" class="row quote-card-container my-1"><div data-v-62c809ee="" class="col-sm-12 col-lg-12 col-12"><div data-v-62c809ee="" class="quote-card py-3 v-card v-sheet theme--light" fill-height=""><div data-v-62c809ee="" class="row px-3 align-center"><div data-v-62c809ee="" align="center" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="v-image v-responsive theme--light" style="height: 100px; max-height: 100px; max-width: 140px;"><div class="v-responsive__sizer" style="padding-bottom: 52.4038%;"></div><div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://cdn.goshorty.co.uk/Strata/Insurer_logos/Mulsanne.png&quot;); background-position: center center;"></div><div class="v-responsive__content" style="width: 208px;"></div></div></div> <div data-v-62c809ee="" class="text-h5 text-xs-h4 text-sm-h3 font-weight-bold brandLightBlue white--text text-center d-flex align-center justify-center col col-6 align-self-stretch" style="flex: 1 0 20%;"><span data-v-62c809ee="">£390.02</span></div> <div data-v-62c809ee="" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="vehicle-value-label text-body-1 text-md-h6 text-center mb-0">
+            Max Vehicle Value
+          </div> <div data-v-62c809ee="" class="text-h6 text-xs-h5 brandDarkGrey--text font-weight-bold text-center">
+            £40,000
+          </div></div> <hr data-v-62c809ee="" role="separator" aria-orientation="vertical" class="my-7 v-divider v-divider--inset v-divider--vertical theme--light"> <div data-v-62c809ee="" class="col col-6" style="flex: 1 0 20%;"><div data-v-62c809ee="" class="compulsory-excess-label text-body-1 text-md-h6 text-center">
+            Compulsory Excess
+          </div> <div data-v-62c809ee="" class="text-h6 text-xs-h5 brandDarkGrey--text font-weight-bold text-center">
+            £900
+          </div></div> <div data-v-62c809ee="" class="col col-12" style="flex: 1 0 20%;"><button data-v-62c809ee="" type="button" class="brandGreen brandDarkestGrey--text mb-2 v-btn v-btn--block v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default" id="nextBtn5" data-zuko-id="zuko--quoteForm-quote-MG-buy"><span class="v-btn__content">Buy Now
+
+            <i data-v-62c809ee="" aria-hidden="true" class="v-icon notranslate ml-2 mdi mdi-arrow-right-circle-outline theme--light"></i></span></button> <a data-v-62c809ee="" id="gtm--quoteForm-quote-MG-more-information" data-zuko-id="zuko--quoteForm-quote-MG-more-information" class="black--text font-weight-bold text-decoration-underline">More Information</a></div></div></div></div></div></div> <div data-v-6404c5fc="" class="pt-16 pb-4 text-body-2 font-weight-medium col"><p data-v-6404c5fc="">
+            GoShorty offer Quotes from a range of insurers, covering varying
+            situations that our customers may require short insurance for, it
+            is important that you read and understand our Assumptions and
+            Eligibility Criteria before purchasing any policy from this
+            website.
+          </p> <p data-v-6404c5fc="">
+            To find out more about our range of products visit our FAQ's page
+            for further details or follow the link below to read and download
+            important information.
+          </p></div></div> <!--- <div data-v-6404c5fc="" class="row justify-center"><div data-v-6404c5fc="" id="gtm--quoteForm-back" data-zuko-id="zuko--quoteForm-back" class="cta-back-button" style="margin-top: 0px;"><i data-v-6404c5fc="" aria-hidden="true" class="v-icon notranslate mr-1 mdi mdi-arrow-left-circle-outline theme--light white--text"></i> <span data-v-6404c5fc="">Go Back</span></div></div> --></div></div> 
+</div>
+
+<!-- Step 5 -->
+<div id="step5" class="form-step mx-auto"  style="" >
+<div class="row mt-0 mt-md-2 text-body-2 text-md-body-1 align-center justify-center ">
+  <div class="cover-details-container__cover-details-col col col-12" style="background-color: white;">
+    <div data-v-4b93d776="" class="row white d-flex justify-center"><!--<button data-v-4b93d776="" type="button"
+        class="cta-submit-button px-12 brandGreen brandDarkestGrey--text d-none d-lg-flex v-btn v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default"
+        data-zuko-id="zuko--confirmationForm-submit"><span class="v-btn__content">
+          Confirm &amp; Continue
+          <i data-v-4b93d776="" aria-hidden="true"
+            class="v-icon notranslate ml-2 mdi mdi-arrow-right-circle-outline theme--light"></i></span></button>--></div>
+    <div data-v-4b93d776="" class="row">
+      <div data-v-4b93d776="" class="col-lg-4 col-12">
+        <div data-v-2d7c6b22="" data-v-4b93d776=""
+          class="mb-4 confirmation-costs-container mb-4 v-card v-sheet theme--light">
+          <div class="v-card__text brandGrey brandDarkGrey--text text-h6 text-center">Costs &amp; Breakdown of Costs
+          </div>
+          <div class="v-card__text brandGrey">
+            <div data-v-2d7c6b22="" class="row px-0 align-center">
+              <div data-v-2d7c6b22="" class="pr-0 col-sm-6 col-lg-4 col-6">
+                <div data-v-2d7c6b22="" class="costs-title text-body-1 text-md-body-1 font-weight-bold">
+                  TOTAL TO PAY:
+                </div>
+              </div>
+              <div data-v-2d7c6b22="" class="pl-0 pl-md-2 col-sm-6 col-lg-8 col-6">
+                <div data-v-2d7c6b22=""
+                  class="ml-auto text-h5 text-sm-h4 text-md-h5 text-lg-h4 font-weight-bold brandDarkestGrey--text text-right currency-flex">
+                  £168.97
+                  <button data-v-2d7c6b22="" type="button"
+                    class="v-icon notranslate v-icon--link mdi mdi-arrow-right-bold-circle theme--light brandGreen--text"
+                    style="font-size: 3rem;"></button> <button data-v-2d7c6b22="" type="button"
+                    class="v-icon notranslate v-icon--link mdi mdi-arrow-down-bold-circle theme--light brandGreen--text"
+                    style="font-size: 3rem; display: none;"></button>
+                </div>
+              </div>
+            </div>
+            <div data-v-2d7c6b22="" class="row mt-0" style="display: none;">
+              <div data-v-2d7c6b22="" class="pt-0 col col-12">
+                <div data-v-2d7c6b22="" role="list" class="v-list brandGrey v-sheet theme--light">
+                  <div data-v-2d7c6b22="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                    <div data-v-2d7c6b22="" tabindex="0" role="option" aria-selected="false"
+                      class="v-list-item v-list-item--link theme--light">
+                      <div data-v-2d7c6b22="" class="v-list-item__content">
+                        <div data-v-2d7c6b22="" class="v-list-item__title">Premium</div>
+                      </div>
+                      <div data-v-2d7c6b22="" align="right" class="v-list-item__content">
+                        <div data-v-2d7c6b22="" class="v-image v-responsive theme--light"
+                          style="max-width: 50px; display: none;">
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div data-v-2d7c6b22="" class="font-weight-bold text-h6">
+                          £124.49
                         </div>
                       </div>
                     </div>
-                    <div class="row" data-v-3b8d5b18="">
-                      <div class="col" data-v-3b8d5b18="">
-                        <div data-v-3b8d5b18="">
-                          <div></div>
+                    <hr data-v-2d7c6b22="" role="separator" aria-orientation="horizontal"
+                      class="v-divider theme--light">
+                  </div>
+                  <div data-v-2d7c6b22="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                    <div data-v-2d7c6b22="" tabindex="0" role="option" aria-selected="false"
+                      class="v-list-item v-list-item--link theme--light">
+                      <div data-v-2d7c6b22="" class="v-list-item__content">
+                        <div data-v-2d7c6b22="" class="v-list-item__title">Admin fee</div>
+                      </div>
+                      <div data-v-2d7c6b22="" align="right" class="v-list-item__content">
+                        <div data-v-2d7c6b22="" class="v-image v-responsive theme--light"
+                          style="max-width: 50px; display: none;">
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div data-v-2d7c6b22="" class="font-weight-bold text-h6">
+                          £44.48
+                        </div>
+                      </div>
+                    </div>
+                    <hr data-v-2d7c6b22="" role="separator" aria-orientation="horizontal"
+                      class="v-divider theme--light">
+                  </div>
+                  <div data-v-2d7c6b22="" class="text-center pt-6">
+                    Insurance Premium tax (IPT) is included where applicable
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-v-1f1c9093="" data-v-4b93d776=""
+          class="confirmation-documents-container mb-4 v-card v-sheet theme--light">
+          <div class="v-card__text brandGrey brandDarkGrey--text text-h6 text-center"> Important Documents </div>
+          <div class="v-card__text brandGrey">
+            <div data-v-1f1c9093="" role="list" class="v-list py-0 v-sheet theme--light">
+              <div data-v-1f1c9093=""
+                class="v-subheader d-block brandGrey brandDarkGrey--text text-subtitle text-center mb-2 theme--light"
+                style="min-width: 100%;">Click below to read</div>
+              <div data-v-1f1c9093="" tabindex="0" role="listitem"
+                class="d-block brandGrey v-list-item v-list-item--link theme--light">
+                <div data-v-1f1c9093="" class="row">
+                  <div data-v-1f1c9093="" class="v-list-item__content">
+                    <div data-v-1f1c9093="" class="v-list-item__title pt-2 text-wrap">Insurance Product Information
+                      Document (IPID)</div> <!---->
+                  </div>
+                  <div data-v-1f1c9093="" class="v-list-item__action"><button data-v-1f1c9093="" type="button"
+                      class="black--text mb-0 v-btn v-btn--icon v-btn--round v-btn--rounded theme--light v-size--small brandGreen--text"><span
+                        class="v-btn__content"><i data-v-1f1c9093="" aria-hidden="true"
+                          class="v-icon notranslate mdi mdi-open-in-new theme--light"></i></span></button></div>
+                </div>
+                <div data-v-1f1c9093="" class="row">
+                  <hr data-v-1f1c9093="" role="separator" aria-orientation="horizontal" class="v-divider theme--light">
+                </div>
+              </div>
+              <div data-v-1f1c9093="" tabindex="0" role="listitem"
+                class="d-block brandGrey v-list-item v-list-item--link theme--light">
+                <div data-v-1f1c9093="" class="row">
+                  <div data-v-1f1c9093="" class="v-list-item__content">
+                    <div data-v-1f1c9093="" class="v-list-item__title pt-2 text-wrap">Policy wording</div> <!---->
+                  </div>
+                  <div data-v-1f1c9093="" class="v-list-item__action mt-6"><button data-v-1f1c9093="" type="button"
+                      class="black--text mb-0 v-btn v-btn--icon v-btn--round v-btn--rounded theme--light v-size--small brandGreen--text"><span
+                        class="v-btn__content"><i data-v-1f1c9093="" aria-hidden="true"
+                          class="v-icon notranslate mdi mdi-open-in-new theme--light"></i></span></button></div>
+                </div>
+                <div data-v-1f1c9093="" class="row">
+                  <hr data-v-1f1c9093="" role="separator" aria-orientation="horizontal" class="v-divider theme--light">
+                </div>
+              </div>
+              <div data-v-1f1c9093="" tabindex="0" role="listitem"
+                class="d-block brandGrey v-list-item v-list-item--link theme--light">
+                <div data-v-1f1c9093="" class="row">
+                  <div data-v-1f1c9093="" class="v-list-item__content">
+                    <div data-v-1f1c9093="" class="v-list-item__title pt-2 text-wrap">Terms of business</div> <!---->
+                  </div>
+                  <div data-v-1f1c9093="" class="v-list-item__action mt-6"><button data-v-1f1c9093="" type="button"
+                      class="black--text mb-0 v-btn v-btn--icon v-btn--round v-btn--rounded theme--light v-size--small brandGreen--text"><span
+                        class="v-btn__content"><i data-v-1f1c9093="" aria-hidden="true"
+                          class="v-icon notranslate mdi mdi-open-in-new theme--light"></i></span></button></div>
+                </div> <!---->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-v-4b93d776="" class="row d-flex d-lg-none justify-center">
+       <!-- <div data-v-4b93d776="" class="d-flex justify-center col col-12"><button data-v-4b93d776="" type="button"
+            class="cta-submit-button px-6 brandGreen brandDarkestGrey--text v-btn v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default"
+            id="gtm--confirmationForm-submit" data-zuko-id="zuko--confirmationForm-submit"><span class="v-btn__content">
+              Confirm &amp; Continue
+              <i data-v-4b93d776="" aria-hidden="true"
+                class="v-icon notranslate ml-2 mdi mdi-arrow-right-circle-outline theme--light"></i></span></button>
+        </div>-->
+      </div>
+      <div data-v-4b93d776="" class="col-lg-4 col-12">
+        <div data-v-cd20e23a="" data-v-4b93d776=""
+          class="confirmation-vehicle-details-container mb-4 v-card v-sheet theme--light">
+          <div class="v-card__text brandGrey brandDarkGrey--text text-h6 text-center">Vehicle &amp; Insurance Details
+          </div>
+          <div class="v-card__text brandGrey">
+            <div data-v-cd20e23a="" role="list" class="v-list brandGrey v-sheet theme--light">
+              <div data-v-cd20e23a="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                <div data-v-cd20e23a="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                  class="flex-wrap justify-start px-0 text-body-2 v-list-item v-list-item--disabled v-list-item--link theme--light">
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details confirmation-label pb-0 px-0">
+                    <div data-v-cd20e23a="" class="v-list-item__title text-wrap">Registration</div>
+                  </div>
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details d-flex flex-column align-start pt-0 px-0 pb-2">
+                    <div data-v-cd20e23a="" class="insurance-name font-weight-bold text-body-2">
+                      GF17HNO
+                    </div>
+                    <div data-v-cd20e23a="" class="v-image v-responsive my-1 theme--light"
+                      style="max-height: 50px; max-width: 100px; display: none;">
+                      <div class="v-responsive__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <hr data-v-cd20e23a="" role="separator" aria-orientation="horizontal"
+                  class="mb-1 v-divider theme--light">
+              </div>
+              <div data-v-cd20e23a="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                <div data-v-cd20e23a="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                  class="flex-wrap justify-start px-0 text-body-2 v-list-item v-list-item--disabled v-list-item--link theme--light">
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details confirmation-label pb-0 px-0">
+                    <div data-v-cd20e23a="" class="v-list-item__title text-wrap">Vehicle</div>
+                  </div>
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details d-flex flex-column align-start pt-0 px-0 pb-2">
+                    <div data-v-cd20e23a="" class="insurance-name font-weight-bold text-body-2">
+                      SHARAN SE TDI 150, 1968, Diesel
+                    </div>
+                    <div data-v-cd20e23a="" class="v-image v-responsive my-1 theme--light"
+                      style="max-height: 50px; max-width: 100px; display: none;">
+                      <div class="v-responsive__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <hr data-v-cd20e23a="" role="separator" aria-orientation="horizontal"
+                  class="mb-1 v-divider theme--light">
+              </div>
+              <div data-v-cd20e23a="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                <div data-v-cd20e23a="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                  class="flex-wrap justify-start px-0 text-body-2 v-list-item v-list-item--disabled v-list-item--link theme--light">
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details confirmation-label pb-0 px-0">
+                    <div data-v-cd20e23a="" class="v-list-item__title text-wrap">Insurer</div>
+                  </div>
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details d-flex flex-column align-start pt-0 px-0 pb-2">
+                    <div data-v-cd20e23a="" class="insurance-name font-weight-bold text-body-2">
+                      Granite
+                    </div>
+                    <div data-v-cd20e23a="" class="v-image v-responsive my-1 theme--light"
+                      style="max-height: 50px; max-width: 100px; display: none;">
+                      <div class="v-responsive__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <hr data-v-cd20e23a="" role="separator" aria-orientation="horizontal"
+                  class="mb-1 v-divider theme--light">
+              </div>
+              <div data-v-cd20e23a="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                <div data-v-cd20e23a="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                  class="flex-wrap justify-start px-0 text-body-2 v-list-item v-list-item--disabled v-list-item--link theme--light">
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details confirmation-label pb-0 px-0">
+                    <div data-v-cd20e23a="" class="v-list-item__title text-wrap">Cover type</div>
+                  </div>
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details d-flex flex-column align-start pt-0 px-0 pb-2">
+                    <div data-v-cd20e23a="" class="insurance-name font-weight-bold text-body-2">
+                      Comprehensive
+                    </div>
+                    <div data-v-cd20e23a="" class="v-image v-responsive my-1 theme--light"
+                      style="max-height: 50px; max-width: 100px; display: none;">
+                      <div class="v-responsive__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <hr data-v-cd20e23a="" role="separator" aria-orientation="horizontal"
+                  class="mb-1 v-divider theme--light">
+              </div>
+              <div data-v-cd20e23a="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                <div data-v-cd20e23a="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                  class="flex-wrap justify-start px-0 text-body-2 v-list-item v-list-item--disabled v-list-item--link theme--light">
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details confirmation-label pb-0 px-0">
+                    <div data-v-cd20e23a="" class="v-list-item__title text-wrap">Length of cover</div>
+                  </div>
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details d-flex flex-column align-start pt-0 px-0 pb-2">
+                    <div data-v-cd20e23a="" class="insurance-name font-weight-bold text-body-2">
+                      4 weeks
+                    </div>
+                    <div data-v-cd20e23a="" class="v-image v-responsive my-1 theme--light"
+                      style="max-height: 50px; max-width: 100px; display: none;">
+                      <div class="v-responsive__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <hr data-v-cd20e23a="" role="separator" aria-orientation="horizontal"
+                  class="mb-1 v-divider theme--light">
+              </div>
+              <div data-v-cd20e23a="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                <div data-v-cd20e23a="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                  class="flex-wrap justify-start px-0 text-body-2 v-list-item v-list-item--disabled v-list-item--link theme--light">
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details confirmation-label pb-0 px-0">
+                    <div data-v-cd20e23a="" class="v-list-item__title text-wrap">Cover to start</div>
+                  </div>
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details d-flex flex-column align-start pt-0 px-0 pb-2">
+                    <div data-v-cd20e23a="" class="insurance-name font-weight-bold text-body-2">
+                      24/01/2024 7:00 AM
+                    </div>
+                    <div data-v-cd20e23a="" class="v-image v-responsive my-1 theme--light"
+                      style="max-height: 50px; max-width: 100px; display: none;">
+                      <div class="v-responsive__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <hr data-v-cd20e23a="" role="separator" aria-orientation="horizontal"
+                  class="mb-1 v-divider theme--light">
+              </div>
+              <div data-v-cd20e23a="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                <div data-v-cd20e23a="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                  class="flex-wrap justify-start px-0 text-body-2 v-list-item v-list-item--disabled v-list-item--link theme--light">
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details confirmation-label pb-0 px-0">
+                    <div data-v-cd20e23a="" class="v-list-item__title text-wrap">Cover to end</div>
+                  </div>
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details d-flex flex-column align-start pt-0 px-0 pb-2">
+                    <div data-v-cd20e23a="" class="insurance-name font-weight-bold text-body-2">
+                      21/02/2024 7:00 AM
+                    </div>
+                    <div data-v-cd20e23a="" class="v-image v-responsive my-1 theme--light"
+                      style="max-height: 50px; max-width: 100px; display: none;">
+                      <div class="v-responsive__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <hr data-v-cd20e23a="" role="separator" aria-orientation="horizontal"
+                  class="mb-1 v-divider theme--light">
+              </div>
+              <div data-v-cd20e23a="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                <div data-v-cd20e23a="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                  class="flex-wrap justify-start px-0 text-body-2 v-list-item v-list-item--disabled v-list-item--link theme--light">
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details confirmation-label pb-0 px-0">
+                    <div data-v-cd20e23a="" class="v-list-item__title text-wrap">Compulsory excess</div>
+                  </div>
+                  <div data-v-cd20e23a=""
+                    class="v-list-item__content confirmation-details d-flex flex-column align-start pt-0 px-0 pb-2">
+                    <div data-v-cd20e23a="" class="insurance-name font-weight-bold text-body-2">
+                      £350
+                    </div>
+                    <div data-v-cd20e23a="" class="v-image v-responsive my-1 theme--light"
+                      style="max-height: 50px; max-width: 100px; display: none;">
+                      <div class="v-responsive__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <hr data-v-cd20e23a="" role="separator" aria-orientation="horizontal"
+                  class="mb-1 v-divider theme--light">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-v-4b93d776="" class="col-lg-4 col-12">
+        <div data-v-d9e37572="" data-v-4b93d776=""
+          class="confirmation-driver-details-container mb-4 v-card v-sheet theme--light">
+          <div class="v-card__text brandGrey brandDarkGrey--text text-h6 text-center">Driver Details</div>
+          <div class="v-card__text brandGrey">
+            <div data-v-d9e37572="" class="v-tabs theme--light" style="display: none;">
+              <div role="tablist" class="v-item-group theme--light v-slide-group v-tabs-bar black--text"
+                data-booted="true">
+                <div class="v-slide-group__prev v-slide-group__prev--disabled"><!----></div>
+                <div class="v-slide-group__wrapper">
+                  <div class="v-slide-group__content v-tabs-bar__content">
+                    <div class="v-tabs-slider-wrapper" style="height: 2px; left: 0px; width: 0px;">
+                      <div class="v-tabs-slider"></div>
+                    </div>
+                    <div data-v-d9e37572="" tabindex="0" aria-selected="true" role="tab" class="v-tab v-tab--active"><i
+                        data-v-d9e37572="" aria-hidden="true"
+                        class="v-icon notranslate mr-2 mdi mdi-account theme--light"></i> Main </div>
+                    <div data-v-d9e37572="" tabindex="0" aria-selected="false" role="tab" class="v-tab"><i
+                        data-v-d9e37572="" aria-hidden="true"
+                        class="v-icon notranslate mr-2 mdi mdi-account-multiple theme--light"></i> Additional
+                    </div>
+                  </div>
+                </div>
+                <div class="v-slide-group__next v-slide-group__next--disabled"><!----></div>
+              </div>
+            </div>
+            <div data-v-d9e37572="" class="v-window v-item-group theme--light v-tabs-items">
+              <div class="v-window__container" style="">
+                <div data-v-d9e37572="" class="v-window-item v-window-item--active">
+                  <div data-v-d9e37572="" role="list"
+                    class="v-list brandGrey v-sheet theme--light rounded-0 v-list--flat">
+                    <div data-v-d9e37572="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                      <div data-v-d9e37572="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                        class="v-list-item v-list-item--disabled v-list-item--link theme--light">
+                        <div data-v-d9e37572="" class="v-list-item__content py-0 d-flex">
+                          <div data-v-d9e37572="" class="v-list-item__title confirmation-label">Driver</div> <!---->
+                        </div>
+                        <div data-v-d9e37572="" class="v-list-item__content py-0"><span data-v-d9e37572=""
+                            class="font-weight-bold text-body-2">David Davies</span></div>
+                      </div>
+                      <hr data-v-d9e37572="" role="separator" aria-orientation="horizontal"
+                        class="mb-1 v-divider theme--light">
+                    </div>
+                    <div data-v-d9e37572="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                      <div data-v-d9e37572="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                        class="v-list-item v-list-item--disabled v-list-item--link theme--light">
+                        <div data-v-d9e37572="" class="v-list-item__content py-0 d-flex">
+                          <div data-v-d9e37572="" class="v-list-item__title confirmation-label">Date of birth</div>
+                          <!---->
+                        </div>
+                        <div data-v-d9e37572="" class="v-list-item__content py-0"><span data-v-d9e37572=""
+                            class="font-weight-bold text-body-2">12/01/1973</span></div>
+                      </div>
+                      <hr data-v-d9e37572="" role="separator" aria-orientation="horizontal"
+                        class="mb-1 v-divider theme--light">
+                    </div>
+                    <div data-v-d9e37572="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                      <div data-v-d9e37572="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                        class="v-list-item v-list-item--disabled v-list-item--link theme--light">
+                        <div data-v-d9e37572="" class="v-list-item__content py-0 d-flex">
+                          <div data-v-d9e37572="" class="v-list-item__title confirmation-label">Age</div>
+                          <div data-v-d9e37572="" class="v-list-item__subtitle">
+                            (at start of policy)
+                          </div>
+                        </div>
+                        <div data-v-d9e37572="" class="v-list-item__content py-0"><span data-v-d9e37572=""
+                            class="font-weight-bold text-body-2">51</span></div>
+                      </div>
+                      <hr data-v-d9e37572="" role="separator" aria-orientation="horizontal"
+                        class="mb-1 v-divider theme--light">
+                    </div>
+                    <div data-v-d9e37572="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                      <div data-v-d9e37572="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                        class="v-list-item v-list-item--disabled v-list-item--link theme--light">
+                        <div data-v-d9e37572="" class="v-list-item__content align-start py-0">
+                          <div data-v-d9e37572="" class="v-list-item__title confirmation-label">Address</div> <!---->
+                        </div>
+                        <div data-v-d9e37572="" class="v-list-item__content py-0">
+                          <p data-v-d9e37572="" class="font-weight-bold text-body-2">
+                            2
+                            Buchanan Place
+                          </p>
+                          <p data-v-d9e37572="" class="font-weight-bold text-body-2">
+                            EPSOM
+                          </p>
+                          <p data-v-d9e37572="" class="font-weight-bold text-body-2">
+                            KT17 1AT
+                          </p>
+                        </div>
+                      </div>
+                      <hr data-v-d9e37572="" role="separator" aria-orientation="horizontal"
+                        class="mb-1 v-divider theme--light">
+                    </div>
+                    <div data-v-d9e37572="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                      <div data-v-d9e37572="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                        class="v-list-item v-list-item--disabled v-list-item--link theme--light">
+                        <div data-v-d9e37572="" class="v-list-item__content py-0">
+                          <div data-v-d9e37572="" class="v-list-item__title confirmation-label">Email</div> <!---->
+                        </div>
+                        <div data-v-d9e37572="" class="v-list-item__content py-0"><span data-v-d9e37572=""
+                            class="font-weight-bold text-body-2">frankwalterson1@gmail.com</span></div>
+                      </div>
+                      <hr data-v-d9e37572="" role="separator" aria-orientation="horizontal"
+                        class="mb-1 v-divider theme--light">
+                    </div>
+                    <div data-v-d9e37572="" role="listbox" class="v-item-group theme--light v-list-item-group">
+                      <div data-v-d9e37572="" tabindex="-1" aria-disabled="true" role="option" aria-selected="false"
+                        class="v-list-item v-list-item--disabled v-list-item--link theme--light">
+                        <div data-v-d9e37572="" class="v-list-item__content py-0 d-flex">
+                          <div data-v-d9e37572="" class="v-list-item__title confirmation-label">Contact number</div>
+                          <!---->
+                        </div>
+                        <div data-v-d9e37572="" class="v-list-item__content py-0"><span data-v-d9e37572=""
+                            class="font-weight-bold text-body-2">07424582004</span></div>
+                      </div>
+                      <hr data-v-d9e37572="" role="separator" aria-orientation="horizontal"
+                        class="mb-1 v-divider theme--light">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!---->
+    </div>
+    <!--<div data-v-4b93d776="" class="row white">
+      <div data-v-4b93d776="" class="col col-12">
+        <div data-v-4b93d776="" class="row mb-4">
+          <div class="text-center text-body-1 font-weight-bold col">
+            <div>
+              Your policy documents will be sent to:
+              <span class="brandBlue--text">frankwalterson1@gmail.com</span>.
+            </div>
+            <div>
+              If you need to make any changes,
+              <a id="gtm--confirmationForm-back-link" data-zuko-id="zuko--confirmationForm-back-link">Go Back</a>
+              and make any necessary adjustments. Only click
+              <span class="font-italic">Confirm and Continue </span>if all the above
+              information is correct.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+   <!-- <div data-v-4b93d776="" class="row d-flex justify-center white"><button data-v-4b93d776="" type="button"
+        class="cta-submit-button px-6 brandGreen brandDarkestGrey--text v-btn v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default"
+        id="gtm--confirmationForm-submit-2" data-zuko-id="zuko--confirmationForm-submit-2"><span class="v-btn__content">
+          Confirm &amp; Continue
+          <i data-v-4b93d776="" aria-hidden="true"
+            class="v-icon notranslate ml-2 mdi mdi-arrow-right-circle-outline theme--light"></i></span></button></div>-->
+   <!-- <div data-v-4b93d776="" class="row d-flex justify-center white">
+      <div data-v-4b93d776="" id="gtm--confirmationForm-back" data-zuko-id="zuko--confirmationForm-back"
+        class="cta-back-button brandDarkestGrey--text"><i data-v-4b93d776="" aria-hidden="true"
+          class="v-icon notranslate mr-1 mdi mdi-arrow-left-circle-outline theme--light brandDarkestGrey--text--text"></i>
+        <span data-v-4b93d776="">Go Back</span></div>
+    </div>-->
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- Step 6 -->
+<div id="step6" class="form-step">
+ <div class="row mt-0 mt-md-2 text-body-2 text-md-body-1 align-center justify-center "><div class="cover-details-container__cover-details-col col col-12" style="background-color: white;"> <div data-v-77e2875f="" class="mx-0 w-100"><p data-v-77e2875f="" class="text-center">
+      Please read the following carefully, you must only click Confirm and Pay
+      if you do meet and agree to these conditions.
+    </p><!-- <button data-v-77e2875f="" type="button" class="cta-submit-button px-12 brandGreen brandDarkestGrey--text v-btn v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default" id="gtm--acceptanceForm-submit" data-zuko-id="zuko--acceptanceForm-submit"><span class="v-btn__content">
+      Confirm &amp; Pay
+      <i data-v-77e2875f="" aria-hidden="true" class="v-icon notranslate ml-2 mdi mdi-arrow-right-circle-outline theme--light"></i></span></button>--></div> <div data-v-77e2875f="" class="acceptance-criteria overflow-y-auto pa-1 my-5 v-card v-sheet theme--light elevation-0" style="max-height: 400px;"><p data-v-77e2875f="" class="text-left"><p><strong>Assumptions and Eligibility Criteria – Customer Declaration</strong></p><p>You will be required to confirm that you meet the following criteria before buying cover. Please ensure that you do meet this criteria, if you do not your insurance could be invalid.</p><p>1. I declare that I, or any named driver covered:<br>a) Are not employed or work within the fashion or entertainment business (TV, Radio, theatre); as a professional sports person and or coach; within the motor industry (including sales, repairs, valeting); professional driver or driving as part of job role; within the scrap metal, waste or recycling industry; nor am I unemployed.<br>b) Have no more than 7 penalty points on my/our licence(s) in the last 3 years, and have no prosecution or police enquiry pending.<br>c) Have a total of no more than 2 fault claims within the last 3 years (a pending or non-recoverable claim is considered a fault claim) for all drivers.<br>d) Have NOT been disqualified from driving in the last 5 years.<br>e) Have no criminal convictions, a current Anti-Social Behaviour Order (ASBO) or a Criminal Behaviour Order (CBO).<br>f) Have not had any policy of insurance declared void by an Insurer<br>g) Have been a permanent UK resident for at least the last 12 months.</p><p>2. I declare that the vehicle:<br>a) Will only be used for social, domestic and pleasure purposes unless otherwise stated that business use by the policyholder is permitted.<br>b) Will NOT be used for the hire or reward, racing, pace-making, speed testing, commercial travelling or use in connection with the motor trade.<br>c) Has not been modified, has no more than 8 seats and is right hand drive only. Vehicles modified to cater for a disabled driver or a disabled passenger are acceptable.<br>d) Is registered in Great Britain, Northern Ireland or the Isle of Man.<br>e) Has a minimum value of £1,000 and I am aware that the maximum amount payable under this policy in respect of loss of or damage to the insured vehicle is £40,000.<br>f) Will be in the UK at the start of the policy and will not be exported from the UK during the duration of the policy.<br>g) Will not be used to carry hazardous or dangerous goods.<br>h) Not previously declared as a category A, B, C, E, F or S write off</p><p>3. I am aware that no alteration or correction may be made once payment has been confirmed, and that no refund is available once the policy period has commenced.</p><p>4. I am aware that temporary insurance cannot be used for Hire or Loan Vehicles (i.e. Vehicle Rentals, Vehicle Salvage/Recovery Agents, Credit Hire Vehicles/Companies, and Accident Management Companies)</p><p>5. I declare that any certificate or other document issued will not be used as evidence of insurance for the recovery of impounded vehicles.</p><p>6. I am permanently resident at the registered permanent residential address provided.</p><p>7. I am aware that foreign use is NOT permitted for any demonstrator vehicle or courtesy car.</p><p>8. I am aware that this policy has a compulsory excess, the amount of which will be confirmed to you prior to acceptance of cover and will also show on your policy schedule.</p><p>9. To prevent or detect fraud we may check your details with credit reference and fraud prevention agencies and databases. We may pass your information to these agencies for their records. If false or inaccurate information is provided and fraud is identified details will be passed to fraud prevention agencies to prevent future fraud.</p></p></div> <div data-v-77e2875f=""><p data-v-77e2875f="" class="text-center text-body-1 font-weight-bold py-6">
+      By clicking Confirm and Pay you are agreeing that you meet and agree to
+      the conditions shown above
+    </p></div><!-- <button data-v-77e2875f="" type="button" class="cta-submit-button px-12 brandGreen brandDarkestGrey--text v-btn v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default" id="gtm--acceptanceForm-submit-2" data-zuko-id="zuko--acceptanceForm-submit-2"><span class="v-btn__content">
+    Confirm &amp; Pay
+    <i data-v-77e2875f="" aria-hidden="true" class="v-icon notranslate ml-2 mdi mdi-arrow-right-circle-outline theme--light"></i></span></button> --><!--<div data-v-77e2875f="" class="row mt-2"><div data-v-77e2875f="" id="gtm--acceptanceForm-back" data-zuko-id="zuko--acceptanceForm-back" class="cta-back-button brandDarkestGrey--text"><i data-v-77e2875f="" aria-hidden="true" class="v-icon notranslate mr-1 mdi mdi-arrow-left-circle-outline theme--light brandDarkestGrey--text"></i> <span data-v-77e2875f="">Go Back</span></div></div>--></div></div>
+</div>
+
+<!-- Step 7 -->
+<div id="step7" class="form-step">
+    <!-- Form fields for step 7 -->
+      <div class="mb-3">
+                                      <label class="form-label">payment gateway section</label>
+                                      <div class="btn-group d-flex " role="group" aria-label="Duration type">
+                                        <button type="button"
+                                          class="btn btn-outline-primary btn-duration">Hours</button>
+                                        <button type="button" class="btn btn-primary btn-duration">Days</button>
+                                        <button type="button"
+                                          class="btn btn-outline-primary btn-duration">Weeks</button>
+                                      </div>
+                                    </div>
+</div>
+
+                                  
+                                
+                                 
+ <div class="navigation-buttons d-flex flex-column pt-4 justify-content-center align-items-center px-2" style="border: 0px solid red; margin-top: 60px;" >
+      <button type="button" id="nextBtn" class="cta-submit-button cover-submit-button v-btn v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default brandGreen brandDarkestGrey--text">Continue <i data-v-4b93d776="" aria-hidden="true"
+                class="v-icon notranslate ml-2 mdi mdi-arrow-right-circle-outline theme--light"></i></button>
+    <button type="button"  id="prevBtn" class="mt-2">Go Back</button>
+
+</div>                  
+       </form>
+                                <!--NAVIGATION BUTTONS-->
+   
+
+<script>
+  //step function
+  const steps = document.querySelectorAll('.form-step');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn1 = document.getElementById('nextBtn1');
+const nextBtn2 = document.getElementById('nextBtn2');
+const nextBtn3 = document.getElementById('nextBtn3');
+
+const nextBtn4 = document.getElementById('nextBtn4');
+const nextBtn5 = document.getElementById('nextBtn5');
+const progressbar1 = document.getElementById('progressbar1');
+
+const multiStepForm = document.getElementById('multiStepForm');
+const outer1 = document.getElementById('outer1');
+
+let currentbar = 20;
+let currentStep = 0;
+function showStep(stepIndex) {
+    steps.forEach((step, index) => {
+        step.style.display = index === stepIndex ? 'block' : 'none';
+       
+    });
+}
+nextBtn.addEventListener('click', () => {
+  currentbar =currentbar + 17;
+  progressbar1.style.width = currentbar +'%';
+  if(currentStep ===2 ){
+  // multiStepForm.style.width = '1200px';
+      if (outer1.classList.contains("col-md-8")) {
+        // Replace "col-md-8" with "col-md-6"
+        outer1.classList.replace("col-md-8", "col-md-12");
+    }
+   outer1.style.width = '1200px';
+   multiStepForm.style.width = '1000px';
+  }
+   if(currentStep ===6 ){alert('form is supposed to be submitted here');}
+  
+    if (currentStep < steps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+    }
+});
+
+prevBtn.addEventListener('click', () => {
+    currentbar =currentbar - 17;
+  progressbar1.style.width = currentbar +'%';
+    if (currentStep > 0) {
+        currentStep--;
+        showStep(currentStep);
+    }
+});
+
+showStep(currentStep); // Initialize the first step
+
+//payment section
+nextBtn1.addEventListener('click', () => {
+  currentbar =currentbar + 17;
+  progressbar1.style.width = currentbar +'%';
+   if(currentStep ===5 ){alert('form is supposed to be submitted here');}
+  
+    if (currentStep < steps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+    }
+});
+nextBtn2.addEventListener('click', () => {
+  currentbar =currentbar + 17;
+  progressbar1.style.width = currentbar +'%';
+   if(currentStep ===5 ){alert('form is supposed to be submitted here');}
+  
+    if (currentStep < steps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+    }
+});
+nextBtn3.addEventListener('click', () => {
+  currentbar =currentbar + 17;
+  progressbar1.style.width = currentbar +'%';
+   if(currentStep ===5 ){alert('form is supposed to be submitted here');}
+  
+    if (currentStep < steps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+    }
+});
+nextBtn4.addEventListener('click', () => {
+  currentbar =currentbar + 17;
+  progressbar1.style.width = currentbar +'%';
+   if(currentStep ===5 ){alert('form is supposed to be submitted here');}
+  
+    if (currentStep < steps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+    }
+});
+nextBtn5.addEventListener('click', () => {
+  currentbar =currentbar + 17;
+  progressbar1.style.width = currentbar +'%';
+   if(currentStep ===5 ){alert('form is supposed to be submitted here');}
+  
+    if (currentStep < steps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+    }
+});
+//payment section
+
+//the second button select manipulation function
+document.addEventListener('DOMContentLoaded', () => {
+    const hoursBtn = document.getElementById('hoursBtn');
+    const daysBtn = document.getElementById('daysBtn');
+    const weeksBtn = document.getElementById('weeksBtn');
+
+       const a1 = document.getElementById('a1');
+    const a2 = document.getElementById('a2');
+    const a3 = document.getElementById('a3');
+     const a4 = document.getElementById('a4');
+
+
+        const t1 = document.getElementById('t1');
+    const t2 = document.getElementById('t2');
+    const t3 = document.getElementById('t3');
+     const t4 = document.getElementById('t4');
+
+         const c1 = document.getElementById('c1');
+     const c2 = document.getElementById('c2');
+
+        const o1 = document.getElementById('o1');
+     const o2 = document.getElementById('o2');
+
+
+    const timeOptions = document.getElementById('timeOptions').getElementsByTagName('button');
+
+     function updateButtonStates(selectedButton) {
+        [hoursBtn, daysBtn, weeksBtn].forEach(btn => {
+            btn.classList.remove('btn-success');
+            btn.classList.add('btn-primary');
+        });
+        selectedButton.classList.remove('btn-primary');
+        selectedButton.classList.add('btn-success');
+    }
+    function updateButtonStates2(selectedButton) {
+        [a1, a2, a3, a4].forEach(btn => {
+            btn.classList.remove('btn-success');
+            btn.classList.add('btn-primary');
+        });
+        selectedButton.classList.remove('btn-primary');
+        selectedButton.classList.add('btn-success');
+    }
+       function updateButtonStates3(selectedButton) {
+        [t1, t2, t3, t4].forEach(btn => {
+            btn.classList.remove('btn-success');
+            btn.classList.add('btn-primary');
+        });
+        selectedButton.classList.remove('btn-primary');
+        selectedButton.classList.add('btn-success');
+    }
+
+    function updateButtonStates4(selectedButton) {
+        [c1, c2].forEach(btn => {
+            btn.classList.remove('btn-success');
+            btn.classList.add('btn-primary');
+        });
+        selectedButton.classList.remove('btn-primary');
+        selectedButton.classList.add('btn-success');
+    }
+
+     function updateButtonStates5(selectedButton) {
+        [o1, o2].forEach(btn => {
+            btn.classList.remove('btn-success');
+            btn.classList.add('btn-primary');
+        });
+        selectedButton.classList.remove('btn-primary');
+        selectedButton.classList.add('btn-success');
+    }
+
+    function updateTimeOptions(unit) {
+        const options = unit === 'Hours' ? ['1Hour', '2Hours', '3Hours', '5Hours'] :  unit === 'Days' ? ['1Day', '2Days', '3Days', '5Days'] :    ['1Week', '2Weeks', '3Weeks', '4Weeks'];
+        for (let i = 0; i < timeOptions.length; i++) {
+            timeOptions[i].textContent = options[i];
+        }
+    }
+
+    hoursBtn.addEventListener('click', () => {
+        updateButtonStates(hoursBtn);
+        updateTimeOptions('Hours');
+    });
+
+    daysBtn.addEventListener('click', () => {
+        updateButtonStates(daysBtn);
+        updateTimeOptions('Days');
+    });
+
+    weeksBtn.addEventListener('click', () => {
+        updateButtonStates(weeksBtn);
+        updateTimeOptions('Weeks');
+    });
+        a1.addEventListener('click', () => {
+        updateButtonStates2(a1);
+       // updateTimeOptions('Weeks');
+    });
+        a2.addEventListener('click', () => {
+        updateButtonStates2(a2);
+      //  updateTimeOptions('Weeks');
+    });
+        a3.addEventListener('click', () => {
+        updateButtonStates2(a3);
+        //updateTimeOptions('Weeks');
+    });
+        a4.addEventListener('click', () => {
+        updateButtonStates2(a4);
+        //updateTimeOptions('Weeks');
+    });
+
+          t1.addEventListener('click', () => {
+        updateButtonStates3(t1);
+       // updateTimeOptions('Weeks');
+    });
+        t2.addEventListener('click', () => {
+        updateButtonStates3(t2);
+      //  updateTimeOptions('Weeks');
+    });
+        t3.addEventListener('click', () => {
+        updateButtonStates3(t3);
+        //updateTimeOptions('Weeks');
+    });
+        t4.addEventListener('click', () => {
+        updateButtonStates3(t4);
+        //updateTimeOptions('Weeks');
+    });
+
+       c1.addEventListener('click', () => {
+        updateButtonStates4(c1);
+        //updateTimeOptions('Weeks');
+    });
+        c2.addEventListener('click', () => {
+        updateButtonStates4(c2);
+        //updateTimeOptions('Weeks');
+    });
+       o1.addEventListener('click', () => {
+        updateButtonStates5(o1);
+        //updateTimeOptions('Weeks');
+    });
+        o2.addEventListener('click', () => {
+        updateButtonStates5(o2);
+        //updateTimeOptions('Weeks');
+    });
+
+
+});
+
+
+
+
+//auto populate the date option
+document.addEventListener('DOMContentLoaded', function() {
+    const selectElement = document.getElementById('dateSelect');
+
+    // Function to add suffix to date
+    function addDateSuffix(date) {
+        if (date > 3 && date < 21) return date + 'th';
+        switch (date % 10) {
+            case 1: return date + "st";
+            case 2: return date + "nd";
+            case 3: return date + "rd";
+            default: return date + "th";
+        }
+    }
+
+    // Function to format date
+    function formatDate(date) {
+        const options = { weekday: 'long', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
+    }
+
+    // Populate the next 28 days
+    for (let i = 0; i < 28; i++) {
+        const date = new Date();
+        date.setDate(date.getDate() + i);
+        const formattedDate = formatDate(date);
+        const option = document.createElement('option');
+        option.value = formattedDate;
+        option.text = (i === 0 ? 'Today ' : i === 1 ? 'Tomorrow ' : '') + addDateSuffix(date.getDate()) + ' of ' + date.toLocaleString('default', { month: 'long' });
+        selectElement.appendChild(option);
+    }
+});
+
+</script>
+ <!--NAVIGATION BUTTONS-->
+
+
+                              
+                            </div>
+                            </div>
+              
+
+                          </div>
+                          <!--CAR DETAILS-->
+
+
+
+
+
+                        </div>
+                        <div data-v-4f3c6938="" class="col col-12">
+                          <div data-v-4f3c6938="" class="row d-flex justify-center"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="row" data-v-3b8d5b18="">
+                  <div class="col" data-v-3b8d5b18="">
+                    <div data-v-3b8d5b18="">
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </main>
           <div class="container site-footer pt-8 container--fluid" data-v-5ded152e="">
             <div class="container pb-8 pb-md-0" data-v-5ded152e="">
