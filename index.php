@@ -29,24 +29,24 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
     <!-- This site is optimized with the Yoast SEO Premium plugin v21.8 (Yoast SEO v21.8) - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Temporary Car Insurance | Short Term Car Insurance Quote | GoShorty</title>
+    <title>Temporary Car Insurance | Short Term Car Insurance Quote | GoDirect</title>
     <meta name="description"
-        content="Looking for temporary car insurance that works for you? Find out more about GoShorty&#039;s short-term car insurance policies, and get an instant quote today." />
+        content="Looking for temporary car insurance that works for you? Find out more about GoDirect&#039;s short-term car insurance policies, and get an instant quote today." />
     <link rel="canonical" href="#/temporary-car-insurance/" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Car" />
     <meta property="og:description"
-        content="Looking for temporary car insurance that works for you? Find out more about GoShorty&#039;s short-term car insurance policies, and get an instant quote today." />
+        content="Looking for temporary car insurance that works for you? Find out more about GoDirect&#039;s short-term car insurance policies, and get an instant quote today." />
     <meta property="og:url" content="#/temporary-car-insurance/" />
-    <meta property="og:site_name" content="GoShorty Short Term Vehicle Insurance" />
+    <meta property="og:site_name" content="GoDirect Short Term Vehicle Insurance" />
     <meta property="article:modified_time" content="2023-12-11T15:37:54+00:00" />
     <meta property="og:image" content="wp-content/uploads/2023/02/home-s.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:label1" content="Estimated reading time" />
     <meta name="twitter:data1" content="18 minutes" />
     <script type="application/ld+json"
-        class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"#/temporary-car-insurance/","url":"#/temporary-car-insurance/","name":"Temporary Car Insurance | Short Term Car Insurance Quote | GoShorty","isPartOf":{"@id":"#/#website"},"primaryImageOfPage":{"@id":"#/temporary-car-insurance/#primaryimage"},"image":{"@id":"#/temporary-car-insurance/#primaryimage"},"thumbnailUrl":"wp-content/uploads/2023/05/default-page-image-1.jpg","datePublished":"2023-02-02T12:18:04+00:00","dateModified":"2023-12-11T15:37:54+00:00","description":"Looking for temporary car insurance that works for you? Find out more about GoShorty's short-term car insurance policies, and get an instant quote today.","inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["#/temporary-car-insurance/"]}]},{"@type":"ImageObject","inLanguage":"en-GB","@id":"#/temporary-car-insurance/#primaryimage","url":"wp-content/uploads/2023/05/default-page-image-1.jpg","contentUrl":"wp-content/uploads/2023/05/default-page-image-1.jpg","width":375,"height":250},{"@type":"WebSite","@id":"#/#website","url":"#/","name":"GoShorty","description":"Temporary and Short-Term Vehicle Insurance","publisher":{"@id":"#/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"#/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"Organization","@id":"#/#organization","name":"GoShorty","url":"#/","logo":{"@type":"ImageObject","inLanguage":"en-GB","@id":"#/#/schema/logo/image/","url":"wp-content/uploads/2023/02/goshorty-logo-master-rgb.svg","contentUrl":"wp-content/uploads/2023/02/goshorty-logo-master-rgb.svg","width":200,"height":44,"caption":"GoShorty"},"image":{"@id":"#/#/schema/logo/image/"}}]}</script>
+        class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"#/temporary-car-insurance/","url":"#/temporary-car-insurance/","name":"Temporary Car Insurance | Short Term Car Insurance Quote | GoDirect","isPartOf":{"@id":"#/#website"},"primaryImageOfPage":{"@id":"#/temporary-car-insurance/#primaryimage"},"image":{"@id":"#/temporary-car-insurance/#primaryimage"},"thumbnailUrl":"wp-content/uploads/2023/05/default-page-image-1.jpg","datePublished":"2023-02-02T12:18:04+00:00","dateModified":"2023-12-11T15:37:54+00:00","description":"Looking for temporary car insurance that works for you? Find out more about GoDirect's short-term car insurance policies, and get an instant quote today.","inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["#/temporary-car-insurance/"]}]},{"@type":"ImageObject","inLanguage":"en-GB","@id":"#/temporary-car-insurance/#primaryimage","url":"wp-content/uploads/2023/05/default-page-image-1.jpg","contentUrl":"wp-content/uploads/2023/05/default-page-image-1.jpg","width":375,"height":250},{"@type":"WebSite","@id":"#/#website","url":"#/","name":"GoDirect","description":"Temporary and Short-Term Vehicle Insurance","publisher":{"@id":"#/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"#/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"Organization","@id":"#/#organization","name":"GoDirect","url":"#/","logo":{"@type":"ImageObject","inLanguage":"en-GB","@id":"#/#/schema/logo/image/","url":"imgs/logo1.png","contentUrl":"imgs/logo1.png","width":200,"height":44,"caption":"GoDirect"},"image":{"@id":"#/#/schema/logo/image/"}}]}</script>
     <!-- / Yoast SEO Premium plugin. -->
 
 
@@ -542,7 +542,7 @@
         id="jquery-js"></script>
     <script type="text/javascript" id="sf_main-js-extra">
         /* <![CDATA[ */
-        var SF_Opts = { "wp_menu_id": "34", "social": [], "search": "no", "blur": "no", "fade": "no", "test_mode": "no", "hide_def": "no", "mob_nav": "yes", "dynamic": "no", "parent_ignore": "yes", "sidebar_style": "side", "sidebar_behaviour": "slide", "alt_menu": "", "sidebar_pos": "right", "width_panel_1": "370", "width_panel_2": "370", "width_panel_3": "370", "width_panel_4": "370", "base_color": "rgb(255, 255, 255)", "opening_type": "click", "sub_type": "swipe", "video_bg": "", "video_mob": "no", "video_preload": "no", "sub_mob_type": "dropdown", "sub_opening_type": "click", "label": "none", "label_top": "0px", "label_size": "50", "label_vis": "yes", "item_padding": "20", "bg": "", "path": "https:\/\/goshorty.co.uk\/wp-content\/plugins\/superfly-menu\/img\/", "menu": "{\"34\":{\"term_id\":34,\"name\":\"Mobile Menu\",\"loc\":{\"pages\":{\"4111\":1,\"4285\":1,\"4287\":1,\"4289\":1,\"4291\":1,\"4293\":1,\"4295\":1,\"4297\":1,\"4299\":1,\"4301\":1,\"4303\":1,\"4315\":1,\"4317\":1,\"4319\":1,\"4321\":1,\"4323\":1,\"4325\":1,\"4327\":1,\"4330\":1,\"4334\":1,\"4336\":1,\"4338\":1},\"cposts\":{\"custom-post-type\":1},\"cats\":{\"1\":1,\"2\":1,\"3\":1,\"4\":1,\"5\":1,\"7\":1,\"9\":1,\"10\":1,\"12\":1,\"17\":1,\"23\":1,\"25\":1,\"28\":1,\"29\":1,\"30\":1},\"taxes\":[],\"langs\":[],\"wp_pages\":{\"front\":1,\"home\":1,\"archive\":1,\"single\":1,\"forbidden\":1,\"search\":1},\"ids\":[\"\"]},\"isDef\":true}}", "togglers": "", "subMenuSupport": "yes", "subMenuSelector": "sub-menu, children", "eventsInterval": "51", "activeClassSelector": "current-menu-item", "allowedTags": "DIV, NAV, UL, OL, LI, A, P, H1, H2, H3, H4, SPAN", "menuData": { "12358": "img=&icon_manager_search=&la_icon_manager_menu-item-12358_custom=&icon=&icon_color=&sline=&chapter=&content=&bg=&width=", "4370": "img=&icon_manager_search=&la_icon_manager_menu-item-4370_custom=&icon=&icon_color=&sline=&chapter=&content=&bg=&width=", "4688": "img=&icon_manager_search=&la_icon_manager_menu-item-4688_custom=&icon=&icon_color=&sline=Temporary%20car%20insurance%20from%201%20hour%20to%2028%20days%2C%20to%20get%20you%20where%20you%20need%20to%20be.&chapter=&content=&bg=&width=", "4691": "img=&icon_manager_search=&la_icon_manager_menu-item-4691_custom=&icon=&icon_color=&sline=Insure%20a%20van%20from%20an%20hour%20to%204%20weeks%2C%20with%20business%20use%20fully%20included.&chapter=&content=&bg=&width=", "4692": "img=&icon_manager_search=&la_icon_manager_menu-item-4692_custom=&icon=&icon_color=&sline=Get%20learner%20driver%20practice%20insurance%20from%20an%20hour%20to%2024%20weeks.&chapter=&content=&bg=&width=", "4387": "img=&icon_manager_search=&la_icon_manager_menu-item-4387_custom=&icon=&icon_color=&sline=&chapter=&content=&bg=%2381d742&width=" }, "siteBase": "https:\/\/goshorty.co.uk", "plugin_ver": "5.0.14" };
+        var SF_Opts = { "wp_menu_id": "34", "social": [], "search": "no", "blur": "no", "fade": "no", "test_mode": "no", "hide_def": "no", "mob_nav": "yes", "dynamic": "no", "parent_ignore": "yes", "sidebar_style": "side", "sidebar_behaviour": "slide", "alt_menu": "", "sidebar_pos": "right", "width_panel_1": "370", "width_panel_2": "370", "width_panel_3": "370", "width_panel_4": "370", "base_color": "rgb(255, 255, 255)", "opening_type": "click", "sub_type": "swipe", "video_bg": "", "video_mob": "no", "video_preload": "no", "sub_mob_type": "dropdown", "sub_opening_type": "click", "label": "none", "label_top": "0px", "label_size": "50", "label_vis": "yes", "item_padding": "20", "bg": "", "path": "https:\/\/#\/wp-content\/plugins\/superfly-menu\/img\/", "menu": "{\"34\":{\"term_id\":34,\"name\":\"Mobile Menu\",\"loc\":{\"pages\":{\"4111\":1,\"4285\":1,\"4287\":1,\"4289\":1,\"4291\":1,\"4293\":1,\"4295\":1,\"4297\":1,\"4299\":1,\"4301\":1,\"4303\":1,\"4315\":1,\"4317\":1,\"4319\":1,\"4321\":1,\"4323\":1,\"4325\":1,\"4327\":1,\"4330\":1,\"4334\":1,\"4336\":1,\"4338\":1},\"cposts\":{\"custom-post-type\":1},\"cats\":{\"1\":1,\"2\":1,\"3\":1,\"4\":1,\"5\":1,\"7\":1,\"9\":1,\"10\":1,\"12\":1,\"17\":1,\"23\":1,\"25\":1,\"28\":1,\"29\":1,\"30\":1},\"taxes\":[],\"langs\":[],\"wp_pages\":{\"front\":1,\"home\":1,\"archive\":1,\"single\":1,\"forbidden\":1,\"search\":1},\"ids\":[\"\"]},\"isDef\":true}}", "togglers": "", "subMenuSupport": "yes", "subMenuSelector": "sub-menu, children", "eventsInterval": "51", "activeClassSelector": "current-menu-item", "allowedTags": "DIV, NAV, UL, OL, LI, A, P, H1, H2, H3, H4, SPAN", "menuData": { "12358": "img=&icon_manager_search=&la_icon_manager_menu-item-12358_custom=&icon=&icon_color=&sline=&chapter=&content=&bg=&width=", "4370": "img=&icon_manager_search=&la_icon_manager_menu-item-4370_custom=&icon=&icon_color=&sline=&chapter=&content=&bg=&width=", "4688": "img=&icon_manager_search=&la_icon_manager_menu-item-4688_custom=&icon=&icon_color=&sline=Temporary%20car%20insurance%20from%201%20hour%20to%2028%20days%2C%20to%20get%20you%20where%20you%20need%20to%20be.&chapter=&content=&bg=&width=", "4691": "img=&icon_manager_search=&la_icon_manager_menu-item-4691_custom=&icon=&icon_color=&sline=Insure%20a%20van%20from%20an%20hour%20to%204%20weeks%2C%20with%20business%20use%20fully%20included.&chapter=&content=&bg=&width=", "4692": "img=&icon_manager_search=&la_icon_manager_menu-item-4692_custom=&icon=&icon_color=&sline=Get%20learner%20driver%20practice%20insurance%20from%20an%20hour%20to%2024%20weeks.&chapter=&content=&bg=&width=", "4387": "img=&icon_manager_search=&la_icon_manager_menu-item-4387_custom=&icon=&icon_color=&sline=&chapter=&content=&bg=%2381d742&width=" }, "siteBase": "https:\/\/#", "plugin_ver": "5.0.14" };
         /* ]]> */
     </script>
     <script type="text/javascript" src="wp-content/plugins/superfly-menu/js/public.min.js?ver=5.0.14"
@@ -553,9 +553,9 @@
     <meta name="generator" content="WordPress 6.4.2" />
     <link rel='shortlink' href='#/?p=4285' />
     <link rel="alternate" type="application/json+oembed"
-        href="#/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoshorty.co.uk%2Ftemporary-car-insurance%2F" />
+        href="#/wp-json/oembed/1.0/embed?url=https%3A%2F%2F#%2Ftemporary-car-insurance%2F" />
     <link rel="alternate" type="text/xml+oembed"
-        href="#/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoshorty.co.uk%2Ftemporary-car-insurance%2F&#038;format=xml" />
+        href="#/wp-json/oembed/1.0/embed?url=https%3A%2F%2F#%2Ftemporary-car-insurance%2F&#038;format=xml" />
     <script>
 
         // global
@@ -1532,20 +1532,15 @@
             }
         })()
     </script>
-    <script
-        type='text/javascript'>var SFM_template = "<div class=\"sfm-rollback sfm-color1 sfm-theme-none sfm-label-visible sfm-label-none  sfm-label-text sfm-fixed\" style=\"\">\r\n    <div role='button' tabindex='0' aria-haspopup=\"true\" class='sfm-navicon-button x sf_label_custom '><div class=\"la403c7127afe6243ad5188b9ae36799b3-menu sf_label_icon\"><\/div>    <\/div>\r\n<\/div>\r\n<div id=\"sfm-sidebar\" style=\"opacity:0\" data-wp-menu-id=\"34\" class=\"sfm-theme-none sfm-hl-text sfm-indicators\">\r\n    <div class=\"sfm-scroll-wrapper sfm-scroll-main\">\r\n        <div class=\"sfm-scroll\">\r\n            <div class=\"sfm-sidebar-close\"><\/div>\r\n            <div class=\"sfm-logo\">\r\n                                                                        <a href=\"https:\/\/goshorty.co.uk\">\r\n                        <img src=\"https:\/\/goshorty.co.uk\/wp-content\/uploads\/2023\/02\/goshorty-logo-master-rgb.svg\" alt=\"\">\r\n                    <\/a>\r\n                                                <div class=\"sfm-title\"><\/div>\r\n            <\/div>\r\n            <nav class=\"sfm-nav\">\r\n                <div class=\"sfm-va-middle\">\r\n                    <ul id=\"sfm-nav\" class=\"menu\"><li id=\"menu-item-12358\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-12358\"><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/your.goshorty.co.uk\/\">Sign In<\/a><\/li>\n<li id=\"menu-item-4370\" class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4285 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-4370\"><a href=\"https:\/\/goshorty.co.uk\/temporary-car-insurance\/\" aria-current=\"page\">Temporary Car Insurance<\/a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-4688\" class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4285 current_page_item menu-item-4688\"><a href=\"https:\/\/goshorty.co.uk\/temporary-car-insurance\/\" aria-current=\"page\">Temp Car Insurance<\/a><\/li>\n\t<li id=\"menu-item-4372\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4372\"><a href=\"https:\/\/goshorty.co.uk\/temporary-car-insurance\/hourly\/\">Hourly Car Insurance<\/a><\/li>\n\t<li id=\"menu-item-4371\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4371\"><a href=\"https:\/\/goshorty.co.uk\/temporary-car-insurance\/daily\/\">Daily Car Insurance<\/a><\/li>\n\t<li id=\"menu-item-4376\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4376\"><a href=\"https:\/\/goshorty.co.uk\/temporary-car-insurance\/weekly\/\">Weekly Car Insurance<\/a><\/li>\n\t<li id=\"menu-item-4373\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4373\"><a href=\"https:\/\/goshorty.co.uk\/temporary-car-insurance\/monthly\/\">Monthly Car Insurance<\/a><\/li>\n\t<li id=\"menu-item-4375\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4375\"><a href=\"https:\/\/goshorty.co.uk\/temporary-car-insurance\/young-drivers\/\">Temp Under 21 Car Insurance<\/a><\/li>\n\t<li id=\"menu-item-4374\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4374\"><a href=\"https:\/\/goshorty.co.uk\/temporary-car-insurance\/student\/\">Temp Student Car Insurance<\/a><\/li>\n\t<li id=\"menu-item-12879\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-12879\"><a href=\"https:\/\/goshorty.co.uk\/impound-release-insurance\/\">Car Impound Release Insurance<\/a><\/li>\n<\/ul>\n<\/li>\n<li id=\"menu-item-4381\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4381\"><a href=\"https:\/\/goshorty.co.uk\/temporary-van-insurance\/\">Temporary Van Insurance<\/a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-4691\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-4691\"><a href=\"https:\/\/goshorty.co.uk\/temporary-van-insurance\/\">Temporary Van Insurance<\/a><\/li>\n\t<li id=\"menu-item-4383\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4383\"><a href=\"https:\/\/goshorty.co.uk\/temporary-van-insurance\/hourly\/\">Hourly Van Insurance<\/a><\/li>\n\t<li id=\"menu-item-4382\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4382\"><a href=\"https:\/\/goshorty.co.uk\/temporary-van-insurance\/daily\/\">Daily Van Insurance<\/a><\/li>\n\t<li id=\"menu-item-4385\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4385\"><a href=\"https:\/\/goshorty.co.uk\/temporary-van-insurance\/weekly\/\">Weekly Van Insurance<\/a><\/li>\n\t<li id=\"menu-item-4384\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4384\"><a href=\"https:\/\/goshorty.co.uk\/temporary-van-insurance\/monthly\/\">Monthly Van Insurance<\/a><\/li>\n\t<li id=\"menu-item-13244\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-13244\"><a href=\"https:\/\/goshorty.co.uk\/van-impound-release-insurance\/\">Van Impound Release Insurance<\/a><\/li>\n<\/ul>\n<\/li>\n<li id=\"menu-item-4377\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4377\"><a href=\"https:\/\/goshorty.co.uk\/temporary-learner-driver-insurance\/\">Learner Driver Insurance<\/a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-4692\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-4692\"><a href=\"https:\/\/goshorty.co.uk\/temporary-learner-driver-insurance\/\">Temporary Learner Insurance<\/a><\/li>\n\t<li id=\"menu-item-4379\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4379\"><a href=\"https:\/\/goshorty.co.uk\/temporary-learner-driver-insurance\/hourly\/\">Hourly Learner Insurance<\/a><\/li>\n\t<li id=\"menu-item-4378\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4378\"><a href=\"https:\/\/goshorty.co.uk\/temporary-learner-driver-insurance\/daily\/\">Daily Learner Insurance<\/a><\/li>\n\t<li id=\"menu-item-7545\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-7545\"><a href=\"https:\/\/goshorty.co.uk\/temporary-learner-driver-insurance\/weekly\/\">Weekly Learner Insurance<\/a><\/li>\n\t<li id=\"menu-item-4380\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4380\"><a href=\"https:\/\/goshorty.co.uk\/temporary-learner-driver-insurance\/monthly\/\">Monthly Learner Insurance<\/a><\/li>\n<\/ul>\n<\/li>\n<li id=\"menu-item-4386\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4386\"><a href=\"https:\/\/goshorty.co.uk\/who-we-cover\/\">Who We Cover<\/a><\/li>\n<li id=\"menu-item-4387\" class=\"mobile-menu-get-a-quote menu-item menu-item-type-custom menu-item-object-custom menu-item-4387\"><a href=\"\/quote\/\">Get A Quote<\/a><\/li>\n<li id=\"menu-item-4389\" class=\"mobile-menu-text-link menu-item menu-item-type-post_type menu-item-object-page menu-item-4389\"><a href=\"https:\/\/goshorty.co.uk\/about-us\/\">About GoShorty<\/a><\/li>\n<li id=\"menu-item-4388\" class=\"mobile-menu-text-link menu-item menu-item-type-post_type menu-item-object-page menu-item-4388\"><a href=\"https:\/\/goshorty.co.uk\/blog\/\">Blog<\/a><\/li>\n<li id=\"menu-item-4391\" class=\"mobile-menu-pill-button menu-item menu-item-type-post_type menu-item-object-page menu-item-4391\"><a href=\"https:\/\/goshorty.co.uk\/help-centre\/\">Help Centre<\/a><\/li>\n<li id=\"menu-item-4390\" class=\"mobile-menu-pill-button menu-item menu-item-type-post_type menu-item-object-page menu-item-4390\"><a href=\"https:\/\/goshorty.co.uk\/contact\/\">Contact Us<\/a><\/li>\n<\/ul>                    <div class=\"sfm-widget-area\"><\/div>\r\n                <\/div>\r\n            <\/nav>\r\n            <ul class=\"sfm-social sfm-social-icons\"><\/ul>\r\n                    <\/div>\r\n    <\/div>\r\n    <div class=\"sfm-sidebar-bg\">\r\n        <!-- eg. https:\/\/www.youtube.com\/watch?v=AgI7OcZ9g60 or https:\/\/www.youtube.com\/watch?v=gU10ALRQ0ww -->\r\n            <\/div>\r\n    <div class=\"sfm-view sfm-view-level-custom\">\r\n        <span class=\"sfm-close\"><\/span>\r\n            <\/div>\r\n<\/div>\r\n<div id=\"sfm-mob-navbar\"><div class=\"sfm-navicon-button x\"><div class=\"sfm-navicon\"><\/div><\/div><a href=\"https:\/\/goshorty.co.uk\"><img src=\"https:\/\/goshorty.co.uk\/wp-content\/uploads\/2023\/02\/goshorty-logo-master-rgb.svg\" alt=\"\"><\/a><\/div><div id=\"sfm-overlay-wrapper\"><div id=\"sfm-overlay\"><\/div><div class=\"sfm-nav-bg_item -top\"><\/div><div class=\"sfm-nav-bg_item -bottom\"><\/div><\/div>"</script>
-    <!-- Schema optimized by Schema Pro -->
-    <script
-        type="application/ld+json">{"@context":"https://schema.org","type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does temporary car insurance cover?","acceptedAnswer":{"@type":"Answer","text":"When you get temporary car insurance with GoShorty, you instantly get fully comprehensive car insurance. Comprehensive cover for temporary car insurance covers:\r\nLoss, theft or damage\r\nAccident recovery\r\nLegal liability"}},{"@type":"Question","name":"Can I use temporary car insurance for my own car?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can. If you have a car that you only use from time to time, that you store off-road, you can opt to insure your car for each journey or just on weekends, for example. If you are doing this, your car won’t be insured between policies, and you’ll need to keep it off the road and get a ‘Statutory Off Road Notification’"}},{"@type":"Question","name":"When is temporary insurance not suitable?","acceptedAnswer":{"@type":"Answer","text":"There are several instances where short term car insurance isn’t the right solution. When you hire or rent a vehicle, these will come with their own insurance or specialised hire car insurance. Temporary car insurance policies do not cover a hire or rental vehicle.\r\nYou also can’t use it if you’re using the car to make money. I.e. you can’t use it for a taxi or to transport goods."}},{"@type":"Question","name":"What does temporary car insurance cost?","acceptedAnswer":{"@type":"Answer","text":"There are three main factors that affect how much your short term car insurance will cost:\r\n\r\nYour age\r\nThe vehicle you want to cover\r\nThe length of the policy\r\nWhile these are the main factors, other things will come into play, too, like points on your license and any extras you want to add to your insurance."}},{"@type":"Question","name":"Can I get temporary van insurance?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can! You can get temporary van insurance through GoShorty."}},{"@type":"Question","name":"Can I be added to another person’s car insurance policy?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can, and for a long time this was your main option, but it can be costly. Temporary car insurance is a short term and affordable solution that lets you instantly get insured on someone’s car, without affecting their policy. Also, rather than being added for a long chunk of time, you can do it for short bursts, like an hour or just a couple of days."}},{"@type":"Question","name":"Can I use temporary car insurance abroad?","acceptedAnswer":{"@type":"Answer","text":"At this time, you can’t drive abroad with our short term cover. The insurers we work with only allow you to drive within the UK."}},{"@type":"Question","name":"What’s the shortest time I can insure?","acceptedAnswer":{"@type":"Answer","text":"You can insure a car for as little as 1 hour with GoShorty. Check out our hourly car insurance for more information."}},{"@type":"Question","name":"What’s the longest time I can insure on a temporary car insurance policy?","acceptedAnswer":{"@type":"Answer","text":"While we specialise in short term car insurance, you can actually insure a car for up to 28 days or one month with us. Check out our monthly car insurance."}},{"@type":"Question","name":"Why can’t I get temporary car insurance?","acceptedAnswer":{"@type":"Answer","text":"While we try our best to offer everyone the best short-term insurance quote, we can’t always promise this. Factors such as your age, how long you’ve held your licence for and the vehicle you want to insure can affect your quote. While we can’t change this, we do hope you return if your circumstances change so that we can provide you with a flexible and affordable policy."}},{"@type":"Question","name":"Can I tax my car with temporary car insurance?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can. For your car to be taxed you need a valid insurance policy and an up to date MOT. Once your temporary insurance policy is in place you will be able to tax your car. This can be done online, over the phone or via the post office."}},{"@type":"Question","name":"How do I extend my insurance policy?","acceptedAnswer":{"@type":"Answer","text":"Extending your policy is simple, easy and quick. It takes as little as 90 seconds to get covered. So once your policy comes to an end, simply repeat the super-quick process so you can get back on the road in no time."}}]}</script>
-    <!-- / Schema optimized by Schema Pro --><!-- site-navigation-element Schema optimized by Schema Pro -->
-    <script
-        type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Temporary Car Insurance","url":"https:\/\/goshorty.co.uk\/temporary-car-insurance\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Hourly Car Insurance","url":"https:\/\/goshorty.co.uk\/temporary-car-insurance\/hourly\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Daily Car Insurance","url":"https:\/\/goshorty.co.uk\/temporary-car-insurance\/daily\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Weekly Car Insurance","url":"https:\/\/goshorty.co.uk\/temporary-car-insurance\/weekly\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Monthly Car Insurance","url":"https:\/\/goshorty.co.uk\/temporary-car-insurance\/monthly\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Temp Under 21 Car Insurance","url":"https:\/\/goshorty.co.uk\/temporary-car-insurance\/young-drivers\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Temp Student Car Insurance","url":"https:\/\/goshorty.co.uk\/temporary-car-insurance\/student\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Car Impound Release Insurance","url":"https:\/\/goshorty.co.uk\/impound-release-insurance\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Temporary Van Insurance","url":"https:\/\/goshorty.co.uk\/temporary-van-insurance\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Hourly Van Insurance","url":"https:\/\/goshorty.co.uk\/temporary-van-insurance\/hourly\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Daily Van Insurance","url":"https:\/\/goshorty.co.uk\/temporary-van-insurance\/daily\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Weekly Van Insurance","url":"https:\/\/goshorty.co.uk\/temporary-van-insurance\/weekly\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Monthly Van Insurance","url":"https:\/\/goshorty.co.uk\/temporary-van-insurance\/monthly\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Van Impound Release Insurance","url":"https:\/\/goshorty.co.uk\/van-impound-release-insurance\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Learner Driver Insurance","url":"https:\/\/goshorty.co.uk\/temporary-learner-driver-insurance\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Daily Learner Insurance","url":"https:\/\/goshorty.co.uk\/temporary-learner-driver-insurance\/daily\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Weekly Learner Insurance","url":"https:\/\/goshorty.co.uk\/temporary-learner-driver-insurance\/weekly\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Monthly Learner Insurance","url":"https:\/\/goshorty.co.uk\/temporary-learner-driver-insurance\/monthly\/"}]}</script>
+
+
+
     <!-- / site-navigation-element Schema optimized by Schema Pro -->
     <style id="wpsp-style-frontend"></style>
-    <link rel="icon" href="wp-content/uploads/2023/01/cropped-GoShorty-favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" href="wp-content/uploads/2023/01/cropped-GoShorty-favicon-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="wp-content/uploads/2023/01/cropped-GoShorty-favicon-180x180.png" />
-    <meta name="msapplication-TileImage" content="wp-content/uploads/2023/01/cropped-GoShorty-favicon-270x270.png" />
+    <link rel="icon" href="wp-content/uploads/2023/01/cropped-GoDirect-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="wp-content/uploads/2023/01/cropped-GoDirect-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="wp-content/uploads/2023/01/cropped-GoDirect-favicon-180x180.png" />
+    <meta name="msapplication-TileImage" content="wp-content/uploads/2023/01/cropped-GoDirect-favicon-270x270.png" />
     <style type="text/css" id="wp-custom-css">
         .micro-combo-block-white {
             width: 100%;
@@ -1770,11 +1765,11 @@
                                 id='mega-menu-item-13251'><a class="mega-menu-link" href="#/who-we-cover/"
                                     tabindex="0">Who We Cover</a></li>
                             <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-13252'
-                                id='mega-menu-item-13252'><a class="mega-menu-link" href="https://your.goshorty.co.uk/"
-                                    tabindex="0">Discover Your GoShorty</a></li>
+                                id='mega-menu-item-13252'><a class="mega-menu-link" href="https://your.#/"
+                                    tabindex="0">Discover Your GoDirect</a></li>
                             <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-4350'
                                 id='mega-menu-item-4350'><a class="mega-menu-link" href="#/about-us/" tabindex="0">About
-                                    GoShorty</a></li>
+                                    GoDirect</a></li>
                             <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-4349'
                                 id='mega-menu-item-4349'><a class="mega-menu-link" href="#/help-centre/"
                                     tabindex="0">Help Centre</a></li>
@@ -1796,9 +1791,8 @@
 
         <div class="menu-bar container">
             <div class="header-logo">
-                <a href="#/" class="custom-logo-link" rel="home"><img width="200" height="44"
-                        src="wp-content/uploads/2023/02/goshorty-logo-master-rgb.svg" class="custom-logo"
-                        alt="GoShorty Short Term Vehicle Insurance" decoding="async" /></a>
+                <a href="#/" class="custom-logo-link" rel="home"><img width="200" height="44" src="imgs/logo1.png"
+                        class="custom-logo" alt="GoDirect Short Term Vehicle Insurance" decoding="async" /></a>
             </div>
 
             <nav class="main-menu">
@@ -1817,7 +1811,7 @@
                                 </button></div>
                         </div>
                     </div>
-                    <ul id="mega-menu-header-menu" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
+                    <!--<ul id="mega-menu-header-menu" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
                         data-event="hover_intent" data-effect="fade_up" data-effect-speed="200"
                         data-effect-mobile="disabled" data-effect-speed-mobile="0" data-panel-width=".sub-nav-container"
                         data-mobile-force-width="body" data-second-click="go" data-document-click="collapse"
@@ -1856,11 +1850,11 @@
                                                 <li class='mega-menu-item mega-menu-item-type-widget widget_media_image mega-menu-item-media_image-5'
                                                     id='mega-menu-item-media_image-5'><a
                                                         href="#/temporary-car-insurance/"><img width="300" height="286"
-                                                            src="wp-content/uploads/2023/04/goshorty-nav-300x286.jpg"
+                                                            src="wp-content/uploads/2023/04/GoShorty-nav-300x286.jpg"
                                                             class="image wp-image-4362  attachment-medium size-medium"
                                                             alt="" style="max-width: 100%; height: auto;"
                                                             decoding="async" loading="lazy"
-                                                            srcset="wp-content/uploads/2023/04/goshorty-nav-300x286.jpg 300w, wp-content/uploads/2023/04/goshorty-nav.jpg 332w"
+                                                            srcset="wp-content/uploads/2023/04/GoShorty-nav-300x286.jpg 300w, wp-content/uploads/2023/04/GoShorty-nav.jpg 332w"
                                                             sizes="(max-width: 300px) 100vw, 300px" /></a></li>
                                             </ul>
                                         </li>
@@ -1969,11 +1963,11 @@
                                                 <li class='mega-menu-item mega-menu-item-type-widget widget_media_image mega-menu-item-media_image-6'
                                                     id='mega-menu-item-media_image-6'><a
                                                         href="#/temporary-van-insurance/"><img width="300" height="286"
-                                                            src="wp-content/uploads/2023/04/goshorty-menu-van-300x286.jpg"
+                                                            src="wp-content/uploads/2023/04/GoShorty-menu-van-300x286.jpg"
                                                             class="image wp-image-6629  attachment-medium size-medium"
                                                             alt="" style="max-width: 100%; height: auto;"
                                                             decoding="async" loading="lazy"
-                                                            srcset="wp-content/uploads/2023/04/goshorty-menu-van-300x286.jpg 300w, wp-content/uploads/2023/04/goshorty-menu-van.jpg 332w"
+                                                            srcset="wp-content/uploads/2023/04/GoShorty-menu-van-300x286.jpg 300w, wp-content/uploads/2023/04/GoShorty-menu-van.jpg 332w"
                                                             sizes="(max-width: 300px) 100vw, 300px" /></a></li>
                                             </ul>
                                         </li>
@@ -1983,6 +1977,7 @@
                                                     id='mega-menu-item-4344'><a class="mega-menu-link"
                                                         href="#/temporary-van-insurance/hourly/">Hourly Van
                                                         Insurance</a></li>
+                                                content/uploads/2023/02/GoShorty-logo-master-rgb.svg
                                                 <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-4343'
                                                     id='mega-menu-item-4343'><a class="mega-menu-link"
                                                         href="#/temporary-van-insurance/daily/">Daily Van Insurance</a>
@@ -2078,11 +2073,11 @@
                                                     id='mega-menu-item-media_image-7'><a
                                                         href="#/temporary-learner-driver-insurance/"><img width="300"
                                                             height="286"
-                                                            src="wp-content/uploads/2023/04/goshorty-menu-learner-300x286.jpg"
+                                                            src="wp-content/uploads/2023/04/GoShorty-menu-learner-300x286.jpg"
                                                             class="image wp-image-6628  attachment-medium size-medium"
                                                             alt="" style="max-width: 100%; height: auto;"
                                                             decoding="async" loading="lazy"
-                                                            srcset="wp-content/uploads/2023/04/goshorty-menu-learner-300x286.jpg 300w, wp-content/uploads/2023/04/goshorty-menu-learner.jpg 332w"
+                                                            srcset="wp-content/uploads/2023/04/GoShorty-menu-learner-300x286.jpg 300w, wp-content/uploads/2023/04/GoShorty-menu-learner.jpg 332w"
                                                             sizes="(max-width: 300px) 100vw, 300px" /></a></li>
                                             </ul>
                                         </li>
@@ -2147,15 +2142,11 @@
                                 </li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </nav>
 
-            <div class="header-button">
-                <a class="blue button shadow sign-in sign-in-button button-center" target="_blank"
-                    href="https://your.goshorty.co.uk/"><i class="link-user-button-icon"></i></a>
-            </div>
-        </div>
+
     </header><span id="pageQuoteBanner"></span>
     <div class="default-page">
 
@@ -2248,7 +2239,7 @@
                                         data-businessunit-id="601bf83da023a000010814c1" data-style-height="100%"
                                         data-style-width="100%" data-theme="dark">
 
-                                        <a href=https://uk.trustpilot.com/review/goshorty.co.uk target="_blank"
+                                        <a href=https://uk.trustpilot.com/review/# target="_blank"
                                             rel="noopener">Trustpilot</a>
 
                                     </div>
@@ -2350,7 +2341,7 @@
                                         data-businessunit-id="601bf83da023a000010814c1" data-style-height="100%"
                                         data-style-width="100%" data-theme="dark">
 
-                                        <a href=https://uk.trustpilot.com/review/goshorty.co.uk target="_blank"
+                                        <a href=https://uk.trustpilot.com/review/# target="_blank"
                                             rel="noopener">Trustpilot</a>
 
                                     </div>
@@ -2719,7 +2710,7 @@
 
 
                                 <ul>
-                                    <li><strong>Personal details</strong> &#8211; At GoShorty, we pride ourselves on our
+                                    <li><strong>Personal details</strong> &#8211; At GoDirect, we pride ourselves on our
                                         attractive acceptance criteria, which means we’re able to insure more people.
                                         That said, your personal circumstances &#8211; i.e. your age and driving history
                                         &#8211; can still impact the cost of your cover.</li>
@@ -2761,7 +2752,7 @@
 
 
                                 <p>It’s important to understand how many variables go into determining the cost of your
-                                    policy. GoShorty makes all of this quick and easy for you.&nbsp;</p>
+                                    policy. GoDirect makes all of this quick and easy for you.&nbsp;</p>
 
 
 
@@ -2830,7 +2821,8 @@
 
                                                         <p class="has-text-align-center qq-estimated-quote has-white-color has-text-color has-small-font-size"
                                                             style="letter-spacing:2.5px;text-transform:uppercase">
-                                                            <strong>prices from</strong></p>
+                                                            <strong>prices from</strong>
+                                                        </p>
 
 
                                                         <div class="wp-block-image divider">
@@ -3256,7 +3248,8 @@
 
                                                         <p class="has-text-align-center qq-estimated-quote has-white-color has-text-color has-small-font-size"
                                                             style="letter-spacing:2.5px;text-transform:uppercase">
-                                                            <strong>prices from</strong></p>
+                                                            <strong>prices from</strong>
+                                                        </p>
 
 
                                                         <div class="wp-block-image divider">
@@ -3682,7 +3675,8 @@
 
                                                         <p class="has-text-align-center qq-estimated-quote has-white-color has-text-color has-small-font-size"
                                                             style="letter-spacing:2.5px;text-transform:uppercase">
-                                                            <strong>prices from</strong></p>
+                                                            <strong>prices from</strong>
+                                                        </p>
 
 
                                                         <div class="wp-block-image divider">
@@ -4190,7 +4184,7 @@
                                         <div class="wp-block-image">
                                             <figure class="aligncenter size-full"><img loading="lazy" decoding="async"
                                                     width="115" height="43"
-                                                    src="wp-content/uploads/2023/04/24hours-goshorty.png" alt=""
+                                                    src="wp-content/uploads/2023/04/24hours-Go Directpng" alt=""
                                                     class="wp-image-6866" /></figure>
                                         </div>
                                     </div>
@@ -4446,7 +4440,8 @@
                                                     <a href="#/temporary-car-insurance/car-sharing-insurance/">car
                                                         sharing</a> on long road trips where you’re all taking it in
                                                     turns to get behind the wheel but don’t want to risk affecting the
-                                                    owner’s no claims discount.</p>
+                                                    owner’s no claims discount.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -4748,9 +4743,8 @@
                                 <figure
                                     class="eb-advanced-image-wrapper eb-advanced-image-4ouyezx img-style-square caption-style-1 caption-horizontal-left caption-vertical-bottom bottom no-effect"
                                     data-id="eb-advanced-image-4ouyezx">
-                                    <div class="image-wrapper"><a class="eb-advimg-link"
-                                            href="https://your.goshorty.co.uk/" target="_blank" rel="noopener"></a><img
-                                            decoding="async"
+                                    <div class="image-wrapper"><a class="eb-advimg-link" href="https://your.#/"
+                                            target="_blank" rel="noopener"></a><img decoding="async"
                                             src="wp-content/uploads/2023/04/0112-GOSH-PortalBanners_5.png" alt="" />
                                         <figcaption>Login now</figcaption>
                                     </div>
@@ -4894,7 +4888,8 @@
 
 
                         <p class="has-text-align-center">We will need to know what type of license you hold and for
-                            <strong>how long you&#8217;ve had it.</strong></p>
+                            <strong>how long you&#8217;ve had it.</strong>
+                        </p>
                     </div>
                 </div>
 
@@ -5219,7 +5214,7 @@
                                             </div>
                                             <div class="eb-accordion-content-wrapper">
                                                 <div class="eb-accordion-content">
-                                                    <p>When you get temporary car insurance with GoShorty, you instantly
+                                                    <p>When you get temporary car insurance with GoDirect, you instantly
                                                         get fully comprehensive car insurance. Comprehensive cover for
                                                         temporary car insurance covers:</p>
 
@@ -5336,7 +5331,7 @@
                                                 <div class="eb-accordion-content">
                                                     <p>Yes, you can! You can get&nbsp;<a
                                                             href="#/temporary-van-insurance/">temporary van
-                                                            insurance</a>&nbsp;through GoShorty.</p>
+                                                            insurance</a>&nbsp;through Go Direct</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -5394,7 +5389,7 @@
                                             </div>
                                             <div class="eb-accordion-content-wrapper">
                                                 <div class="eb-accordion-content">
-                                                    <p>You can insure a car for as little as 1 hour with GoShorty. Check
+                                                    <p>You can insure a car for as little as 1 hour with Go Direct Check
                                                         out our&nbsp;<a href="#/temporary-car-insurance/hourly/">hourly
                                                             car insurance</a>&nbsp;for more information.</p>
                                                 </div>
@@ -5553,7 +5548,7 @@
                                         car share. Reduce your annual miles, fuel and maintenance expenses, as well as
                                         lowering your carbon footprint, by choosing temporary car insurance. Whether
                                         you’re looking to split a long drive with a friend, or just require a car for a
-                                        short time, GoShorty’s <a href="#/temporary-car-insurance/">temporary car
+                                        short time, GoDirect’s <a href="#/temporary-car-insurance/">temporary car
                                             insurance policies</a> allow drivers aged between 18-75 to drive whenever,
                                         wherever, while adhering to the UK’s road laws.”</em></p>
                             </div>
@@ -5771,7 +5766,7 @@
 
                                                             <h2 class="wp-block-post-title has-medium-font-size">
                                                                 Breaking the Stigma of ‘City Car Insurance’: Why
-                                                                GoShorty Wants to Insure More City Dwellers</h2>
+                                                                GoDirect Wants to Insure More City Dwellers</h2>
 
 
                                                             <div
@@ -5827,18 +5822,17 @@
                     <div class="col col3-12 footer-left">
                         <a href="/">
                             <img class="footer-logo"
-                                src="wp-content/uploads/2023/04/goshorty-logo-inverted-rgb-1852px@72ppi.png" alt="" />
+                                src="wp-content/uploads/2023/04/GoShorty-logo-inverted-rgb-1852px@72ppi.png" alt="" />
                         </a>
 
                         <ul class="socials">
-                            <li><a href="https://facebook.com/goshortyinsurance" target="_blank"><img
-                                        class="fb social-icon"
+                            <li><a href="#" target="_blank"><img class="fb social-icon"
                                         src="wp-content/themes/ddtheme/img/icons/fb-green-icon.svg"
-                                        alt="GoShorty Facebook Page" /></a></li>
+                                        alt="GoDirect Facebook Page" /></a></li>
 
-                            <li><a href="https://instagram.com/goshortyuk" target="_blank"><img class="ig social-icon"
+                            <li><a href="" target="_blank"><img class="ig social-icon"
                                         src="wp-content/themes/ddtheme/img/icons/ig-green-icon.svg"
-                                        alt="GoShorty Instagram Proile" /></a></li>
+                                        alt="GoDirect Instagram Proile" /></a></li>
                         </ul>
 
                         <div class="desktop-award hide-on-mobile">
@@ -5872,23 +5866,29 @@
                                                     <ul id="menu-useful-links-menu" class="menu">
                                                         <li id="menu-item-4153"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-4153">
-                                                            <a href="#/">Home</a></li>
+                                                            <a href="#/">Home</a>
+                                                        </li>
                                                         <li id="menu-item-4157"
                                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4157">
-                                                            <a href="/quote">Get a Quote</a></li>
+                                                            <a href="/quote">Get a Quote</a>
+                                                        </li>
                                                         <li id="menu-item-5446"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5446">
-                                                            <a href="#/about-us/">About Us</a></li>
+                                                            <a href="#/about-us/">About Us</a>
+                                                        </li>
                                                         <li id="menu-item-5448"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5448">
-                                                            <a href="#/blog/">Blog</a></li>
+                                                            <a href="#/blog/">Blog</a>
+                                                        </li>
                                                         <li id="menu-item-5447"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5447">
-                                                            <a href="#/contact/">Contact Us</a></li>
+                                                            <a href="#/contact/">Contact Us</a>
+                                                        </li>
                                                         <li id="menu-item-12566"
                                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12566">
-                                                            <a href="https://your.goshorty.co.uk/">See Your Quotes
-                                                                &#038; Purchases</a></li>
+                                                            <a href="https://your.#/">See Your Quotes
+                                                                &#038; Purchases</a>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </nav>
@@ -5909,25 +5909,32 @@
                                                         <li id="menu-item-5479"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5479">
                                                             <a href="#/assumptions-eligibility-criteria/">Assumptions
-                                                                &#038; Eligibility Criteria</a></li>
+                                                                &#038; Eligibility Criteria</a>
+                                                        </li>
                                                         <li id="menu-item-5478"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5478">
-                                                            <a href="#/policy-wording/">Policy Wording</a></li>
+                                                            <a href="#/policy-wording/">Policy Wording</a>
+                                                        </li>
                                                         <li id="menu-item-5477"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5477">
-                                                            <a href="#/ipid/">IPID</a></li>
+                                                            <a href="#/ipid/">IPID</a>
+                                                        </li>
                                                         <li id="menu-item-5476"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5476">
-                                                            <a href="#/privacy-policy/">Privacy Policy</a></li>
+                                                            <a href="#/privacy-policy/">Privacy Policy</a>
+                                                        </li>
                                                         <li id="menu-item-5475"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5475">
-                                                            <a href="#/cookie-policy/">Cookie Policy</a></li>
+                                                            <a href="#/cookie-policy/">Cookie Policy</a>
+                                                        </li>
                                                         <li id="menu-item-5474"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5474">
-                                                            <a href="#/terms-of-business/">Terms of Business</a></li>
+                                                            <a href="#/terms-of-business/">Terms of Business</a>
+                                                        </li>
                                                         <li id="menu-item-5473"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5473">
-                                                            <a href="#/terms-of-use/">Website Terms of Use</a></li>
+                                                            <a href="#/terms-of-use/">Website Terms of Use</a>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </nav>
@@ -5947,13 +5954,16 @@
                                                     <ul id="menu-work-with-us" class="menu">
                                                         <li id="menu-item-5484"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5484">
-                                                            <a href="#/brokers/">Brokers</a></li>
+                                                            <a href="#/brokers/">Brokers</a>
+                                                        </li>
                                                         <li id="menu-item-5483"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5483">
-                                                            <a href="#/introducers/">Introducers</a></li>
+                                                            <a href="#/introducers/">Introducers</a>
+                                                        </li>
                                                         <li id="menu-item-5482"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5482">
-                                                            <a href="#/affiliates/">Affiliates</a></li>
+                                                            <a href="#/affiliates/">Affiliates</a>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </nav>
@@ -5971,10 +5981,12 @@
                                                     <ul id="menu-help-centre" class="menu">
                                                         <li id="menu-item-5628"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5628">
-                                                            <a href="#/help-centre/">FAQs</a></li>
+                                                            <a href="#/help-centre/">FAQs</a>
+                                                        </li>
                                                         <li id="menu-item-5629"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5629">
-                                                            <a href="#/complaints/">Complaints</a></li>
+                                                            <a href="#/complaints/">Complaints</a>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </nav>
@@ -5992,23 +6004,29 @@
                                         <ul id="menu-useful-links-menu-1" class="menu">
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-4153">
-                                                <a href="#/">Home</a></li>
+                                                <a href="#/">Home</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4157">
-                                                <a href="/quote">Get a Quote</a></li>
+                                                <a href="/quote">Get a Quote</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5446">
-                                                <a href="#/about-us/">About Us</a></li>
+                                                <a href="#/about-us/">About Us</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5448">
-                                                <a href="#/blog/">Blog</a></li>
+                                                <a href="#/blog/">Blog</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5447">
-                                                <a href="#/contact/">Contact Us</a></li>
+                                                <a href="#/contact/">Contact Us</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12566">
-                                                <a href="https://your.goshorty.co.uk/">See Your Quotes &#038;
-                                                    Purchases</a></li>
+                                                <a href="https://your.#/">See Your Quotes &#038;
+                                                    Purchases</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -6023,25 +6041,32 @@
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5479">
                                                 <a href="#/assumptions-eligibility-criteria/">Assumptions &#038;
-                                                    Eligibility Criteria</a></li>
+                                                    Eligibility Criteria</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5478">
-                                                <a href="#/policy-wording/">Policy Wording</a></li>
+                                                <a href="#/policy-wording/">Policy Wording</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5477">
-                                                <a href="#/ipid/">IPID</a></li>
+                                                <a href="#/ipid/">IPID</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5476">
-                                                <a href="#/privacy-policy/">Privacy Policy</a></li>
+                                                <a href="#/privacy-policy/">Privacy Policy</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5475">
-                                                <a href="#/cookie-policy/">Cookie Policy</a></li>
+                                                <a href="#/cookie-policy/">Cookie Policy</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5474">
-                                                <a href="#/terms-of-business/">Terms of Business</a></li>
+                                                <a href="#/terms-of-business/">Terms of Business</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5473">
-                                                <a href="#/terms-of-use/">Website Terms of Use</a></li>
+                                                <a href="#/terms-of-use/">Website Terms of Use</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -6055,13 +6080,16 @@
                                         <ul id="menu-work-with-us-1" class="menu">
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5484">
-                                                <a href="#/brokers/">Brokers</a></li>
+                                                <a href="#/brokers/">Brokers</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5483">
-                                                <a href="#/introducers/">Introducers</a></li>
+                                                <a href="#/introducers/">Introducers</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5482">
-                                                <a href="#/affiliates/">Affiliates</a></li>
+                                                <a href="#/affiliates/">Affiliates</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -6073,10 +6101,12 @@
                                         <ul id="menu-help-centre-1" class="menu">
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5628">
-                                                <a href="#/help-centre/">FAQs</a></li>
+                                                <a href="#/help-centre/">FAQs</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5629">
-                                                <a href="#/complaints/">Complaints</a></li>
+                                                <a href="#/complaints/">Complaints</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -6095,7 +6125,7 @@
                                 <small>We are a UK based insurance broker and we are authorised and regulated by the
                                     Financial Conduct Authority under reference number 751221.</small>
 
-                                <small>GoShorty is a registered trademark. GoShorty is a trading style of Complex to
+                                <small>GoDirect is a registered trademark. GoDirect is a trading style of Complex to
                                     Clear Group Limited registered in England and Wales.</small>
 
                                 <small>Company Registration Number 05044963. Data Protection Registration
@@ -6278,7 +6308,7 @@
     <script type="text/javascript" id="essential-blocks-blocks-localize-js-extra">
         /* <![CDATA[ */
         var eb_conditional_localize = { "editor_type": "" };
-        var EssentialBlocksLocalize = { "eb_plugins_url": "https:\/\/goshorty.co.uk\/wp-content\/plugins\/essential-blocks\/", "image_url": "https:\/\/goshorty.co.uk\/wp-content\/plugins\/essential-blocks\/assets\/images", "eb_wp_version": "6.4", "eb_version": "4.4.9", "eb_admin_url": "https:\/\/goshorty.co.uk\/wp-admin\/", "rest_rootURL": "https:\/\/goshorty.co.uk\/wp-json\/", "ajax_url": "https:\/\/goshorty.co.uk\/wp-admin\/admin-ajax.php", "nft_nonce": "5cbc0875da", "post_grid_pagination_nonce": "89cc1c8d1f", "placeholder_image": "https:\/\/goshorty.co.uk\/wp-content\/plugins\/essential-blocks\/assets\/images\/placeholder.png", "is_pro_active": "false", "upgrade_pro_url": "https:\/\/essential-blocks.com\/upgrade" };
+        var EssentialBlocksLocalize = { "eb_plugins_url": "https:\/\/#\/wp-content\/plugins\/essential-blocks\/", "image_url": "https:\/\/#\/wp-content\/plugins\/essential-blocks\/assets\/images", "eb_wp_version": "6.4", "eb_version": "4.4.9", "eb_admin_url": "https:\/\/#\/wp-admin\/", "rest_rootURL": "https:\/\/#\/wp-json\/", "ajax_url": "https:\/\/#\/wp-admin\/admin-ajax.php", "nft_nonce": "5cbc0875da", "post_grid_pagination_nonce": "89cc1c8d1f", "placeholder_image": "https:\/\/#\/wp-content\/plugins\/essential-blocks\/assets\/images\/placeholder.png", "is_pro_active": "false", "upgrade_pro_url": "https:\/\/essential-blocks.com\/upgrade" };
         /* ]]> */
     </script>
     <script type="text/javascript" src="wp-content/plugins/essential-blocks/assets/js/eb-blocks-localize.js?ver=4.4.9"
@@ -6287,7 +6317,7 @@
         id="swv-js"></script>
     <script type="text/javascript" id="contact-form-7-js-extra">
         /* <![CDATA[ */
-        var wpcf7 = { "api": { "root": "https:\/\/goshorty.co.uk\/wp-json\/", "namespace": "contact-form-7\/v1" } };
+        var wpcf7 = { "api": { "root": "https:\/\/#\/wp-json\/", "namespace": "contact-form-7\/v1" } };
         /* ]]> */
     </script>
     <script type="text/javascript" src="wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.6"
