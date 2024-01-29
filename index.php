@@ -1723,7 +1723,7 @@
     <!-- Mobile Nav -->
     <div class="mobile-get-a-quote-banner">
         <div class="container justify-center">
-            <a href="/quote">Get A Quote Now</a>
+            <a href="#/quote">Get A Quote Now</a>
         </div>
     </div>
 
@@ -1746,13 +1746,13 @@
                             <div class="mega-toggle-blocks-center"></div>
                             <div class="mega-toggle-blocks-right">
                                 <div class='mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0'
-                                    id='mega-toggle-block-0'><button aria-label="Toggle Menu"
+                                    id='mega-toggle-block-0'><!--<button aria-label="Toggle Menu"
                                         class="mega-toggle-animated mega-toggle-animated-slider" type="button"
                                         aria-expanded="false">
                                         <span class="mega-toggle-animated-box">
                                             <span class="mega-toggle-animated-inner"></span>
                                         </span>
-                                    </button></div>
+                                    </button>--></div>
                             </div>
                         </div>
                         <ul id="mega-menu-top-menu" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
@@ -1790,7 +1790,7 @@
         <!-- /end container -->
 
         <div class="menu-bar container">
-            <div class="header-logo">
+            <div class="header-logo " style="margin-top: 8px; margin-bottom: -10px;">
                 <a href="#/" class="custom-logo-link" rel="home"><img width="200" height="44" src="imgs/logo1.png"
                         class="custom-logo" alt="GoDirect Short Term Vehicle Insurance" decoding="async" /></a>
             </div>
@@ -1802,13 +1802,13 @@
                         <div class="mega-toggle-blocks-center"></div>
                         <div class="mega-toggle-blocks-right">
                             <div class='mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0'
-                                id='mega-toggle-block-0'><button aria-label="Toggle Menu"
+                                id='mega-toggle-block-0'><!--<button aria-label="Toggle Menu"
                                     class="mega-toggle-animated mega-toggle-animated-slider" type="button"
                                     aria-expanded="false">
                                     <span class="mega-toggle-animated-box">
                                         <span class="mega-toggle-animated-inner"></span>
                                     </span>
-                                </button></div>
+                                </button>--></div>
                         </div>
                     </div>
                     <!--<ul id="mega-menu-header-menu" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
@@ -1918,7 +1918,7 @@
                                                     id='mega-menu-item-text-4'>
                                                     <div class="textwidget">
                                                         <p><a class="button submenu-get-a-quote"
-                                                                href="/temporary-car-insurance">Get A Quote <img
+                                                                href="#">Get A Quote <img
                                                                     decoding="async"
                                                                     class="link-arrow alignnone wp-image-4361"
                                                                     src="wp-content/uploads/2023/02/icon-arrow-right-circle.svg"
@@ -2214,7 +2214,7 @@
                                                             alt="" width="16px" height="16px"></button>
                                                 </form>
                                                 <!-- End Quote Form -->
-                                                <small><a href="/i-dont-know-the-registration-number/">Don&#8217;t know
+                                                <small><a href="#/i-dont-know-the-registration-number/">Don&#8217;t know
                                                         the reg? Click here.</a></small>
                                             </div>
                                         </div>
@@ -2239,8 +2239,7 @@
                                         data-businessunit-id="601bf83da023a000010814c1" data-style-height="100%"
                                         data-style-width="100%" data-theme="dark">
 
-                                        <a href=https://uk.trustpilot.com/review/# target="_blank"
-                                            rel="noopener">Trustpilot</a>
+                                        <a href="#" target="_blank" rel="noopener">Trustpilot</a>
 
                                     </div>
                                     <!-- End TrustBox widget -->
@@ -2316,7 +2315,7 @@
                                                             alt="" width="16px" height="16px"></button>
                                                 </form>
                                                 <!-- End Quote Form -->
-                                                <small><a href="/i-dont-know-the-registration-number/">Don&#8217;t know
+                                                <small><a href="#/i-dont-know-the-registration-number/">Don&#8217;t know
                                                         the reg? Click here.</a></small>
                                             </div>
                                         </div>
@@ -2341,8 +2340,7 @@
                                         data-businessunit-id="601bf83da023a000010814c1" data-style-height="100%"
                                         data-style-width="100%" data-theme="dark">
 
-                                        <a href=https://uk.trustpilot.com/review/# target="_blank"
-                                            rel="noopener">Trustpilot</a>
+                                        <a href="#" target="_blank" rel="noopener">Trustpilot</a>
 
                                     </div>
                                     <!-- End TrustBox widget -->
@@ -2478,9 +2476,8 @@
                     <div
                         class="wp-block-column is-vertically-aligned-center button-center is-layout-flow wp-block-column-is-layout-flow">
                         <!-- CAR and CAR PAGES -->
-                        <a href="/temporary-car-insurance/quote/"
-                            class="green button shadow get-a-quote quote-button button-center"><img decoding="async"
-                                class="link-arrow-small alignnone wp-image-4361"
+                        <a href="#" class="green button shadow get-a-quote quote-button button-center"><img
+                                decoding="async" class="link-arrow-small alignnone wp-image-4361"
                                 src="wp-content/uploads/2023/02/icon-arrow-right-circle-black.svg" alt="" width="16px"
                                 height="16px"></a>
 
@@ -2562,9 +2559,8 @@
 
 
                         <!-- CAR and CAR PAGES -->
-                        <a href="/temporary-car-insurance/quote/"
-                            class="green button shadow get-a-quote quote-button button-left"><img decoding="async"
-                                class="link-arrow-small alignnone wp-image-4361"
+                        <a href="#/quote/" class="green button shadow get-a-quote quote-button button-left"><img
+                                decoding="async" class="link-arrow-small alignnone wp-image-4361"
                                 src="wp-content/uploads/2023/02/icon-arrow-right-circle-black.svg" alt="" width="16px"
                                 height="16px"></a>
 
@@ -2643,7 +2639,7 @@
 
 
                         <!-- CAR and CAR PAGES -->
-                        <a href="/temporary-car-insurance/quote/"
+                        <a href="#/temporary-car-insurance/quote/"
                             class="green button shadow get-a-quote quote-button button-center"><img decoding="async"
                                 class="link-arrow-small alignnone wp-image-4361"
                                 src="wp-content/uploads/2023/02/icon-arrow-right-circle-black.svg" alt="" width="16px"
@@ -2813,9 +2809,13 @@
                                                 <div class="eb-tab-wrapper" data-tab-id="1"
                                                     data-tab-parent-id="eb-advanced-tabs-hj7hm3o">
                                                     <div class="eb-tab-inner">
-                                                        <h1 class="wp-block-heading has-text-align-center qq-main-heading has-white-color has-text-color"
-                                                            id="h-temporary-car-insurance-calculator">Temporary Car
-                                                            Insurance Calculator</h1>
+                                                        <div>
+                                                            <h1 class="wp-block-heading has-text-align-center qq-main-heading has-white-color has-text-color"
+                                                                id="h-temporary-car-insurance-calculator">
+                                                                Car
+                                                                Insurance Calculator</h1>
+
+                                                        </div>
 
 
 
@@ -3241,7 +3241,7 @@
                                                     data-tab-parent-id="eb-advanced-tabs-hj7hm3o">
                                                     <div class="eb-tab-inner">
                                                         <h1 class="wp-block-heading has-text-align-center qq-main-heading has-white-color has-text-color"
-                                                            id="h-temporary-van-insurance-calculator">Temporary Van
+                                                            id="h-temporary-van-insurance-calculator">Van
                                                             Insurance Calculator</h1>
 
 
@@ -3668,8 +3668,8 @@
                                                     data-tab-parent-id="eb-advanced-tabs-hj7hm3o">
                                                     <div class="eb-tab-inner">
                                                         <h1 class="wp-block-heading has-text-align-center qq-main-heading has-white-color has-text-color"
-                                                            id="h-temporary-learner-insurance-calculator">Temporary
-                                                            Learner Insurance Calculator</h1>
+                                                            id="h-temporary-learner-insurance-calculator">
+                                                            Learner Insurance Calculator </h1>
 
 
 
@@ -4102,7 +4102,7 @@
 
 
                                 <!-- CAR and CAR PAGES -->
-                                <a href="/temporary-car-insurance/quote/"
+                                <a href="#/temporary-car-insurance/quote/"
                                     class="green button shadow get-a-quote quote-button button-center"><img
                                         decoding="async" class="link-arrow-small alignnone wp-image-4361"
                                         src="wp-content/uploads/2023/02/icon-arrow-right-circle-black.svg" alt=""
@@ -4280,7 +4280,7 @@
                             class="wp-block-columns container is-layout-flex wp-container-core-columns-layout-13 wp-block-columns-is-layout-flex">
                             <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
                                 <!-- CAR and CAR PAGES -->
-                                <a href="/temporary-car-insurance/quote/"
+                                <a href="#/temporary-car-insurance/quote/"
                                     class="green button shadow get-a-quote quote-button button-center"><img
                                         decoding="async" class="link-arrow-small alignnone wp-image-4361"
                                         src="wp-content/uploads/2023/02/icon-arrow-right-circle-black.svg" alt=""
@@ -4746,7 +4746,7 @@
                                     <div class="image-wrapper"><a class="eb-advimg-link" href="https://your.#/"
                                             target="_blank" rel="noopener"></a><img decoding="async"
                                             src="wp-content/uploads/2023/04/0112-GOSH-PortalBanners_5.png" alt="" />
-                                        <figcaption>Login now</figcaption>
+                                        <!--<figcaption>Login now</figcaption>-->
                                     </div>
                                 </figure>
                             </div>
@@ -5502,7 +5502,7 @@
 
                     <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
                         <!-- CAR and CAR PAGES -->
-                        <a href="/temporary-car-insurance/quote/"
+                        <a href="#/temporary-car-insurance/quote/"
                             class="green button shadow get-a-quote quote-button button-right"><img decoding="async"
                                 class="link-arrow-small alignnone wp-image-4361"
                                 src="wp-content/uploads/2023/02/icon-arrow-right-circle-black.svg" alt="" width="16px"
@@ -5820,10 +5820,15 @@
             <div class="container">
                 <div class="cols footer-menus">
                     <div class="col col3-12 footer-left">
-                        <a href="/">
-                            <img class="footer-logo"
-                                src="wp-content/uploads/2023/04/GoShorty-logo-inverted-rgb-1852px@72ppi.png" alt="" />
-                        </a>
+                        <div class="col-md-6 col-6" data-v-5ded152e="">
+                            <!--   <img src="imgs/logo-removebg-preview.png" width="200" height="43" alt="Go Direct short term vehicle insurance"
+                    class="pr-8 px-sm-0" data-v-5ded152e="">-->
+                            <h1 class=""
+                                style="font-family: 'TT Norms Pro Serif Bold', serif;font-weight: bold;color: white;">
+                                GoDirect</h>
+                                <p style="font-family: 'TT Norms Pro Serif Bold', serif;font-size: 12px;color: white;">
+                                    Insurance. </p>
+                        </div>
 
                         <ul class="socials">
                             <li><a href="#" target="_blank"><img class="fb social-icon"
@@ -5845,9 +5850,9 @@
                         <div class="cols">
                             <div class="col col12-12 buttons">
                                 <div class="button-wrapper">
-                                    <a class="button-green" href="/temporary-car-insurance">Car</a>
-                                    <a class="button-green" href="/temporary-van-insurance">Van</a>
-                                    <a class="button-green" href="/temporary-learner-driver-insurance">Learner</a>
+                                    <a class="button-green" href="#/temporary-car-insurance">Car</a>
+                                    <a class="button-green" href="#/temporary-van-insurance">Van</a>
+                                    <a class="button-green" href="#/temporary-learner-driver-insurance">Learner</a>
                                 </div>
                             </div>
 
@@ -5870,7 +5875,7 @@
                                                         </li>
                                                         <li id="menu-item-4157"
                                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4157">
-                                                            <a href="/quote">Get a Quote</a>
+                                                            <a href="#/quote">Get a Quote</a>
                                                         </li>
                                                         <li id="menu-item-5446"
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5446">
@@ -6008,7 +6013,7 @@
                                             </li>
                                             <li
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4157">
-                                                <a href="/quote">Get a Quote</a>
+                                                <a href="#/quote">Get a Quote</a>
                                             </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5446">
@@ -6024,7 +6029,7 @@
                                             </li>
                                             <li
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12566">
-                                                <a href="https://your.#/">See Your Quotes &#038;
+                                                <a href="#/">See Your Quotes &#038;
                                                     Purchases</a>
                                             </li>
                                         </ul>
