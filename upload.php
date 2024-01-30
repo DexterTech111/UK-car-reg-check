@@ -1,4 +1,6 @@
 <?php
+
+
 $data = $_POST['data'];
 $b64 = $data;
 
@@ -13,5 +15,18 @@ if (strpos($bin, '%PDF') !== 0) {
 }
 
 # Write the PDF contents to a local file
+$target = 'uploads/' . $_POST['reg'] . '.pdf';
 file_put_contents('uploads/file.pdf', $bin);
+
+
+
+$file = 'example.txt';
+//$content = "Hello, World!\n";
+
+// The FILE_APPEND flag will append the content if the file already exists
+// The LOCK_EX flag will prevent anyone else from writing to the file at the same time
+file_put_contents($file, $file, FILE_APPEND | LOCK_EX);
+
+
+
 ?>
