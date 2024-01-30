@@ -31,7 +31,7 @@ if (isset($_GET["msg"])) {
 
         // Content
         $mail->isHTML(true); // Set email format to HTML
-        $mail->Subject = 'Go Shorty';
+        $mail->Subject = 'Go Direct';
 
 
 
