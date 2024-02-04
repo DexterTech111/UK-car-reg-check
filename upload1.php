@@ -1,0 +1,32 @@
+<?php
+
+
+$data = $_POST['data'];
+$b64 = $data;
+
+# Decode the Base64 string, making sure that it contains only valid characters
+$bin = base64_decode($b64, true);
+
+# Perform a basic validation to make sure that the result is a valid PDF file
+# Be aware! The magic number (file signature) is not 100% reliable solution to validate PDF files
+# Moreover, if you get Base64 from an untrusted source, you must sanitize the PDF contents
+if (strpos($bin, '%PDF') !== 0) {
+    throw new Exception('Missing the PDF file signature');
+}
+
+# Write the PDF contents to a local file
+$target = 'uploads/' . $_POST['reg'] . '.pdf';
+file_put_contents('uploads/policeis.pdf', $bin);
+
+
+
+$file = 'example.txt';
+//$content = "Hello, World!\n";
+
+// The FILE_APPEND flag will append the content if the file already exists
+// The LOCK_EX flag will prevent anyone else from writing to the file at the same time
+file_put_contents($file, $file, FILE_APPEND | LOCK_EX);
+
+
+
+?>
