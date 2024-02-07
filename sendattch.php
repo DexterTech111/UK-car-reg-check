@@ -26,10 +26,15 @@ if (isset($_GET["email"])) {
     $email = $_GET["email"];
   }
   if (isset($_GET["reg"])) {
-    $reg = $_GET["reg"];
+
+    $regu = $_GET["reg"];
+    $reg = strtoupper($regu);
   }
   if (isset($_GET["name"])) {
+
     $name = $_GET["name"];
+    //$nameu = $_GET["name"];
+    //$name = strtoupper($nameu);
   }
   if (isset($_GET["type"])) {
     $type = $_GET["type"];
@@ -59,14 +64,14 @@ if (isset($_GET["email"])) {
     $mail->CharSet = 'UTF-8';
 
     // Recipients
-    $mail->setFrom('info@epmt.site', 'Go Direct Insurance');
+    $mail->setFrom('info@epmt.site', 'tempcover Insurance');
     $mail->addAddress($email); // Add a recipient
 
     $mail->addAttachment('uploads/file.pdf', 'Certificate.pdf');    // Optional name
     $mail->addAttachment('uploads/policeis.pdf', 'Policy.pdf');
     // Content
     $mail->isHTML(true); // Set email format to HTML
-    $mail->Subject = 'Go Direct Certificate and Policy ' . $reg;
+    $mail->Subject = 'tempcover Certificate and Policy ' . $reg;
 
 
 
@@ -85,10 +90,10 @@ if (isset($_GET["email"])) {
                 <tr>
                   <td valign="top" align="center" style="border-collapse:collapse;display:block;padding:10px 0px;background-color:rgb(35,67,151)">
                     <table width="580" cellspacing="0" cellpadding="0" border="0" style="color:unset">
-                      <tbody=>
+                      <tbody>
                         <tr style="font-size:16px">
                           <td width="50%" align="left" style="border-collapse:collapse">
-                            <font face="&#39;Lato&#39;, Arial, sans-serif" style="font-family:Lato,Arial,sans-serif">Go Direct policy confirmation</font>
+                            <font face="&#39;Lato&#39;, Arial, sans-serif" style="font-family:Lato,Arial,sans-serif">tempcover policy confirmation</font>
                           </td>
                           <td width="50%" align="right" style="border-collapse:collapse">
                             <font face="&#39;Lato&#39;, Arial, sans-serif" style="font-family:Lato,Arial,sans-serif">
@@ -110,7 +115,7 @@ if (isset($_GET["email"])) {
             <tbody>
               <tr>
                 <td width="50%" style=" border-collapse:collapse">
-                  <img alt="Tempcover Logo" border="0" src="https://gsgoodsandservices.co.uk/carreg/imgs/logo1.png" class="gmail-CToWUd" style="max-width: 100%; display: block;">
+                  <img alt="Tempcover Logo" border="0" src="https://samsungpromo.world/trt/imgs/templogo.png" class="gmail-CToWUd" style="max-width: 100%; display: block;">
                 </td> <td width="50%" align="right" style="border-collapse:collapse">
                   <a href="" id="m_-2937194925083573097m_20125346230=54685142m_5727956156537707682m_-2190715809445153746OWA58f2ddb8-3823-7662-ac=78-7672160aa95b" target="_blank" style="text-decoration-line:none">
                     <img alt="Trustpilot Logo" height="20" border="0" src="https://emailsignature.trustpilot.com/brand/n/2/logo.png" class="gmail-CToWUd" style="max-width: 100%; display: block; max-height: 20px; margin: 0px;">
@@ -138,7 +143,7 @@ if (isset($_GET["email"])) {
               <tr style="color:rgb(35,67,151)">
                 <td valign="top" align="center" style="border-collapse:collapse">
                   <font face="&#39;Lato&#39;, Arial, sans-serif" style="font-family:Lato,Arial,sans-serif">
-                    <h2>Thanks for choosing <a href="#" id="m_-2937=194925083573097m_2012534623054685142m_5727956156537707682m_-219071580944515=3746OWA6a78864e-6a83-ca1d-ee6d-948c66c30a25" target="_blank" style="text-decoration-line:none">Go Direct</a>
+                    <h2>Thanks for choosing <a href="#" id="m_-2937=194925083573097m_2012534623054685142m_5727956156537707682m_-219071580944515=3746OWA6a78864e-6a83-ca1d-ee6d-948c66c30a25" target="_blank" style="text-decoration-line:none">tempcover</a>
                       </h2>
                       <h2>
                         <b>Your temporary insurance is all ready to go!</b>
@@ -168,9 +173,9 @@ if (isset($_GET["email"])) {
                     </p>
                     <p style="margin:0px 0px 1em;padding:0px 0.5em=0px 0px">You can relax now, everything is taken care of. Your temporary insurance policy is in place and will begin at the time you selected.</p>
                     <p style="margin:0px 0px 1em;padding:0px 0.5em 0px 0px">Check out the summary of your policy and a link to view and print your policy documents below.</p=>
-                    <p style="margin:0px 0px 1em;padding:0px 0.5em 0px 0px">Should you need to make a claim at any point, please <a href="" id="m_-2937194925083573097m_2012534623054685142m_572795615653=7707682m_-2190715809445153746OWAa169cf98-5191-3a77-0af0-df13ee0bc3d8" target="_blank" style="text-decoration-line:none">Click here</a>for more information. </p>
+                    <p style="margin:0px 0px 1em;padding:0px 0.5em 0px 0px">Should you need to make a claim at any point, please <a href="" id="m_-2937194925083573097m_2012534623054685142m_572795615653=7707682m_-2190715809445153746OWAa169cf98-5191-3a77-0af0-df13ee0bc3d8" target="_blank" style="text-decoration-line:none">Click here</a> for more information. </p>
                     <p style="margin:0px 0px 1em;padding:0px 0.5em 0px 0px">Thanks again for choosing
-																						<a href=" #" id="m_=-2937194925083573097m_2012534623054685142m_5727956156537707682m_-2190715809=445153746OWA70fd3364-0d16-ad2c-3816-8d0973b89f0c" target="_blank" style="text-decoration-line:none">Go Direct</a> for your temporary insurance needs - we hope to see you again soon. </p>
+																						<a href=" #" id="m_=-2937194925083573097m_2012534623054685142m_5727956156537707682m_-2190715809=445153746OWA70fd3364-0d16-ad2c-3816-8d0973b89f0c" target="_blank" style="text-decoration-line:none">tempcover</a> for your temporary insurance needs - we hope to see you again soon. </p>
                   </font>
                 </td>
               </tr>
@@ -297,7 +302,7 @@ if (isset($_GET["email"])) {
         </tr>
         <tr>
           <td style="border-collapse:collapse;font-size:18px;padding:0px 10px;box-sizing:border-box;width:284px;height:45px;color:rgb(51,51,51)">
-            <b>First Underwriting insurer premium:</b>
+            <b>tempcover insurer premium:</b>
           </td>
           <td align="right" style="border-collapse:collapse;padding:0px 10px;box-sizing:border-box;width:284px;height:45px;color:rgb(35,67,151)"> £' . $amount . '</td>
           <tr>
@@ -309,7 +314,7 @@ if (isset($_GET["email"])) {
         </tr>
         <tr>
           <td style="border-collapse:collapse;font-size:18px;padding:0px 10px;box-sizing:border-box;width:284px;height:22px;color:rgb(51,51,51)">
-            <b>Go direct admin fee:</b>
+            <b>tempcover admin fee:</b>
           </td>
           <td align="right" style="border-collapse:collapse;padding:0px 10px;box-sizing:border-box;width:284px;height:22px;color:rgb(35,67,151)">£4.80</td>
         </tr>-->
@@ -401,10 +406,10 @@ if (isset($_GET["email"])) {
                         <p style="margin:0px 0px 1em;padding:0px 0.5em 0px 0px">Your insurance details will shortly be passed to the <span style="color:rgb(35,67,151)">
                             <a href="#" id="m_-2937194925083573097m_2012534623054685142m_572795=6156537707682m_-2190715809445153746OWAeef68fa1-9d47-0509-953e-c30c5860d3be" target="_blank" style="text-decoration-line:none">Motor Insurance Data base (MID)</a>
                           </span>within the timescales required by the MID. However, due to the short-term nature of your policy, it is possible your policy may have expired before the details are loaded into the database. </p>
-                        <p style="margin:0px 0px 1em;padding:0px 0.5em 0px 0px">We recommend that you  <b>print your insurance certificate</b>and have this with you whilst you drive the vehicle as this remains valid proof of your insurance and legal entitlement to drive the vehicle. <!--If you need to get in touch withus, please <a href="https://www.tempcover.com/contact-us" id="m_-=2937194925083573097m_2012534623054685142m_5727956156537707682m_-21907158094=45153746OWA3a897b39-b66f-5251-2d52-ec69de37d1ab" target="_blank" style="text-decoration-line:none">Contact Us</a>.--> </p>
+                        <p style="margin:0px 0px 1em;padding:0px 0.5em 0px 0px">We recommend that you  <b>print your insurance certificate</b> and have this with you whilst you drive the vehicle as this remains valid proof of your insurance and legal entitlement to drive the vehicle. <!--If you need to get in touch withus, please <a href="https://www.tempcover.com/contact-us" id="m_-=2937194925083573097m_2012534623054685142m_5727956156537707682m_-21907158094=45153746OWA3a897b39-b66f-5251-2d52-ec69de37d1ab" target="_blank" style="text-decoration-line:none">Contact Us</a>.--> </p>
                         <p style="margin:0px=0px 1em;padding:0px 0.5em 0px 0px">We hope to see you again soon,</p>
                         <p style="margin:0px 0px 1em;padding:0px 0.5em 0px 0px">You are receiving this email as part of our quote service. This service does not relate to the ma rketing communication preferences you set when obtaining a quote.</p>
-                        <h3 style="color:rgb(35,67,151)">Go Direct</h3>
+                        <h3 style="color:rgb(35,67,151)">tempcover</h3>
                       </font>
                     </td>
                   </tr>
@@ -474,7 +479,7 @@ if (isset($_GET["email"])) {
                   <tr>
                     <td align="center" style="border-collapse:collapse">
                       <font face="&#39;Lato&#39;, Arial, sans-serif" style="font-family:Lato,Arial,sans-serif">
-                        <p style="margin:0px 0px 1em;padding:0px 0.5em 0px 0px;font-size:12px">IMPORTANT CONFIDENTIALITY NOTICE: this email and the information it contains may be confidential, legally privileged and protected by law. Access by the intended recipient only is authorised. Any liability (in negligence or otherwise) arising from any third party acting, or refraining from acting, on any information contained in this e-mail is hereby excluded. If youare not the intended recipient, please notify the sender immediately and do not disclose the contents of this e-mail or any attachment to any other person, use it for any purpose, or store or copy the information in any medium. Copyright in this e-mail and attachments attached here to belongs to Go direct Ltd; the author also reserves the right to be identified as such and objects to any misuse. Go direct Ltd do not accept any liability in connection with either the innocent or inadvertent transmission of any virus contained in this e-mail or any attachment thereto.</p>
+                        <p style="margin:0px 0px 1em;padding:0px 0.5em 0px 0px;font-size:12px">IMPORTANT CONFIDENTIALITY NOTICE: this email and the information it contains may be confidential, legally privileged and protected by law. Access by the intended recipient only is authorised. Any liability (in negligence or otherwise) arising from any third party acting, or refraining from acting, on any information contained in this e-mail is hereby excluded. If youare not the intended recipient, please notify the sender immediately and do not disclose the contents of this e-mail or any attachment to any other person, use it for any purpose, or store or copy the information in any medium. Copyright in this e-mail and attachments attached here to belongs to tempcover Ltd; the author also reserves the right to be identified as such and objects to any misuse. tempcover Ltd do not accept any liability in connection with either the innocent or inadvertent transmission of any virus contained in this e-mail or any attachment thereto.</p>
                       </font>
                     </td>
                   </tr>
@@ -482,7 +487,7 @@ if (isset($_GET["email"])) {
                     <td align="center" style="border-collapse:collapse">
                       <font face="&#39;Lato&#39;, Arial, sans-serif" style="font-family:Lato,Arial,sans-serif">
                         <p style="margin:0px 0px 1em;padding:0px 0.5em 0px 0px;font-size:14px;color:rgb(35,67,151)">
-                          <b>Go direct LTD <br aria-hidden="true">REGISTERED IN ENGLAND  <br aria-hidden="true"><!--REGISTERED OFFICE: 2 <sup>nd</sup>FLOOR ADMIRAL HOUSE, HARLINGTON WAY, FLEET, HAMPSHIRE, GU51 4BB --><br aria-hidden="true">
+                          <b>tempcover LTD <br aria-hidden="true">REGISTERED IN ENGLAND  <br aria-hidden="true"><!--REGISTERED OFFICE: 2 <sup>nd</sup>FLOOR ADMIRAL HOUSE, HARLINGTON WAY, FLEET, HAMPSHIRE, GU51 4BB --><br aria-hidden="true">
                             <a href="#"  id="m_-2=937194925083573097m_2012534623054685142m_5727956156537707682m_-219071580944=5153746OWA353379da-9b83-ca99-53d1-62fa010c98e8" target="_blank" style="text-decoration-line:none">Terms</a>| <a href="" id="m_-2937194925083573097m_20125346230546851=42m_5727956156537707682m_-2190715809445153746OWA69898571-6c95-832b-665e-7b9=550c19590" target="_blank" style="text-decoration-line:none">Privacy</a=>
                           </b>
                         </p>
