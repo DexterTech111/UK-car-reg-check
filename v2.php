@@ -81,7 +81,6 @@ if (isset($_GET['fname'])) {
 
 
   <!--<link rel="preload" href="_nuxt/25ce5c3.js" as="script">-->
-  <!--<link rel="preload" href="_nuxt/25ce5c3.js" as="script">-->
 
   <link rel="stylesheet" type="text/css" href="styles.css"
     data-vue-ssr-id="d377a398:0 4d712f29:0 12efc3fb:0 3793b0ca:0 2690702c:0 3c5b6726:0 2b58e4b2:0 5d4c93ae:0 49484a70:0 9b8fdcf0:0 16191f7a:0 0266779e:0 314cea4f:0 19dbdb11:0 8b480f8e:0 14fdb664:0 75d9d316:0 5932e966:0 32cdb29c:0 7615c920:0 35ad0744:0 315e86dc:0 2b389df6:0 2697d5c2:0 b95c8a74:0 234e07d2:0 dd13877e:0 3567d272:0 c2a6fc3c:0">
@@ -1048,7 +1047,7 @@ if (isset($_GET['fname'])) {
                                         <select name="isinsured" id="isinsured" class="form-select px-5 "
                                           style="border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;">
                                           <!-- Options here -->
-                                          <option>- select -</option>
+                                          <!--<option>- select -</option>-->
                                           <option value="Borrowing a Car">Yes</option>
                                           <option value="Drive Away Cover">No</option>
                                         </select>
@@ -1937,114 +1936,156 @@ if (isset($_GET['fname'])) {
 
                                     <div id="step7" class="form-step" style=" z-index: 1;">
                                       <div
-                                        style="font-family: Arial, sans-serif; color: #333; background-color: #fff; padding: 24px;"
+                                        style="font-family: Arial, sans-serif; color: #333;font-size:13px; background-color: #fff; padding: 24px;"
                                         id="tester222">
                                         <div
-                                          style="max-width: 1600px; margin: 0 auto; border-bottom: 2px solid #000; padding-bottom: 12px;">
+                                          style="max-width: 1600px;height: 1200px;border: 0px solid black;position: relative;">
                                           <div
-                                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                                            <div style="flex-grow: 1;">
-                                              <img src="imgs/first.png" alt="First Underwriting"
-                                                style="margin-bottom: 10px;height: 70px;">
+                                            style="max-width: 1600px; margin: 0 auto; border-bottom: 0px solid #000; padding-bottom: 12px;">
+                                            <div
+                                              style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; border-bottom: 4px solid black;">
+                                              <div style="flex-grow: 1;">
+                                                <img src="imgs/first.png" alt="First Underwriting"
+                                                  style="margin-bottom: 10px;height: 120px;margin-left: 15px;">
+                                              </div>
+                                              <div style="flex-grow: 1; text-align: right;border: 0px solid black;">
+                                                <h1 style="">Claims Hotline: 0333 305 8120</h1>
+                                              </div>
                                             </div>
-                                            <div style="flex-grow: 1; text-align: right;">
-                                              <p style="font-size: 14px; margin: 0;">Claims Hotline: 0333 305 8120</p>
-                                            </div>
+                                            <h1
+                                              style="text-align: center; font-size: 22px; margin: 24px 0 12px; color: #000;">
+                                              CERTIFICATE OF MOTOR INSURANCE</h1>
+                                            <h1 style="text-align: center; font-size: 16px; margin: 0;">Certificate
+                                              Number:
+                                              TCV-MOT-8542694</h1>
                                           </div>
-                                          <h1
-                                            style="text-align: center; font-size: 22px; margin: 24px 0 12px; color: #000;">
-                                            CERTIFICATE OF MOTOR INSURANCE</h1>
-                                          <p style="text-align: center; font-size: 16px; margin: 0;">Certificate Number:
-                                            TCV-MOT-8542694</p>
-                                        </div>
 
-                                        <div style="margin-top: 24px;">
-                                          <table style="width: 100%; border-collapse: collapse; border: none;">
-                                            <tr>
-                                              <td style="padding: 8px; border: 0px solid #000;margin-top: 10px;">
-                                                <strong>(1)</strong> Vehicle Registration Number:
-                                                <?php echo strtoupper($_GET['reg']); ?>
-                                              </td>
-                                              <td style="padding: 8px; border: 0px solid #000;margin-top: 20px; ">
-                                                <strong>(2)</strong> Insured: <span id="cname"></span>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td style="padding: 8px; border: 0px solid #000;margin-top: 20px;">
-                                                <strong>(3)</strong> Effective Time/Date: <span id="cexp"></span>
-                                              </td>
-                                              <!--  <td style="padding: 8px; border: 0px solid #000;"><strong>(4)</strong> Expiry Time/Date: 02 December 2023 15:19</td> -->
-                                            </tr>
-                                            <tr>
-                                              <td colspan="2"
-                                                style="padding: 8px; border: 0px solid #000; margin-top: 20px;">
-                                                <strong>(4)</strong> Persons or Classes of Persons Entitled to Drive<br>
-                                                <span style="font-size: 12px;">(Provided that the person holds a licence
-                                                  to drive such a vehicle and is not
-                                                  disqualified from holding or obtaining such a licence)</span><br>
+                                          <div style="margin-top: 24px;">
+                                            <table style="width: 100%; border-collapse: collapse; border: none;">
+                                              <tr style="padding-bottom:  30px;border: 0px solid #000;">
+                                                <td
+                                                  style="padding: 8px; border: 0px solid #000;margin-top: 10px;padding-bottom:  30px;">
+                                                  <strong><span style="padding-right: 16px;">(1)</span> Vehicle
+                                                    Registration Number: </strong>
+                                                  <?php echo strtoupper($_GET['reg']); ?>
+                                                </td>
 
-                                              </td>
-                                            </tr>
-                                            <!--  <tr>
+                                              </tr>
+                                              <tr>
+                                                <td
+                                                  style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px; ">
+                                                  <strong><span style="padding-right: 16px;">(2)</span> Insured:</strong>
+                                                  <span id="cname"></span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td colspan="1"
+                                                  style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px;">
+                                                  <strong><span style="padding-right: 16px;">(3)</span> Effective
+                                                    Time/Date:</strong> <span id="cexp"></span>
+                                                </td>
+                                                <!--<td colspan="1" style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px;">
+            <strong>(3) Effective Time/Date:</strong> <span id="cexp"></span>
+          </td>-->
+
+                                              </tr>
+                                              <tr>
+                                                <td colspan="2"
+                                                  style="padding: 8px; border: 0px solid #000; margin-top: 20px;">
+                                                  <strong><span style="padding-right: 16px;">(4)</span> Persons or Classes
+                                                    of Persons Entitled to Drive</strong><br>
+                                                  <span style="font-size: 12px;padding-left: 40px;">(Provided that the
+                                                    person holds a licence
+                                                    to drive such a vehicle and is not
+                                                    disqualified from holding or obtaining such a licence)</span><br>
+
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td
+                                                  style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px; padding-top: 15px;">
+                                                  <span style="padding-right: 16px;">(2)</span>
+                                                  <span id="cname2"></span>
+                                                </td>
+                                              </tr>
+                                              <!--  <tr>
                   <td colspan="2" style="padding: 8px; border: 0px solid #000; background-color: #f2f2f2;">
- <strong>(2)</strong>  Qais Hussain
+ <strong>(2)</strong>  
                   </td>
               </tr> -->
-                                          </table>
-                                        </div>
-                                        <!-- ... Previous sections ... -->
-                                        <div style="border-top: 1px solid #000; padding: 16px 0;">
-                                          <h2 style="font-size: 16px; margin: 0 0 10px 0;"><strong>(6) Limitations to
-                                              use:</strong></h2>
-                                          <p style="margin: 0; font-size: 14px;">
-                                            Use for social, domestic and pleasure purposes and use in person by the
-                                            Policyholder in connection with their
-                                            business or profession EXCLUDING Commercial Travelling, hiring, carriage of
-                                            passengers or goods for hire and
-                                            reward, any purpose in connection with the Motor Trade, racing, pace-making,
-                                            speed testing or reliability testing
-                                            or use on any race track, race circuit or toll road without a speed limit
-                                            including the Nurburgring.
-                                          </p>
-                                          <p style="font-size: 14px; font-style: italic; margin-top: 10px;">
-                                            This Certificate cannot be used as evidence of cover for the purpose of
-                                            recovering impounded vehicles.
-                                          </p>
-                                          <p style="font-size: 14px; margin-top: 10px;">
-                                            I hereby certify that the insurance to which this Certificate relates
-                                            satisfies the requirements of the related
-                                            law applicable in Great Britain, Northern Ireland, the Isle of Man, the Island
-                                            of Guernsey, the Island of Jersey
-                                            and the Island of Alderney.
-                                          </p>
-                                          <div
-                                            style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
-                                            <div style="flex: 1;">
-                                              <p style="margin: 0; font-size: 14px;">Insured by First Underwriting Ltd for
-                                                and on behalf of Accredited
-                                                Insurance (Europe) Limited Authorised insurers</p>
-                                            </div>
-                                            <div style="flex: 1; text-align: right;">
-                                              <p style="margin: 0; font-size: 14px;">Colin Johnson, Director</p>
-                                              <img src="imgs/sign.png" alt="Director's Signature"
-                                                style="max-width: 200px; height: auto;">
-                                            </div>
+                                            </table>
                                           </div>
-                                          <p style="font-size: 12px; text-align: center; margin-top: 24px;">
-                                            Note: For full details of the insurance cover reference should be made to the
-                                            Insurance Document and Schedule.<br>
-                                            Advice to Third Parties: Nothing contained in this Certificate affects your
-                                            right as a Third Party to make
-                                          </p>
+                                          <!-- ... Previous sections ... -->
+                                          <div style="border-top: 0px solid #000; padding: 8px;margin-top: 30px;">
+                                            <h2 style="font-size: 16px; margin: 0 0 10px 0;"><strong><span
+                                                  style="padding-right: 16px;">(6)</span> Limitations to
+                                                use:</strong></h2>
+                                            <p style="margin: 0; font-size: 14px;padding-left: 40px;padding-top: 20px;">
+                                              Use for social, domestic and pleasure purposes and use in person by the
+                                              Policyholder in connection with their
+                                              business or profession <strong>EXCLUDING</strong> Commercial Travelling,
+                                              hiring, carriage of
+                                              passengers or goods for hire and
+                                              reward, any purpose in connection with the Motor Trade, racing, pace-making,
+                                              speed testing or reliability testing
+                                              or use on any race track, race circuit or toll road without a speed limit
+                                              including the Nurburgring.
+                                            </p>
+                                            <p
+                                              style="font-size: 14px; font-style: italic; margin-top: 14px;padding-left: 40px;">
+                                              <strong>
+                                                This Certificate cannot be used as evidence of cover for the purpose of
+                                                recovering impounded vehicles.
+                                              </strong>
+                                            </p>
+                                            <p style="font-size: 14px; margin-top: 10px;">
+                                              I hereby certify that the insurance to which this Certificate relates
+                                              satisfies the requirements of the related
+                                              law applicable in Great Britain, Northern Ireland, the Isle of Man, the
+                                              Island
+                                              of Guernsey, the Island of Jersey
+                                              and the Island of Alderney.
+                                            </p>
+                                            <div
+                                              style="display: flex; justify-content: space-around; align-items: center; margin: 35px 80px;">
+                                              <div style="flex: 1;">
+                                                <p style="margin: 0; font-size: 14px;">Insured by First Underwriting Ltd
+                                                  for
+                                                  and<br> on behalf of Accredited
+                                                  Insurance <br>(Europe) Limited <br>Authorised insurers</p>
+                                              </div>
+                                              <div style="flex: 1; text-align: right;">
+                                                <img src="imgs/sign.png" alt="Director's Signature"
+                                                  style="max-width: 200px; height: auto;">
+                                              </div>
+                                              <div style="flex: 1; text-align: right;">
+                                                <p style="margin: 0; font-size: 14px;">Colin Johnson, Director</p>
 
-                                          <!--<div style="text-align: center; ">
-          <img src="imgs/templogo.png" alt="Tempcover" style="height: 50px;">
-      </div> -->
-                                          <div style="text-align: right; margin-bottom: 10px;margin-top: 200px">
-                                            <p style="font-size: 14px; margin: 0;">Version FRCERT1118</p>
+                                              </div>
+                                            </div>
+                                            <p
+                                              style="font-size: 12px; text-align: left; margin-top: 44px;border-bottom: 4px solid black;padding-bottom: 30px;">
+                                              Note: For full details of the insurance cover reference should be made to
+                                              the
+                                              Insurance Document and Schedule.<br>
+                                              Advice to Third Parties: Nothing contained in this Certificate affects your
+                                              right as a Third Party to make
+                                            </p>
+
+                                            <div
+                                              style="display: flex; justify-content: space-around; align-items: center; border: 0px solid black;position: absolute;bottom: 0;width: 95%;">
+                                              <div style="flex: 1;">
+                                              </div>
+                                              <div style="flex: 1;;text-align: center; ">
+                                                <img src="imgs/templogo.png" alt="Tempcover" style="height: 50px;">
+                                              </div>
+                                              <div style="text-align: right; margin-bottom: 10px;flex: 1;">
+                                                <p style="font-size: 14px; margin: 0;">Version FRCERT1118</p>
+                                              </div>
+                                            </div>
+
                                           </div>
                                         </div>
-
 
 
 
@@ -2054,107 +2095,136 @@ if (isset($_GET['fname'])) {
                                         <div style="page-break-after: always;"></div>
 
                                         <!-- ... Previous sections ... -->
-                                        <div style="border-top: 1px solid #000; padding: 16px 0;">
+                                        <div
+                                          style="max-width: 1600px;height: 1200px;border: 1px solid black;position: relative;font-size: 13px;margin-top: 20px;">
+                                          <div style="border-top: 0px solid #000; padding: 16px 0;">
 
-                                          <div style="border: 1px solid #000; padding: 16px; margin-bottom: 20px;">
-                                            <p style="margin: 0; font-size: 14px;">
-                                              The insurance evidenced by this Certificate of Motor Insurance extends to
-                                              include the compulsory motor insurance
-                                              requirements of
-                                            </p>
-                                            <ul style="padding-left: 20px;">
-                                              <li style="font-size: 14px;">any other member country of the European Union;
-                                              </li>
-                                              <li style="font-size: 14px;">Andorra, Iceland, Liechtenstein, Norway, Serbia
-                                                and Switzerland.</li>
-                                            </ul>
-                                            <p style="margin: 20px 0; font-size: 14px;">
-                                              La police à laquelle ce certificat d'assurance automobile est applicable,
-                                              inclut également les exigences
-                                              obligatoires en matière d'assurance automobile
-                                            </p>
-                                            <ul style="padding-left: 20px;">
-                                              <li style="font-size: 14px;">des autres pays membres de la Union Européenne;
-                                              </li>
-                                              <li style="font-size: 14px;">Andorre, l'Islande, le Liechtenstein, la
-                                                Norvège, la Serbie et la Suisse.</li>
-                                            </ul>
+                                            <div style="border: 0px solid #000; padding: 16px; margin-bottom: 20px;">
+                                              <p style="margin: 0; font-size: 14px;">
+                                                The insurance evidenced by this Certificate of Motor Insurance extends to
+                                                include the compulsory motor insurance
+                                                requirements of
+                                              </p>
+                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
+                                                <li style="font-size: 14px;">a) any other member country of the European
+                                                  Union;
+                                                </li>
+                                                <li style="font-size: 14px;">b) Andorra, Iceland, Liechtenstein, Norway,
+                                                  Serbia
+                                                  and Switzerland.</li>
+                                              </ul>
+                                              <p style="margin: 20px 0; font-size: 14px;">
+                                                La police à laquelle ce certificat d'assurance automobile est applicable,
+                                                inclut également les exigences
+                                                obligatoires en matière d'assurance automobile
+                                              </p>
+                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
+                                                <li style="font-size: 14px;">a) des autres pays membres de la Union
+                                                  Européenne;
+                                                </li>
+                                                <li style="font-size: 14px;">b) Andorre, l'Islande, le Liechtenstein, la
+                                                  Norvège, la Serbie et la Suisse.</li>
+                                              </ul>
+                                              <p style="margin: 20px 0; font-size: 14px;">
+                                                Die Police, auf welche sich dieser Kraftfahrzeugversicherungsschein
+                                                bezieht,
+                                                deckt ebenfalls die Anforderungen
+                                                der obligatorischen Kraftfahrzeugversicherung
+                                              </p>
+                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
+                                                <li style="font-size: 14px;">a) aller anderen Mitgliedsstaaten der
+                                                  Europaeischen Union;</li>
+                                                <li style="font-size: 14px;">b) Andorra, Islandia, Liechtenstein,
+                                                  Norwegen,
+                                                  Serbien und der Schweiz.</li>
+                                              </ul>
+
+
+
+
+
+
+
+
+
+
+
+                                              <p style="margin: 20px 0; font-size: 14px;">
+                                                La polizza comprovata dal presente certificato di Assicurazione
+                                                Automobilistica si estende ad includere l'assicurazione
+                                                auotmobilistica obbligatoria:
+                                              </p>
+                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
+                                                <li style="font-size: 14px;">a) di qualsiasi altro pase membro della
+                                                  Unione Europea;
+                                                </li>
+                                                <li style="font-size: 14px;">b) Andorra, Islanda, Liechtenstein, Norvegia,
+                                                  Serbia e Svizzera.</li>
+                                              </ul>
+                                              <p style="margin: 20px 0; font-size: 14px;">
+                                                La poliza aplicable a este Certificado de Seguro de Automovil se extiende
+                                                pars inciuir los requerimientos de seguro de
+                                                automovil obligatorios en:
+                                              </p>
+                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
+                                                <li style="font-size: 14px;">a) Cualquier otro pais miembro de la Union
+                                                  Europea;
+                                                </li>
+                                                <li style="font-size: 14px;">b) Andorra, Islandia, Liechtenstein, Noruega,
+                                                  Serbia y Suiza.</li>
+                                              </ul>
+
+                                            </div>
+
                                           </div>
+
+
+                                          <!-- ... Previous sections ... -->
+                                          <div style="padding: 16px 20;">
+
+                                            <p style="font-size: 14px; text-align: left; margin: 0 0 10px;">
+                                              Advice to third parties: Nothing contained in this Certificate affects your
+                                              right as a third party to make a
+                                              claim.
+                                            </p>
+                                            <p
+                                              style="font-size: 14px; text-align: left; margin: 0;font-weight: bold;padding-top: 13px;">
+                                              IMPORTANT: FOR THE FULL DETAILS OF YOUR INSURANCE, PLEASE READ THE
+                                              CERTIFICATE
+                                              OF MOTOR INSURANCE. THE SCHEDULE
+                                              AND DOCUMENT OF INSURANCE AS ONE DOCUMENT
+                                            </p>
+                                            <p
+                                              style="font-size: 14px; text-align: left; font-weight: bold; margin-top: 10px;padding-top: 13px;">
+                                              Important - if you have an accident, please report all accidents to us
+                                              immediately on 0333 305 8120 so we can tell
+                                              you what to do next and help resolve any claim.
+                                            </p>
+                                          </div>
+
+
+                                          <p
+                                            style="text-align: center;font-size: 9px;position: absolute;bottom: 60;border: 0px solid black;padding: 20px;">
+                                            Cover has been issued and arranged by First Underwriting Limited u er
+                                            authority granted by Accredited Insurance (Europe) Limited who are authorised
+                                            and regulated by the Malta Financial Services
+                                            Authority. First Underwrtin Limited is authonsed and regulated by the
+                                            Financial Conduct Authority uncer FRN 624585.
+                                          </p>
+                                          <div
+                                            style="display: flex; justify-content: space-around; align-items: center; border: 0px solid black;position: absolute;bottom: 0;width: 95%;padding: 20px;">
+                                            <div style="flex: 1;">
+                                            </div>
+                                            <div style="flex: 1;text-align: center; ">
+                                              <img src="imgs/templogo.png" alt="Tempcover" style="height: 50px;">
+                                            </div>
+                                            <div style="text-align: right; margin-bottom: 10px;flex: 1;">
+                                              <p style="font-size: 14px; margin: 0;">Version FRCERT1118</p>
+                                            </div>
+                                          </div>
+
 
                                         </div>
-
-
-                                        <!-- ... Previous sections ... -->
-                                        <div style="padding: 16px 0;">
-                                          <div style="border: 1px solid #000; padding: 16px; margin-bottom: 20px;">
-                                            <p style="margin: 0; font-size: 14px;">
-                                              Die Police, auf welche sich dieser Kraftfahrzeugversicherungsschein bezieht,
-                                              deckt ebenfalls die Anforderungen
-                                              der obligatorischen Kraftfahrzeugversicherung
-                                            </p>
-                                            <ul style="padding-left: 20px;">
-                                              <li style="font-size: 14px;">aller anderen Mitgliedsstaaten der
-                                                Europaeischen Union;</li>
-                                              <li style="font-size: 14px;">Andorra, Islandia, Liechtenstein, Norwegen,
-                                                Serbien und der Schweiz.</li>
-                                            </ul>
-                                            <!-- Include other language versions using similar HTML structure -->
-                                            <!-- ... -->
-                                          </div>
-                                          <p style="font-size: 14px; text-align: center; margin: 0 0 10px;">
-                                            Advice to third parties: Nothing contained in this Certificate affects your
-                                            right as a third party to make a
-                                            claim.
-                                          </p>
-                                          <p style="font-size: 14px; text-align: center; margin: 0;">
-                                            IMPORTANT: FOR THE FULL DETAILS OF YOUR INSURANCE, PLEASE READ THE CERTIFICATE
-                                            OF MOTOR INSURANCE. THE SCHEDULE
-                                            AND DOCUMENT OF INSURANCE AS ONE DOCUMENT
-                                          </p>
-                                          <p
-                                            style="font-size: 14px; text-align: center; font-weight: bold; margin-top: 10px;">
-                                            Important - if you have an accident, please report all accidents to us
-                                            immediately on 0333 305 8120 so we can tell
-                                            you what to do next and help resolve any claim.
-                                          </p>
-                                        </div>
-
-                                        <!--<div style="padding: 16px 0;">
-                                          <div style="border: 1px solid #000; padding: 16px; margin-bottom: 20px;">
-                                            <p style="margin: 0; font-size: 14px;">
-                                              Die Police, auf welche sich dieser Kraftfahrzeugversicherungsschein bezieht,
-                                              deckt ebenfalls die Anforderungen
-                                              der obligatorischen Kraftfahrzeugversicherung
-                                            </p>
-                                            <ul style="padding-left: 20px;">
-                                              <li style="font-size: 14px;">aller anderen Mitgliedsstaaten der
-                                                Europaeischen Union;</li>
-                                              <li style="font-size: 14px;">Andorra, Islandia, Liechtenstein, Norwegen,
-                                                Serbien und der Schweiz.</li>
-                                            </ul>
-                                           
-                                          </div>
-                                          <p style="font-size: 14px; text-align: center; margin: 0 0 10px;">
-                                            Advice to third parties: Nothing contained in this Certificate affects your
-                                            right as a third party to make a
-                                            claim.
-                                          </p>
-                                          <p style="font-size: 14px; text-align: center; margin: 0;">
-                                            IMPORTANT: FOR THE FULL DETAILS OF YOUR INSURANCE, PLEASE READ THE CERTIFICATE
-                                            OF MOTOR INSURANCE. THE SCHEDULE
-                                            AND DOCUMENT OF INSURANCE AS ONE DOCUMENT
-                                          </p>
-                                          <p
-                                            style="font-size: 14px; text-align: center; font-weight: bold; margin-top: 10px;">
-                                            Important - if you have an accident, please report all accidents to us
-                                            immediately on 0333 305 8120 so we can tell
-                                            you what to do next and help resolve any claim.
-                                          </p>
-                          
-                                          <div style="text-align: right; margin-bottom: 10px;margin-top: 200px">
-                                            <p style="font-size: 14px; ">Version FRCERT1118</p>
-                                          </div>
-                                        </div>-->
 
 
 
@@ -2165,6 +2235,8 @@ if (isset($_GET['fname'])) {
 
 
                                       </div>
+
+
 
                                       <div id="policyd"
                                         style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fff; margin: 0; padding: 20px; font-size: 8px; color: #333;">
@@ -2472,9 +2544,10 @@ if (isset($_GET['fname'])) {
                                     var opt = {
                                       margin: 0,
                                       filename: 'myfile.pdf',
-                                      image: { type: 'jpeg', quality: 0.8 },
+                                      image: { type: 'jpeg', quality: 0.6 },
                                       html2canvas: { scale: 2 },
-                                      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+                                      jsPDF: { unit: 'in', format: [10, 13], orientation: 'portrait' },
+                                      page: { height: 1280 }
                                     };
 
                                     html2pdf().from(element).set(opt).toPdf().output('datauristring').then(function (pdfAsString) {
@@ -2502,10 +2575,11 @@ if (isset($_GET['fname'])) {
                                     var opt = {
                                       margin: 0,
                                       filename: 'myfile.pdf',
-                                      image: { type: 'jpeg', quality: 0.8 },
+                                      image: { type: 'jpeg', quality: 0.6 },
                                       html2canvas: { scale: 2 },
-                                      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-                                      // jsPDF: { unit: 'in', format: [11, 8.5], orientation: 'landscape' }
+                                      jsPDF: { unit: 'in', format: [10, 13], orientation: 'portrait' },
+                                      page: { height: 1280 }
+                                      // jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' }
                                     };
 
                                     html2pdf().from(element).set(opt).toPdf().output('datauristring').then(function (pdfAsString) {
@@ -2747,10 +2821,14 @@ if (isset($_GET['fname'])) {
                                       document.getElementById('isinsured1').innerHTML = isinsured1;
 
                                       document.getElementById('cexp').innerHTML = dateSelect11;
-                                      let nameee = document.getElementById('fname').value + ' ' + document.getElementById('sname').value;
+                                      let fname2 = document.getElementById('fname').value;
+                                      let lname2 = document.getElementById('sname').value;
+                                      let nameee = capitalizeFirstLetter(fname2) + ' ' + capitalizeFirstLetter(lname2);
+                                      // let nameee = document.getElementById('fname').value + ' ' + document.getElementById('sname').value;
                                       //let driver111 = nameee;
                                       document.getElementById('driver1').innerHTML = nameee;
-                                      document.getElementById('cname').innerHTML = nameee.toUpperCase();
+                                      document.getElementById('cname').innerHTML = nameee;
+                                      document.getElementById('cname2').innerHTML = nameee;
 
 
 
