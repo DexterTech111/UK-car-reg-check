@@ -32,7 +32,7 @@ if (isset($_GET['reg'])) {
 require __DIR__ . "/vendor/autoload.php";
 if (isset($_GET['fname'])) {
 
-  $stripe_secret_key = "sk_test_51OcfOjK1LtX7HFiObLeAVXEJ8ia54fUwhNCinAxoiu6UiB9loKwAvUPPaLzCYc6u0c32l34hAvLKTm342Z8MmqWc00v7oFbZLE";
+  $stripe_secret_key = "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";
 
   \Stripe\Stripe::setApiKey($stripe_secret_key);
   $amount = $_GET['amount'] * 100;
@@ -54,8 +54,8 @@ if (isset($_GET['fname'])) {
         ]
       ],
       'mode' => 'payment',
-      'success_url' => 'https://konstructionpro.site/carreg/edit/v2.php?success=1',
-      'cancel_url' => 'https://konstructionpro.site/carreg/edit/v2.php?error=1',
+      'success_url' => 'locahost/v2.php?success=1',
+      'cancel_url' => 'locahost/v2.php?error=1',
     ]
   );
   http_response_code(303);
@@ -1048,8 +1048,8 @@ if (isset($_GET['fname'])) {
                                           style="border-radius: 5px; background: white; color: #909099; height: 59px; width: 100%; border: 0px solid red; font-family: 'TT Norms Pro DemiBold',sans-serif; font-weight: 500; font-size: 18px;">
                                           <!-- Options here -->
                                           <!--<option>- select -</option>-->
-                                          <option value="Borrowing a Car">Yes</option>
-                                          <option value="Drive Away Cover">No</option>
+                                          <option value="Yes">Yes</option>
+                                          <option value="No">No</option>
                                         </select>
                                       </div>
 
@@ -1934,502 +1934,11 @@ if (isset($_GET['fname'])) {
                                       </div>
                                     </div>
 
-                                    <div id="step7" class="form-step" style=" z-index: 1;">
-                                      <div
-                                        style="font-family: Arial, sans-serif; color: #333;font-size:13px; background-color: #fff; padding: 24px;"
-                                        id="tester222">
-                                        <div
-                                          style="max-width: 1600px;height: 1200px;border: 0px solid black;position: relative;">
-                                          <div
-                                            style="max-width: 1600px; margin: 0 auto; border-bottom: 0px solid #000; padding-bottom: 12px;">
-                                            <div
-                                              style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; border-bottom: 4px solid black;">
-                                              <div style="flex-grow: 1;">
-                                                <img src="imgs/first.png" alt="First Underwriting"
-                                                  style="margin-bottom: 10px;height: 120px;margin-left: 15px;">
-                                              </div>
-                                              <div style="flex-grow: 1; text-align: right;border: 0px solid black;">
-                                                <h1 style="">Claims Hotline: 0333 305 8120</h1>
-                                              </div>
-                                            </div>
-                                            <h1
-                                              style="text-align: center; font-size: 22px; margin: 24px 0 12px; color: #000;">
-                                              CERTIFICATE OF MOTOR INSURANCE</h1>
-                                            <h1 style="text-align: center; font-size: 16px; margin: 0;">Certificate
-                                              Number:
-                                              TCV-MOT-8542694</h1>
-                                          </div>
+                                   <!-- <div id="step7" class="form-step" style=" z-index: 1;">
+                                 <!--tester222 ->
 
-                                          <div style="margin-top: 24px;">
-                                            <table style="width: 100%; border-collapse: collapse; border: none;">
-                                              <tr style="padding-bottom:  30px;border: 0px solid #000;">
-                                                <td
-                                                  style="padding: 8px; border: 0px solid #000;margin-top: 10px;padding-bottom:  30px;">
-                                                  <strong><span style="padding-right: 16px;">(1)</span> Vehicle
-                                                    Registration Number: </strong>
-                                                  <?php echo strtoupper($_GET['reg']); ?>
-                                                </td>
 
-                                              </tr>
-                                              <tr>
-                                                <td
-                                                  style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px; ">
-                                                  <strong><span style="padding-right: 16px;">(2)</span> Insured:</strong>
-                                                  <span id="cname"></span>
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td colspan="1"
-                                                  style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px;">
-                                                  <strong><span style="padding-right: 16px;">(3)</span> Effective
-                                                    Time/Date:</strong> <span id="cexp"></span>
-                                                </td>
-                                                <!--<td colspan="1" style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px;">
-            <strong>(3) Effective Time/Date:</strong> <span id="cexp"></span>
-          </td>-->
-
-                                              </tr>
-                                              <tr>
-                                                <td colspan="2"
-                                                  style="padding: 8px; border: 0px solid #000; margin-top: 20px;">
-                                                  <strong><span style="padding-right: 16px;">(4)</span> Persons or Classes
-                                                    of Persons Entitled to Drive</strong><br>
-                                                  <span style="font-size: 12px;padding-left: 40px;">(Provided that the
-                                                    person holds a licence
-                                                    to drive such a vehicle and is not
-                                                    disqualified from holding or obtaining such a licence)</span><br>
-
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td
-                                                  style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px; padding-top: 15px;">
-                                                  <span style="padding-right: 16px;">(2)</span>
-                                                  <span id="cname2"></span>
-                                                </td>
-                                              </tr>
-                                              <!--  <tr>
-                  <td colspan="2" style="padding: 8px; border: 0px solid #000; background-color: #f2f2f2;">
- <strong>(2)</strong>  
-                  </td>
-              </tr> -->
-                                            </table>
-                                          </div>
-                                          <!-- ... Previous sections ... -->
-                                          <div style="border-top: 0px solid #000; padding: 8px;margin-top: 30px;">
-                                            <h2 style="font-size: 16px; margin: 0 0 10px 0;"><strong><span
-                                                  style="padding-right: 16px;">(6)</span> Limitations to
-                                                use:</strong></h2>
-                                            <p style="margin: 0; font-size: 14px;padding-left: 40px;padding-top: 20px;">
-                                              Use for social, domestic and pleasure purposes and use in person by the
-                                              Policyholder in connection with their
-                                              business or profession <strong>EXCLUDING</strong> Commercial Travelling,
-                                              hiring, carriage of
-                                              passengers or goods for hire and
-                                              reward, any purpose in connection with the Motor Trade, racing, pace-making,
-                                              speed testing or reliability testing
-                                              or use on any race track, race circuit or toll road without a speed limit
-                                              including the Nurburgring.
-                                            </p>
-                                            <p
-                                              style="font-size: 14px; font-style: italic; margin-top: 14px;padding-left: 40px;">
-                                              <strong>
-                                                This Certificate cannot be used as evidence of cover for the purpose of
-                                                recovering impounded vehicles.
-                                              </strong>
-                                            </p>
-                                            <p style="font-size: 14px; margin-top: 10px;">
-                                              I hereby certify that the insurance to which this Certificate relates
-                                              satisfies the requirements of the related
-                                              law applicable in Great Britain, Northern Ireland, the Isle of Man, the
-                                              Island
-                                              of Guernsey, the Island of Jersey
-                                              and the Island of Alderney.
-                                            </p>
-                                            <div
-                                              style="display: flex; justify-content: space-around; align-items: center; margin: 35px 80px;">
-                                              <div style="flex: 1;">
-                                                <p style="margin: 0; font-size: 14px;">Insured by First Underwriting Ltd
-                                                  for
-                                                  and<br> on behalf of Accredited
-                                                  Insurance <br>(Europe) Limited <br>Authorised insurers</p>
-                                              </div>
-                                              <div style="flex: 1; text-align: right;">
-                                                <img src="imgs/sign.png" alt="Director's Signature"
-                                                  style="max-width: 200px; height: auto;">
-                                              </div>
-                                              <div style="flex: 1; text-align: right;">
-                                                <p style="margin: 0; font-size: 14px;">Colin Johnson, Director</p>
-
-                                              </div>
-                                            </div>
-                                            <p
-                                              style="font-size: 12px; text-align: left; margin-top: 44px;border-bottom: 4px solid black;padding-bottom: 30px;">
-                                              Note: For full details of the insurance cover reference should be made to
-                                              the
-                                              Insurance Document and Schedule.<br>
-                                              Advice to Third Parties: Nothing contained in this Certificate affects your
-                                              right as a Third Party to make
-                                            </p>
-
-                                            <div
-                                              style="display: flex; justify-content: space-around; align-items: center; border: 0px solid black;position: absolute;bottom: 0;width: 95%;">
-                                              <div style="flex: 1;">
-                                              </div>
-                                              <div style="flex: 1;;text-align: center; ">
-                                                <img src="imgs/templogo.png" alt="Tempcover" style="height: 50px;">
-                                              </div>
-                                              <div style="text-align: right; margin-bottom: 10px;flex: 1;">
-                                                <p style="font-size: 14px; margin: 0;">Version FRCERT1118</p>
-                                              </div>
-                                            </div>
-
-                                          </div>
-                                        </div>
-
-
-
-
-
-
-                                        <div style="page-break-after: always;"></div>
-
-                                        <!-- ... Previous sections ... -->
-                                        <div
-                                          style="max-width: 1600px;height: 1200px;border: 1px solid black;position: relative;font-size: 13px;margin-top: 20px;">
-                                          <div style="border-top: 0px solid #000; padding: 16px 0;">
-
-                                            <div style="border: 0px solid #000; padding: 16px; margin-bottom: 20px;">
-                                              <p style="margin: 0; font-size: 14px;">
-                                                The insurance evidenced by this Certificate of Motor Insurance extends to
-                                                include the compulsory motor insurance
-                                                requirements of
-                                              </p>
-                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
-                                                <li style="font-size: 14px;">a) any other member country of the European
-                                                  Union;
-                                                </li>
-                                                <li style="font-size: 14px;">b) Andorra, Iceland, Liechtenstein, Norway,
-                                                  Serbia
-                                                  and Switzerland.</li>
-                                              </ul>
-                                              <p style="margin: 20px 0; font-size: 14px;">
-                                                La police à laquelle ce certificat d'assurance automobile est applicable,
-                                                inclut également les exigences
-                                                obligatoires en matière d'assurance automobile
-                                              </p>
-                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
-                                                <li style="font-size: 14px;">a) des autres pays membres de la Union
-                                                  Européenne;
-                                                </li>
-                                                <li style="font-size: 14px;">b) Andorre, l'Islande, le Liechtenstein, la
-                                                  Norvège, la Serbie et la Suisse.</li>
-                                              </ul>
-                                              <p style="margin: 20px 0; font-size: 14px;">
-                                                Die Police, auf welche sich dieser Kraftfahrzeugversicherungsschein
-                                                bezieht,
-                                                deckt ebenfalls die Anforderungen
-                                                der obligatorischen Kraftfahrzeugversicherung
-                                              </p>
-                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
-                                                <li style="font-size: 14px;">a) aller anderen Mitgliedsstaaten der
-                                                  Europaeischen Union;</li>
-                                                <li style="font-size: 14px;">b) Andorra, Islandia, Liechtenstein,
-                                                  Norwegen,
-                                                  Serbien und der Schweiz.</li>
-                                              </ul>
-
-
-
-
-
-
-
-
-
-
-
-                                              <p style="margin: 20px 0; font-size: 14px;">
-                                                La polizza comprovata dal presente certificato di Assicurazione
-                                                Automobilistica si estende ad includere l'assicurazione
-                                                auotmobilistica obbligatoria:
-                                              </p>
-                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
-                                                <li style="font-size: 14px;">a) di qualsiasi altro pase membro della
-                                                  Unione Europea;
-                                                </li>
-                                                <li style="font-size: 14px;">b) Andorra, Islanda, Liechtenstein, Norvegia,
-                                                  Serbia e Svizzera.</li>
-                                              </ul>
-                                              <p style="margin: 20px 0; font-size: 14px;">
-                                                La poliza aplicable a este Certificado de Seguro de Automovil se extiende
-                                                pars inciuir los requerimientos de seguro de
-                                                automovil obligatorios en:
-                                              </p>
-                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
-                                                <li style="font-size: 14px;">a) Cualquier otro pais miembro de la Union
-                                                  Europea;
-                                                </li>
-                                                <li style="font-size: 14px;">b) Andorra, Islandia, Liechtenstein, Noruega,
-                                                  Serbia y Suiza.</li>
-                                              </ul>
-
-                                            </div>
-
-                                          </div>
-
-
-                                          <!-- ... Previous sections ... -->
-                                          <div style="padding: 16px 20;">
-
-                                            <p style="font-size: 14px; text-align: left; margin: 0 0 10px;">
-                                              Advice to third parties: Nothing contained in this Certificate affects your
-                                              right as a third party to make a
-                                              claim.
-                                            </p>
-                                            <p
-                                              style="font-size: 14px; text-align: left; margin: 0;font-weight: bold;padding-top: 13px;">
-                                              IMPORTANT: FOR THE FULL DETAILS OF YOUR INSURANCE, PLEASE READ THE
-                                              CERTIFICATE
-                                              OF MOTOR INSURANCE. THE SCHEDULE
-                                              AND DOCUMENT OF INSURANCE AS ONE DOCUMENT
-                                            </p>
-                                            <p
-                                              style="font-size: 14px; text-align: left; font-weight: bold; margin-top: 10px;padding-top: 13px;">
-                                              Important - if you have an accident, please report all accidents to us
-                                              immediately on 0333 305 8120 so we can tell
-                                              you what to do next and help resolve any claim.
-                                            </p>
-                                          </div>
-
-
-                                          <p
-                                            style="text-align: center;font-size: 9px;position: absolute;bottom: 60;border: 0px solid black;padding: 20px;">
-                                            Cover has been issued and arranged by First Underwriting Limited u er
-                                            authority granted by Accredited Insurance (Europe) Limited who are authorised
-                                            and regulated by the Malta Financial Services
-                                            Authority. First Underwrtin Limited is authonsed and regulated by the
-                                            Financial Conduct Authority uncer FRN 624585.
-                                          </p>
-                                          <div
-                                            style="display: flex; justify-content: space-around; align-items: center; border: 0px solid black;position: absolute;bottom: 0;width: 95%;padding: 20px;">
-                                            <div style="flex: 1;">
-                                            </div>
-                                            <div style="flex: 1;text-align: center; ">
-                                              <img src="imgs/templogo.png" alt="Tempcover" style="height: 50px;">
-                                            </div>
-                                            <div style="text-align: right; margin-bottom: 10px;flex: 1;">
-                                              <p style="font-size: 14px; margin: 0;">Version FRCERT1118</p>
-                                            </div>
-                                          </div>
-
-
-                                        </div>
-
-
-
-
-
-
-
-
-
-                                      </div>
-
-
-
-                                      <div id="policyd"
-                                        style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fff; margin: 0; padding: 20px; font-size: 8px; color: #333;">
-                                        <div style="border: 0px solid #000; padding: 0px; margin-bottom: 20px;">
-                                          <table cellspacing="0"
-                                            style="width: 100%; border-collapse: collapse; margin-bottom: 20px;border: 1px solid black;">
-                                            <tr>
-                                              <td colspan="6" style="padding: 10px;">
-                                                <img src="imgs/first.png" alt="First Underwriting"
-                                                  style="margin-bottom: 10px;height: 70px;">
-                                                <!-- <div style="font-size: 22px; font-weight: bold; margin-bottom: 10px;">FIRST UNDERWRITING</div>-->
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td colspan="4"
-                                                style="padding: 2px; border: 1px solid #000; font-weight: bold;font-size: 11px;">
-                                                SHORT TERM INSURANCE - FIRST UNDERWRITING</td>
-                                              <td colspan="2"
-                                                style="padding: 2px; border: 1px solid #000;  font-weight: bold; text-align: right;font-size: 11px;">
-                                                NEW BUSINESS SCHEDULE</td>
-                                            </tr>
-                                            <tr>
-                                              <td colspan="2"
-                                                style="padding: 2px; border: 1px solid #000; font-weight: bold; font-size: 11px;">
-                                                <strong>Policy Number:</strong><br><span>TCV-MOT-854269</span>
-                                              </td>
-                                              <td colspan="1"
-                                                style="padding: 2px; border: 1px solid #000; font-size: 11px;">
-                                                <strong>Date Issued:</strong><br><span id="starter3"></span>
-                                              </td>
-                                              <td colspan="4"
-                                                style="padding: 2px; border: 1px solid #000; font-weight: bold; font-size: 11px;">
-                                                <strong>Agent:</strong><br><span>Go Direct</span>
-                                              </td>
-
-                                            </tr>
-                                            <!-- Continue with other rows in a similar fashion -->
-                                            <tr>
-
-
-                                              <td colspan="3"
-                                                style="padding: 2px; border: 1px solid #000; font-weight: bold; font-size: 11px;">
-                                                <strong>Insured: </strong><br><span id="isinsured1">Qais Hussain</span>
-                                              </td>
-                                              <td colspan="3"
-                                                style="padding: 2px; border: 1px solid #000; font-size: 11px;">
-                                                <strong>Effective Time/Date: </strong><br><span id="dateSelect2"></span>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <!-- First cell with colspan=3 -->
-                                              <td colspan="3"
-                                                style="padding: 2px; border: 1px solid #000; font-weight: bold; font-size: 11px;">
-                                                <span id="address2"></span>
-                                              </td>
-
-                                              <!-- Second cell also with colspan=3, containing another table with 3 rows -->
-                                              <td colspan="3" style="padding:0px; margin: 0px;border: 2px solid black;">
-                                                <table cellspacing="0"
-                                                  style="width: 100%; border-collapse: collapse;border-spacing: 0;padding:0px; margin: 0px;border: 0px solid black;">
-                                                  <!-- <tr style="border-collapse: collapse;">
-          <td style="padding: 2px; border: 1px solid #000; font-weight: bold;font-size: 11px;"> <strong>Expiry Time/Date: </strong><br><span>25 November 2023 15:20</span> </td>
-        </tr> -->
-                                                  <tr>
-                                                    <td
-                                                      style="padding: 2px; border: 1px solid #000; font-weight: bold;font-size: 11px;">
-                                                      <strong>Reason for Issue: </strong><br><span id="reasona"></span>
-                                                    </td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td
-                                                      style="padding: 2px; border: 1px solid #000; font-weight: bold;font-size: 11px;">
-                                                      <strong>Premium (inc. ipt) </strong><br> £<span id="price1a"></span>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-
-                                            <tr style="border: 2px solid black;">
-
-
-                                              <td colspan="2"
-                                                style="padding: 2px; border: 1px solid #000; font-weight: bold;font-size: 11px;">
-                                                <strong> Insured Vehicle: </strong><br><span></span>
-                                              </td>
-                                              <td colspan="2"
-                                                style="padding: 10px; border-bottom:1px solid #000;font-size: 11px;">
-                                                <strong>Registration Number: </strong><br><span id="regi1">
-                                                  <?php echo strtoupper($_GET['reg']); ?>
-                                                </span>
-                                              </td>
-                                              <td colspan="2"
-                                                style="padding: 2px; border: 1px solid #000;font-size: 11px;">
-                                                <strong> Cover: </strong><br><span>COMPREHENSIVE</span>
-                                              </td>
-                                            </tr>
-                                            <tr style="border: 2px solid black;">
-                                              <td colspan="2"
-                                                style="padding: 10px; border: 0px solid #000; font-weight: bold;font-size: 11px;">
-                                                <strong> Vehicle Value:
-                                                </strong><br><span>£20,001 to £40,000</span>
-                                              </td>
-                                              <td colspan="2"
-                                                style="padding: 10px; border-bottom:0px solid #000;font-size: 11px;">
-                                                <strong> Make and Model of Vehicle: </strong><br><span
-                                                  id="vehicle111"></span>
-                                              </td>
-                                            </tr>
-
-                                          </table>
-
-
-                                          <div style="width: 100%; border-top: 4px solid black; margin-bottom: 20px;">
-
-                                          </div>
-
-                                          <div
-                                            style="border:1px solid black; padding: 20px; margin-bottom: 20px;font-size: 11px;">
-                                            <h2
-                                              style="font-size: 13px; border-bottom: 1px solid black; padding-bottom: 5px; margin-bottom: 10px;">
-                                              ENDORSEMENTS APPLICABLE (Full wordings shown within ENDORSEMENTS)</h2>
-                                            <p style="margin-bottom: 5px;"><strong>001 - ACCIDENTAL DAMAGE FIRE AND THEFT
-                                                EXCESS</strong></p>
-                                            <table style="width: 100%; border-collapse: collapse;">
-                                              <tr>
-                                                <td style="border-bottom: 1px solid black; padding: 5px;">Compulsory
-                                                  Excess Amount</td>
-                                                <td
-                                                  style="border-bottom: 1px solid black; padding: 5px; text-align: right;">
-                                                  £1250.00</td>
-                                              </tr>
-                                              <tr>
-                                                <td style="border-bottom: 1px solid black; padding: 5px;">Voluntary Excess
-                                                  Amount</td>
-                                                <td
-                                                  style="border-bottom: 1px solid black; padding: 5px; text-align: right;">
-                                                  £1000</td>
-                                              </tr>
-                                              <tr>
-                                                <td style="padding: 5px;"><strong>Total Excess Amount</strong></td>
-                                                <td style="padding: 5px; text-align: right;"><strong>£2250.00</strong>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </div>
-
-
-                                          <div style="width: 100%; border-top: 4px solid black;margin-bottom: 20px;">
-
-                                          </div>
-
-
-                                          <div
-                                            style="border:1px solid black; padding: 20px; margin-bottom: 20px;font-size:11px;">
-                                            <h2
-                                              style="font-size: 13px;border-bottom: 1px solid black; padding-bottom: 5px; margin-bottom: 10px;">
-                                              Important Information</h2>
-                                            <p style="font-size: 13px;margin-bottom: 10px;">CONTINUOUS INSURANCE
-                                              ENFORCEMENT and the MOTOR INSURANCE DATABASE Information relating to your
-                                              policy will be added to the Motor Insurance Database ('MID') managed by the
-                                              Motor Insurance Bureau ('MIB'). MID and the data stored on it may be used by
-                                              certain statutory and/or authorised bodies including the Police, the DVLA,
-                                              the Insurance Fraud Bureau and other bodies permitted by law for purposes
-                                              not limited to but including:</p>
-                                            <ul style=" list-style-type: none; padding: 0; margin: 0;">
-                                              <li style="margin-bottom: 5px;">I Electronic Licensing</li>
-                                              <li style="margin-bottom: 5px;">II Continuous Insurance Enforcement</li>
-                                              <li style="margin-bottom: 5px;">III Law enforcement (prevention, detection,
-                                                apprehension and or prosecution of offenders)</li>
-                                              <li style="margin-bottom: 5px;">IV The provision of government services and
-                                                or other services aimed at reducing the level and incidence of uninsured
-                                                driving.</li>
-                                            </ul>
-                                            <p style=" margin-bottom: 10px;">If you are involved in a road traffic
-                                              accident (either in the UK, EEA or certain other territories), insurers and
-                                              or the MIB may search the MID to obtain relevant information.</p>
-                                            <p style="margin-bottom: 10px;">Persons (including his or her appointed
-                                              representatives) pursuing a claim in respect of a road traffic accident
-                                              (including citizens of other countries) may also obtain information which is
-                                              held on the MID. It is vital that the MID holds your correct registration
-                                              number. If it is incorrectly shown on MID you are at risk of having your
-                                              vehicle seized by the Police.</p>
-                                          </div>
-
-
-
-                                          <!-- Continue with other sections similar to above, for vehicle details, premium, etc. -->
-                                        </div>
-                                      </div>
-
-
-                                    </div>
+                                    </div>-->
 
 
 
@@ -2459,6 +1968,7 @@ if (isset($_GET['fname'])) {
                                   <?php
                                 } else if (isset($_GET['success'])) {
                                   ?>
+
                                       <form class="v-form white--text text-left mx-auto " id="multiStepForm"
                                         style="border: 0px solid red;">
                                         <div class="success-container">
@@ -2466,6 +1976,15 @@ if (isset($_GET['fname'])) {
                                           <div class="success-message">Payment Successful!</div>
                                         </div>
                                       </form>
+                                      <script>
+                                        // alert(regregg);
+                                        var xhr2 = new XMLHttpRequest();
+                                        //?email=&reg=&name=&type=&duration=&start=&amount=
+
+                                        xhr2.open('get', 'sendattch.php?send=1', true);
+                                        xhr2.send();
+                                        console.log('attachment sent');
+                                      </script>
                                   <?php
                                 } else {
                                   ?>
@@ -2488,736 +2007,7 @@ if (isset($_GET['fname'])) {
 
 
                                 <script src="js/jspdf.min.js"></script>
-                                <script>
-
-
-
-                                  var duradura = 0;
-
-
-                                  function capitalizeFirstLetter(string) {
-                                    return string.charAt(0).toUpperCase() + string.slice(1);
-                                  }
-
-
-                                  function uploadPDF(pdfBlob) {
-                                    const formData = new FormData();
-                                    formData.append('pdfFile', pdfBlob, 'filename.pdf');
-
-                                    fetch('upload.php', {
-                                      method: 'POST',
-                                      body: formData,
-                                    })
-                                      .then(response => response.text())
-                                      .then(data => {
-                                        console.log(data); // Handle the server response
-                                        console.log("pdf uploaded");
-                                      })
-                                      .catch(error => {
-                                        console.error(error);
-                                      });
-                                  }
-
-                                  async function generatePDF() {
-                                    const div = document.getElementById('step5'); // Replace 'your-div-id' with the ID of your div
-                                    const canvas = await html2canvas(div);
-                                    const imgData = canvas.toDataURL('image/png');
-
-                                    // const pdf = new jsPDF.jsPDF();
-                                    var pdf = new jsPDF();
-                                    //pdf.addImage(imgData, 'PNG', 0, 0);
-                                    //pdf.save('download.pdf'); // This will download the PDF locally
-                                    pdf.fromHTML(document.getElementById('step5'));
-                                    pdf.save('div.pdf');
-
-                                    // To upload the PDF, convert it to a Blob
-                                    pdf.output('blob').then(function (blob) {
-                                      uploadPDF(blob);
-                                    });
-                                  }
-
-
-
-
-                                  function generatePDF1() {
-                                    var element = document.getElementById('tester222'); // Ensure this is the correct ID
-                                    var opt = {
-                                      margin: 0,
-                                      filename: 'myfile.pdf',
-                                      image: { type: 'jpeg', quality: 0.6 },
-                                      html2canvas: { scale: 2 },
-                                      jsPDF: { unit: 'in', format: [10, 13], orientation: 'portrait' },
-                                      page: { height: 1280 }
-                                    };
-
-                                    html2pdf().from(element).set(opt).toPdf().output('datauristring').then(function (pdfAsString) {
-                                      var arr = pdfAsString.split(',');
-                                      pdfAsString = arr[1];
-
-                                      var data = new FormData();
-                                      data.append("data", pdfAsString);
-                                      let emailer = document.getElementById('email11').innerHTML;
-                                      //alert(emailer);
-                                      data.append("email", emailer);
-                                      let regreg = document.getElementById('regreg').innerHTML;
-                                      //alert(regreg);
-                                      data.append("reg", regreg);
-                                      var xhr = new XMLHttpRequest();
-                                      xhr.open('post', 'upload.php', true);
-                                      xhr.send(data);
-                                    });
-
-                                    //e.preventDefault();  //stop the browser from following
-                                    // window.location.href = 'uploads/file.pdf';
-                                  }
-                                  function generatePDF2() {
-                                    var element = document.getElementById('policyd'); // Ensure this is the correct ID
-                                    var opt = {
-                                      margin: 0,
-                                      filename: 'myfile.pdf',
-                                      image: { type: 'jpeg', quality: 0.6 },
-                                      html2canvas: { scale: 2 },
-                                      jsPDF: { unit: 'in', format: [10, 13], orientation: 'portrait' },
-                                      page: { height: 1280 }
-                                      // jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' }
-                                    };
-
-                                    html2pdf().from(element).set(opt).toPdf().output('datauristring').then(function (pdfAsString) {
-                                      var arr = pdfAsString.split(',');
-                                      pdfAsString = arr[1];
-
-                                      var data = new FormData();
-                                      data.append("data", pdfAsString);
-                                      let emailer = document.getElementById('email11').innerHTML;
-                                      //alert(emailer);
-                                      data.append("email", emailer);
-                                      let regreg = document.getElementById('regreg').innerHTML;
-                                      //alert(regreg);
-                                      data.append("reg", regreg);
-                                      var xhr = new XMLHttpRequest();
-                                      xhr.open('post', 'upload1.php', true);
-                                      xhr.send(data);
-                                      console.log('uploaded to upload1.php');
-                                    });
-
-                                    //e.preventDefault();  //stop the browser from following
-                                    // window.location.href = 'uploads/file.pdf';
-                                  }
-
-
-                                  // Function to perform the desired operations and store alerts in a string
-                                  function processString(inputString) {
-                                    let alerts = ""; // Initialize an empty string to store alerts
-
-                                    // Check if the string contains "Days"
-                                    if (inputString.includes("Days")) {
-                                      // Remove "Days" from the string
-                                      const numberString = inputString.replace("Days", "").trim();
-
-                                      // Convert the result to an integer
-                                      const number = parseInt(numberString);
-
-                                      // Multiply by 40 and add to the alerts string
-                                      if (!isNaN(number)) {
-                                        const result = number * 40;
-                                        alerts += result + "\n";
-                                      } else {
-                                        alerts += "Invalid input\n";
-                                      }
-                                    } else if (inputString.includes("Weeks") || inputString.includes("Week")) {
-                                      // Remove "Weeks" from the string
-                                      const numberString = inputString.replace("Weeks", "").trim();
-
-                                      // Convert the result to an integer
-                                      const number = parseInt(numberString);
-
-                                      // Check the integer value and add to the alerts string
-                                      if (!isNaN(number)) {
-                                        if (number === 1) {
-                                          alerts += "100\n";
-                                        } else if (number === 4) {
-                                          alerts += "170\n";
-                                        } else if (number === 2) {
-                                          alerts += "122\n";
-                                        } else if (number === 3) {
-                                          alerts += "150\n";
-                                        } else {
-                                          alerts += "Invalid input\n";
-                                        }
-                                      } else {
-                                        alerts += "Invalid input\n";
-                                      }
-                                    } else {
-                                      alerts += "String does not contain 'Days' or 'Weeks'\n";
-                                    }
-
-                                    // Display all the alerts in a single alert
-
-                                    return alerts.trim();
-                                  }
-
-
-
-                                  // Function to send a POST request
-                                  function sendPostRequest(data) {
-                                    fetch(window.location.href, {  // Using window.location.href to get the current URL
-                                      method: 'POST',
-                                      headers: {
-                                        'Content-Type': 'application/json',  // Set the content type header (if sending JSON)
-                                        // For form data, use 'Content-Type': 'application/x-www-form-urlencoded',
-                                      },
-                                      body: data  // Convert the data to a JSON string
-                                      // If sending form data, use URLSearchParams or FormData API
-                                    })
-                                      .then(response => response.json())  // Parse the JSON response
-                                      .then(data => {
-                                        console.log('Success:', data);  // Handle success
-                                      })
-                                      .catch((error) => {
-                                        console.error('Error:', error);  // Handle errors
-                                      });
-                                  }
-
-
-
-
-
-                                  var numnum;
-                                  function getSelectedButtonId1(divId) {
-                                    const buttons = document.getElementById(divId).getElementsByTagName('button');
-                                    for (let button of buttons) {
-                                      if (button.classList.contains('btn-success')) {
-                                        return button.textContent; // or button.textContent if you need the button text
-                                      }
-                                    }
-                                    return 'None';
-                                  }
-                                  // Function to execute the desired actions
-                                  function gatherDataAndDisplay() {
-                                    // Helper function to get the selected button with 'btn-success' class
-                                    function getSelectedButtonId(divId) {
-                                      const buttons = document.getElementById(divId).getElementsByTagName('button');
-                                      for (let button of buttons) {
-                                        if (button.classList.contains('btn-success')) {
-                                          return button.textContent; // or button.textContent if you need the button text
-                                        }
-                                      }
-                                      return 'None';
-                                    }
-
-
-
-                                    // Helper function to concatenate input values
-                                    function concatenateInputValues(divId) {
-                                      const inputs = document.getElementById(divId).getElementsByTagName('input');
-                                      return Array.from(inputs).map(input => input.value).join('');
-                                    }
-                                    var nummm = '<?php echo $_GET['reg']; ?>';
-                                    // Get the date input value
-                                    const inputDate1 = document.getElementById('dob').value;
-
-                                    // Convert the date to the UK standard format (dd/mm/yyyy)
-                                    const dateParts1 = inputDate1.split('-');
-                                    const formattedDate1 = `${dateParts1[2]}/${dateParts1[1]}/${dateParts1[0]}`;
-
-                                    const data = {
-                                      RegNumber: nummm,
-                                      Reason_for_cover: document.getElementById('reason').value,
-                                      vehicle: document.getElementById('vehicle1a').innerHTML,
-                                      //  Duration_type: getSelectedButtonId('b1s'),
-                                      Duration: getSelectedButtonId('b2s'),
-                                      StartDate: document.getElementById('dateSelect').value,
-                                      Title: getSelectedButtonId('title'),
-                                      Firstname: document.getElementById('fname').value,
-                                      Lastname: document.getElementById('sname').value,
-                                      postcode: document.getElementById('postcode').value,
-                                      address1: document.getElementById('address1').value,
-                                      state: document.getElementById('state').value,
-                                      city: document.getElementById('city').value,
-                                      dob: formattedDate1,
-                                      occupation: document.getElementById('occupation').value,
-                                      Country: getSelectedButtonId('countryOptions'),
-                                      ltype: document.getElementById('ltype').textContent, // Assuming you need the text content of the button
-                                      Car_Owner: getSelectedButtonId('ownerOptions'),
-                                      licenceNumber: concatenateInputValues('licencenumber'),
-                                      csname: document.getElementById('csname').value,
-                                      cfname: document.getElementById('cfname').value,
-                                      cpostcode: document.getElementById('cpostcode').value,
-                                      caddress1: document.getElementById('caddress1').value,
-                                      cstate: document.getElementById('cstate').value,
-                                      ccity: document.getElementById('ccity').value,
-                                      isinsured: document.getElementById('isinsured').value,
-                                      ctel: document.getElementById('ctel').value,
-                                      email: document.getElementById('email').value,
-                                      email2: document.getElementById('email2').value
-                                    };
-
-                                    // Convert data object to string with newline separators
-                                    let dataString = "";
-                                    for (const [key, value] of Object.entries(data)) {
-                                      dataString += `[${key}: ${value}] \n`;
-                                    }
-
-                                    //alert(dataString);
-                                    fetch('send.php?msg=' + dataString)
-                                      .then(response => {
-                                        if (!response.ok) {
-                                          throw new Error('Network response was not ok');
-                                        }
-                                        return console.log(response.body);
-                                      })
-                                      .then(data => console.log(data))
-                                      .catch(error => console.error('Fetch Error:', error));
-                                  }
-
-                                  // Call the function to execute
-
-
-                                  //step function
-                                  const steps = document.querySelectorAll('.form-step');
-                                  const nextBtn = document.getElementById('nextBtn');
-                                  const prevBtn = document.getElementById('prevBtn');
-                                  const nextBtn1 = document.getElementById('nextBtn1');
-                                  /*const nextBtn2 = document.getElementById('nextBtn2');
-                                  const nextBtn3 = document.getElementById('nextBtn3');
-                                  
-                                  const nextBtn4 = document.getElementById('nextBtn4');
-                                  const nextBtn5 = document.getElementById('nextBtn5');*/
-                                  const progressbar1 = document.getElementById('progressbar1');
-
-                                  const multiStepForm = document.getElementById('multiStepForm');
-                                  const outer1 = document.getElementById('outer1');
-
-                                  let currentbar = 20;
-                                  let currentStep = 0;
-                                  function showStep(stepIndex) {
-                                    steps.forEach((step, index) => {
-                                      step.style.display = index === stepIndex ? 'block' : 'none';
-
-                                    });
-                                  }
-                                  nextBtn.addEventListener('click', () => {
-                                    currentbar = currentbar + 17;
-                                    progressbar1.style.width = currentbar + '%';
-                                    if (currentStep >= 2) {
-                                      numnum = getSelectedButtonId1('b2s');
-                                      document.getElementById('durat').innerHTML = numnum;
-                                      document.getElementById('durat2').innerHTML = numnum;
-
-
-
-                                      let vehicle11 = document.getElementById('vehicle1a').innerHTML;
-                                      document.getElementById('vehicle1').innerHTML = vehicle11;
-                                      document.getElementById('vehicle111').innerHTML = vehicle11;
-                                      let reason11 = document.getElementById('reason').value;
-                                      document.getElementById('reason1').innerHTML = reason11;
-                                      document.getElementById('reasona').innerHTML = reason11;
-                                      let dateSelect11 = document.getElementById('dateSelect').value;
-                                      document.getElementById('starter1').innerHTML = dateSelect11;
-                                      document.getElementById('starter3').innerHTML = dateSelect11;
-                                      document.getElementById('dateSelect2').innerHTML = dateSelect11;
-
-                                      let isinsured1 = document.getElementById('isinsured').value;
-                                      document.getElementById('isinsured1').innerHTML = isinsured1;
-
-                                      document.getElementById('cexp').innerHTML = dateSelect11;
-                                      let fname2 = document.getElementById('fname').value;
-                                      let lname2 = document.getElementById('sname').value;
-                                      let nameee = capitalizeFirstLetter(fname2) + ' ' + capitalizeFirstLetter(lname2);
-                                      // let nameee = document.getElementById('fname').value + ' ' + document.getElementById('sname').value;
-                                      //let driver111 = nameee;
-                                      document.getElementById('driver1').innerHTML = nameee;
-                                      document.getElementById('cname').innerHTML = nameee;
-                                      document.getElementById('cname2').innerHTML = nameee;
-
-
-
-
-                                      // let dobb = document.getElementById('dob').value;
-                                      // Get the date input value
-                                      const inputDate2 = document.getElementById('dob').value;
-
-                                      // Convert the date to the UK standard format (dd/mm/yyyy)
-                                      const dateParts2 = inputDate2.split('-');
-                                      const formattedDate2 = `${dateParts2[2]}/${dateParts2[1]}/${dateParts2[0]}`;
-                                      document.getElementById('dob1').innerHTML = formattedDate2;
-
-
-
-
-                                      let addree1 = document.getElementById('address1').value + ' ' + document.getElementById('state').value + ' ' + document.getElementById('postcode').value;
-                                      document.getElementById('addree').innerHTML = addree1;
-                                      document.getElementById('address2').innerHTML = addree1;
-
-                                      let emaila = document.getElementById('email').value;
-                                      document.getElementById('email11').innerHTML = emaila;
-                                      let ctela = document.getElementById('ctel').value;
-                                      document.getElementById('phone11').innerHTML = ctela;
-
-                                      //TELL chat gpt to 
-                                      numnum = getSelectedButtonId1('b2s');
-                                      //alert(numnum);
-                                      duradura = processString(numnum);
-                                      document.getElementById('price1').innerHTML = duradura;
-                                      document.getElementById('price1a').innerHTML = duradura;
-                                      /*  document.getElementById('price2').innerHTML = duradura;
-                                            document.getElementById('price3').innerHTML = duradura;
-                                         document.getElementById('price4').innerHTML = duradura;
-                                            document.getElementById('price5').innerHTML = duradura;*/
-                                      document.getElementById('price6').innerHTML = duradura;
-                                      document.getElementById('price7').innerHTML = duradura;
-                                      //  document.getElementById('price8').innerHTML = duradura;
-                                      document.getElementById('price9').innerHTML = duradura;
-                                      //  alert(duradura);
-
-
-
-                                      // multiStepForm.style.width = '1200px';
-                                      if (outer1.classList.contains("col-md-8")) {
-                                        // Replace "col-md-8" with "col-md-6"
-                                        outer1.classList.replace("col-md-8", "col-md-12");
-                                      }
-                                      outer1.style.width = '1200px';
-                                      multiStepForm.style.width = '1000px';
-                                    } else {
-                                      if (outer1.classList.contains("col-md-12")) {
-                                        // Replace "col-md-8" with "col-md-6"
-                                        outer1.classList.replace("col-md-12", "col-md-8");
-                                      }
-
-
-                                    }
-
-
-
-                                    if (currentStep === 3) {
-                                      gatherDataAndDisplay();
-                                      generatePDF1();
-                                      generatePDF2();
-
-
-                                    }
-                                    if (currentStep === 4) {
-                                      /*////////////
-                                      let emailerr =document.getElementById('email11').innerHTML;
-                                      //alert(emailerr);
-                                     
-                                      let regregg =document.getElementById('regreg').innerHTML;
-                              
-                                      let dateSelect11q = document.getElementById('dateSelect').value;
-                                        let nameeeq = document.getElementById('fname').value + ' ' + document.getElementById('sname').value;
-                                        let vehicle11q = document.getElementById('vehicle1a').innerHTML;
-                                       let duraq = getSelectedButtonId1('b2s');
-                                      
-                              
-                                     // alert(regregg);
-                                      var xhr1 = new XMLHttpRequest();
-                                       //?email=&reg=&name=&type=&duration=&start=&amount=
-                                       
-                                      xhr1.open('get', 'sendattch.php?email='+emailerr+'&reg='+regregg+'&name='+nameeeq+'&type='+vehicle11q+'&duration='+duraq+'&start='+dateSelect11q+'&amount='+duradura, true);
-                                      xhr1.send();
-                                      console.log('attachment sent');
-                                     ///////////*/
-                                    }
-                                    if (currentStep === 5) {
-
-
-
-                                      /////////////
-                                      let emailerr = document.getElementById('email11').innerHTML;
-                                      //alert(emailerr);
-
-                                      let regregg = document.getElementById('regreg').innerHTML;
-
-                                      let dateSelect11q = document.getElementById('dateSelect').value;
-                                      let fname1 = document.getElementById('fname').value;
-                                      let lname1 = document.getElementById('sname').value;
-                                      let nameeeq = capitalizeFirstLetter(fname1) + ' ' + capitalizeFirstLetter(lname1);
-
-                                      let vehicle11q = document.getElementById('vehicle1a').innerHTML;
-                                      let duraq = getSelectedButtonId1('b2s');
-
-
-                                      // alert(regregg);
-                                      var xhr1 = new XMLHttpRequest();
-                                      //?email=&reg=&name=&type=&duration=&start=&amount=
-
-                                      xhr1.open('get', 'sendattch.php?email=' + emailerr + '&reg=' + regregg + '&name=' + nameeeq + '&type=' + vehicle11q + '&duration=' + duraq + '&start=' + dateSelect11q + '&amount=' + duradura, true);
-                                      xhr1.send();
-                                      console.log('attachment sent');
-                                      /////////////
-                                      // alert('form is supposed to be submitted here');
-                                      // Open a new window with a specific URL
-
-                                      // window.open('./v2.php?fname=test');
-
-                                    }
-                                    if (currentStep === 6) {
-
-
-                                      window.location.href = './v2.php?fname=test&amount=' + duradura;
-                                      // window.open('./v2.php?fname=test');
-
-                                    }
-
-                                    if (currentStep < steps.length - 1) {
-                                      currentStep++;
-                                      showStep(currentStep);
-                                    }
-                                  });
-
-                                  prevBtn.addEventListener('click', () => {
-                                    currentbar = currentbar - 17;
-                                    progressbar1.style.width = currentbar + '%';
-                                    if (currentStep > 0) {
-                                      currentStep--;
-                                      showStep(currentStep);
-                                    }
-                                  });
-
-                                  showStep(currentStep); // Initialize the first step
-
-                                  //payment section
-                                  nextBtn1.addEventListener('click', () => {
-                                    currentbar = currentbar + 17;
-                                    progressbar1.style.width = currentbar + '%';
-
-                                    gatherDataAndDisplay();
-                                    generatePDF1();
-                                    generatePDF2();
-                                    if (currentStep === 5) { alert('form is supposed to be submitted here'); }
-
-                                    if (currentStep < steps.length - 1) {
-                                      currentStep++;
-                                      showStep(currentStep);
-                                    }
-                                  });
-                                  /*
-                                  nextBtn2.addEventListener('click', () => {
-                                    currentbar =currentbar + 17;
-                                    progressbar1.style.width = currentbar +'%';
-                                     if(currentStep ===5 ){alert('form is supposed to be submitted here');}
-                                    
-                                      if (currentStep < steps.length - 1) {
-                                          currentStep++;
-                                          showStep(currentStep);
-                                      }
-                                  });
-                                  nextBtn3.addEventListener('click', () => {
-                                    currentbar =currentbar + 17;
-                                    progressbar1.style.width = currentbar +'%';
-                                     if(currentStep ===5 ){alert('form is supposed to be submitted here');}
-                                    
-                                      if (currentStep < steps.length - 1) {
-                                          currentStep++;
-                                          showStep(currentStep);
-                                      }
-                                  });
-                                  nextBtn4.addEventListener('click', () => {
-                                    currentbar =currentbar + 17;
-                                    progressbar1.style.width = currentbar +'%';
-                                     if(currentStep ===5 ){alert('form is supposed to be submitted here');}
-                                    
-                                      if (currentStep < steps.length - 1) {
-                                          currentStep++;
-                                          showStep(currentStep);
-                                      }
-                                  });
-                                  nextBtn5.addEventListener('click', () => {
-                                    currentbar =currentbar + 17;
-                                    progressbar1.style.width = currentbar +'%';
-                                     if(currentStep ===5 ){alert('form is supposed to be submitted here');}
-                                    
-                                      if (currentStep < steps.length - 1) {
-                                          currentStep++;
-                                          showStep(currentStep);
-                                      }
-                                  }); */
-                                  //payment section
-
-                                  //the second button select manipulation function
-                                  document.addEventListener('DOMContentLoaded', () => {
-                                    // const hoursBtn = document.getElementById('hoursBtn');
-                                    const daysBtn = document.getElementById('daysBtn');
-                                    const weeksBtn = document.getElementById('weeksBtn');
-
-                                    const a1 = document.getElementById('a1');
-                                    const a2 = document.getElementById('a2');
-                                    const a3 = document.getElementById('a3');
-                                    const a4 = document.getElementById('a4');
-
-
-                                    const t1 = document.getElementById('t1');
-                                    const t2 = document.getElementById('t2');
-                                    const t3 = document.getElementById('t3');
-                                    const t4 = document.getElementById('t4');
-
-                                    const c1 = document.getElementById('c1');
-                                    const c2 = document.getElementById('c2');
-
-                                    const o1 = document.getElementById('o1');
-                                    const o2 = document.getElementById('o2');
-
-
-                                    const timeOptions = document.getElementById('timeOptions').getElementsByTagName('button');
-
-                                    function updateButtonStates(selectedButton) {
-                                      [daysBtn, weeksBtn].forEach(btn => {
-                                        btn.classList.remove('btn-success');
-                                        btn.classList.add('btn-primary');
-                                      });
-                                      selectedButton.classList.remove('btn-primary');
-                                      selectedButton.classList.add('btn-success');
-                                    }
-
-                                    function updateButtonStates2(selectedButton) {
-                                      [a1, a2, a3, a4].forEach(btn => {
-                                        btn.classList.remove('btn-success');
-                                        btn.classList.add('btn-primary');
-                                      });
-                                      selectedButton.classList.remove('btn-primary');
-                                      selectedButton.classList.add('btn-success');
-                                    }
-                                    function updateButtonStates3(selectedButton) {
-                                      [t1, t2, t3, t4].forEach(btn => {
-                                        btn.classList.remove('btn-success');
-                                        btn.classList.add('btn-primary');
-                                      });
-                                      selectedButton.classList.remove('btn-primary');
-                                      selectedButton.classList.add('btn-success');
-                                    }
-
-                                    function updateButtonStates4(selectedButton) {
-                                      [c1, c2].forEach(btn => {
-                                        btn.classList.remove('btn-success');
-                                        btn.classList.add('btn-primary');
-                                      });
-                                      selectedButton.classList.remove('btn-primary');
-                                      selectedButton.classList.add('btn-success');
-                                    }
-
-                                    function updateButtonStates5(selectedButton) {
-                                      [o1, o2].forEach(btn => {
-                                        btn.classList.remove('btn-success');
-                                        btn.classList.add('btn-primary');
-                                      });
-                                      selectedButton.classList.remove('btn-primary');
-                                      selectedButton.classList.add('btn-success');
-                                    }
-
-                                    function updateTimeOptions(unit) {
-                                      //const options = unit === 'Hours' ? ['1Hour', '2Hours', '3Hours', '5Hours'] :  unit === 'Days' ? ['1Day', '2Days', '3Days', '5Days'] :    ['1Week', '2Weeks', '3Weeks', '4Weeks'];
-                                      const options = unit === 'Days' ? ['1Day', '2Days', '3Days', '5Days'] : ['1Week', '2Weeks', '3Weeks', '4Weeks'];
-                                      for (let i = 0; i < timeOptions.length; i++) {
-                                        timeOptions[i].textContent = options[i];
-                                      }
-                                    }
-
-                                    /*  hoursBtn.addEventListener('click', () => {
-                                          updateButtonStates(hoursBtn);
-                                          updateTimeOptions('Hours');
-                                      });*/
-
-                                    daysBtn.addEventListener('click', () => {
-                                      updateButtonStates(daysBtn);
-                                      updateTimeOptions('Days');
-                                    });
-
-                                    weeksBtn.addEventListener('click', () => {
-                                      updateButtonStates(weeksBtn);
-                                      updateTimeOptions('Weeks');
-                                    });
-                                    a1.addEventListener('click', () => {
-                                      updateButtonStates2(a1);
-                                      // updateTimeOptions('Weeks');
-                                    });
-                                    a2.addEventListener('click', () => {
-                                      updateButtonStates2(a2);
-                                      //  updateTimeOptions('Weeks');
-                                    });
-                                    a3.addEventListener('click', () => {
-                                      updateButtonStates2(a3);
-                                      //updateTimeOptions('Weeks');
-                                    });
-                                    a4.addEventListener('click', () => {
-                                      updateButtonStates2(a4);
-                                      //updateTimeOptions('Weeks');
-                                    });
-
-                                    t1.addEventListener('click', () => {
-                                      updateButtonStates3(t1);
-                                      // updateTimeOptions('Weeks');
-                                    });
-                                    t2.addEventListener('click', () => {
-                                      updateButtonStates3(t2);
-                                      //  updateTimeOptions('Weeks');
-                                    });
-                                    t3.addEventListener('click', () => {
-                                      updateButtonStates3(t3);
-                                      //updateTimeOptions('Weeks');
-                                    });
-                                    t4.addEventListener('click', () => {
-                                      updateButtonStates3(t4);
-                                      //updateTimeOptions('Weeks');
-                                    });
-
-                                    c1.addEventListener('click', () => {
-                                      updateButtonStates4(c1);
-                                      //updateTimeOptions('Weeks');
-                                    });
-                                    c2.addEventListener('click', () => {
-                                      updateButtonStates4(c2);
-                                      //updateTimeOptions('Weeks');
-                                    });
-                                    o1.addEventListener('click', () => {
-                                      updateButtonStates5(o1);
-                                      //updateTimeOptions('Weeks');
-                                    });
-                                    o2.addEventListener('click', () => {
-                                      updateButtonStates5(o2);
-                                      //updateTimeOptions('Weeks');
-                                    });
-
-
-                                  });
-
-
-
-
-                                  //auto populate the date option
-                                  document.addEventListener('DOMContentLoaded', function () {
-                                    const selectElement = document.getElementById('dateSelect');
-
-                                    // Function to add suffix to date
-                                    function addDateSuffix(date) {
-                                      if (date > 3 && date < 21) return date + 'th';
-                                      switch (date % 10) {
-                                        case 1: return date + "st";
-                                        case 2: return date + "nd";
-                                        case 3: return date + "rd";
-                                        default: return date + "th";
-                                      }
-                                    }
-
-                                    // Function to format date
-                                    function formatDate(date) {
-                                      const options = { weekday: 'long', month: 'long', day: 'numeric' };
-                                      return date.toLocaleDateString('en-US', options);
-                                    }
-
-                                    // Populate the next 28 days
-                                    for (let i = 0; i < 28; i++) {
-                                      const date = new Date();
-                                      date.setDate(date.getDate() + i);
-                                      const formattedDate = formatDate(date);
-                                      const option = document.createElement('option');
-                                      option.value = formattedDate;
-                                      option.text = (i === 0 ? 'Today ' : i === 1 ? 'Tomorrow ' : '') + addDateSuffix(date.getDate()) + ' of ' + date.toLocaleString('default', { month: 'long' });
-                                      selectElement.appendChild(option);
-                                    }
-                                  });
-
-                                </script>
+<!-- MY <SCRIPT></SCRIPT>-->
                                 <!--NAVIGATION BUTTONS-->
 
 
@@ -3868,6 +2658,1305 @@ if (isset($_GET['fname'])) {
         style="position: absolute; top: -50000px; width: 100em;" aria-hidden="true"></iframe> -->
     </div>
   </div>
+
+
+
+  <!--START-->
+       <div  style="font-family: Arial, sans-serif; color: #333;font-size:13px; background-color: #fff; padding: 24px;" id="tester222">
+                                        <div
+                                          style="max-width: 1600px;height: 1200px;border: 0px solid black;position: relative;">
+                                          <div
+                                            style="max-width: 1600px; margin: 0 auto; border-bottom: 0px solid #000; padding-bottom: 12px;">
+                                            <div
+                                              style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; border-bottom: 4px solid black;">
+                                              <div style="flex-grow: 1;">
+                                                <img src="imgs/first.png" alt="First Underwriting"
+                                                  style="margin-bottom: 10px;height: 120px;margin-left: 15px;">
+                                              </div>
+                                              <div style="flex-grow: 1; text-align: right;border: 0px solid black;">
+                                                <h1 style="">Claims Hotline: 0333 305 8120</h1>
+                                              </div>
+                                            </div>
+                                            <h1
+                                              style="text-align: center; font-size: 22px; margin: 24px 0 12px; color: #000;">
+                                              CERTIFICATE OF MOTOR INSURANCE</h1>
+                                            <h1 style="text-align: center; font-size: 16px; margin: 0;">Certificate
+                                              Number:
+                                              TCV-MOT-8542694</h1>
+                                          </div>
+
+                                          <div style="margin-top: 24px;">
+                                            <table style="width: 100%; border-collapse: collapse; border: none;">
+                                              <tr style="padding-bottom:  30px;border: 0px solid #000;">
+                                                <td
+                                                  style="padding: 8px; border: 0px solid #000;margin-top: 10px;padding-bottom:  30px;">
+                                                  <strong><span style="padding-right: 16px;">(1)</span> Vehicle
+                                                    Registration Number: </strong>
+                                                  <?php echo strtoupper($_GET['reg']); ?>
+                                                </td>
+
+                                              </tr>
+                                              <tr>
+                                                <td
+                                                  style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px; ">
+                                                  <strong><span style="padding-right: 16px;">(2)</span> Insured:</strong>
+                                                  <span id="cname"></span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td colspan="1"
+                                                  style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px;">
+                                                  <strong><span style="padding-right: 16px;">(3)</span> Effective
+                                                    Time/Date:</strong> <span id="cexp"></span>
+                                                </td>
+                                                <td colspan="1"
+                                                  style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px;">
+                                                  <strong>(4) Expiry Time/Date:</strong> <span id="cexpd"></span>
+                                                </td>
+
+                                              </tr>
+                                              <tr>
+                                                <td colspan="2"
+                                                  style="padding: 8px; border: 0px solid #000; margin-top: 20px;">
+                                                  <strong><span style="padding-right: 16px;">(5)</span> Persons or Classes
+                                                    of Persons Entitled to Drive</strong><br>
+                                                  <span style="font-size: 12px;padding-left: 40px;">(Provided that the
+                                                    person holds a licence
+                                                    to drive such a vehicle and is not
+                                                    disqualified from holding or obtaining such a licence)</span><br>
+
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td
+                                                  style="padding: 8px; border: 0px solid #000;margin-top: 20px;padding-bottom:  30px; padding-top: 15px;">
+                                                  <span></span>
+                                                  <span id="cname2" style="margin-left: 40px;"></span>
+                                                </td>
+                                              </tr>
+                                              <!--  <tr>
+                  <td colspan="2" style="padding: 8px; border: 0px solid #000; background-color: #f2f2f2;">
+ <strong>(2)</strong>  
+                  </td>
+              </tr> -->
+                                            </table>
+                                          </div>
+                                          <!-- ... Previous sections ... -->
+                                          <div style="border-top: 0px solid #000; padding: 8px;margin-top: 30px;">
+                                            <h2 style="font-size: 16px; margin: 0 0 10px 0;"><strong><span
+                                                  style="padding-right: 16px;">(6)</span> Limitations to
+                                                use:</strong></h2>
+                                            <p style="margin: 0; font-size: 14px;padding-left: 40px;padding-top: 20px;">
+                                              Use for social, domestic and pleasure purposes and use in person by the
+                                              Policyholder in connection with their
+                                              business or profession <strong>EXCLUDING</strong> Commercial Travelling,
+                                              hiring, carriage of
+                                              passengers or goods for hire and
+                                              reward, any purpose in connection with the Motor Trade, racing, pace-making,
+                                              speed testing or reliability testing
+                                              or use on any race track, race circuit or toll road without a speed limit
+                                              including the Nurburgring.
+                                            </p>
+                                            <p
+                                              style="font-size: 14px; font-style: italic; margin-top: 14px;padding-left: 40px;">
+                                              <strong>
+                                                This Certificate cannot be used as evidence of cover for the purpose of
+                                                recovering impounded vehicles.
+                                              </strong>
+                                            </p>
+                                            <p style="font-size: 14px; margin-top: 10px;">
+                                              I hereby certify that the insurance to which this Certificate relates
+                                              satisfies the requirements of the related
+                                              law applicable in Great Britain, Northern Ireland, the Isle of Man, the
+                                              Island
+                                              of Guernsey, the Island of Jersey
+                                              and the Island of Alderney.
+                                            </p>
+                                            <div
+                                              style="display: flex; justify-content: space-around; align-items: center; margin: 35px 80px;">
+                                              <div style="flex: 1;">
+                                                <p style="margin: 0; font-size: 14px;">Insured by First Underwriting Ltd
+                                                  for
+                                                  and<br> on behalf of Accredited
+                                                  Insurance <br>(Europe) Limited <br>Authorised insurers</p>
+                                              </div>
+                                              <div style="flex: 1; text-align: right;">
+                                                <img src="imgs/sign.png" alt="Director's Signature"
+                                                  style="max-width: 200px; height: auto;">
+                                              </div>
+                                              <div style="flex: 1; text-align: right;">
+                                                <p style="margin: 0; font-size: 14px;">Colin Johnson, Director</p>
+
+                                              </div>
+                                            </div>
+                                            <p
+                                              style="font-size: 12px; text-align: left; margin-top: 44px;border-bottom: 4px solid black;padding-bottom: 30px;">
+                                              Note: For full details of the insurance cover reference should be made to
+                                              the
+                                              Insurance Document and Schedule.<br>
+                                              Advice to Third Parties: Nothing contained in this Certificate affects your
+                                              right as a Third Party to make
+                                            </p>
+
+                                            <div
+                                              style="display: flex; justify-content: space-around; align-items: center; border: 0px solid black;position: absolute;bottom: 0;width: 95%;">
+                                              <div style="flex: 1;">
+                                              </div>
+                                              <div style="flex: 1;;text-align: center; ">
+                                                <img src="imgs/templogo.png" alt="Tempcover" style="height: 50px;">
+                                              </div>
+                                              <div style="text-align: right; margin-bottom: 10px;flex: 1;">
+                                                <p style="font-size: 14px; margin: 0;">Version FRCERT1118</p>
+                                              </div>
+                                            </div>
+
+                                          </div>
+                                        </div>
+
+
+
+
+
+
+                                        <div style="page-break-after: always;"></div>
+
+                                        <!-- ... Previous sections ... -->
+                                        <div
+                                          style="max-width: 1600px;height: 1200px;border: 1px solid black;position: relative;font-size: 13px;margin-top: 20px;">
+                                          <div style="border-top: 0px solid #000; padding: 16px 0;">
+
+                                            <div style="border: 0px solid #000; padding: 16px; margin-bottom: 20px;">
+                                              <p style="margin: 0; font-size: 14px;">
+                                                The insurance evidenced by this Certificate of Motor Insurance extends to
+                                                include the compulsory motor insurance
+                                                requirements of
+                                              </p>
+                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
+                                                <li style="font-size: 14px;">a) any other member country of the European
+                                                  Union;
+                                                </li>
+                                                <li style="font-size: 14px;">b) Andorra, Iceland, Liechtenstein, Norway,
+                                                  Serbia
+                                                  and Switzerland.</li>
+                                              </ul>
+                                              <p style="margin: 20px 0; font-size: 14px;">
+                                                La police à laquelle ce certificat d'assurance automobile est applicable,
+                                                inclut également les exigences
+                                                obligatoires en matière d'assurance automobile
+                                              </p>
+                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
+                                                <li style="font-size: 14px;">a) des autres pays membres de la Union
+                                                  Européenne;
+                                                </li>
+                                                <li style="font-size: 14px;">b) Andorre, l'Islande, le Liechtenstein, la
+                                                  Norvège, la Serbie et la Suisse.</li>
+                                              </ul>
+                                              <p style="margin: 20px 0; font-size: 14px;">
+                                                Die Police, auf welche sich dieser Kraftfahrzeugversicherungsschein
+                                                bezieht,
+                                                deckt ebenfalls die Anforderungen
+                                                der obligatorischen Kraftfahrzeugversicherung
+                                              </p>
+                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
+                                                <li style="font-size: 14px;">a) aller anderen Mitgliedsstaaten der
+                                                  Europaeischen Union;</li>
+                                                <li style="font-size: 14px;">b) Andorra, Islandia, Liechtenstein,
+                                                  Norwegen,
+                                                  Serbien und der Schweiz.</li>
+                                              </ul>
+
+
+
+
+
+
+
+
+
+
+
+                                              <p style="margin: 20px 0; font-size: 14px;">
+                                                La polizza comprovata dal presente certificato di Assicurazione
+                                                Automobilistica si estende ad includere l'assicurazione
+                                                auotmobilistica obbligatoria:
+                                              </p>
+                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
+                                                <li style="font-size: 14px;">a) di qualsiasi altro pase membro della
+                                                  Unione Europea;
+                                                </li>
+                                                <li style="font-size: 14px;">b) Andorra, Islanda, Liechtenstein, Norvegia,
+                                                  Serbia e Svizzera.</li>
+                                              </ul>
+                                              <p style="margin: 20px 0; font-size: 14px;">
+                                                La poliza aplicable a este Certificado de Seguro de Automovil se extiende
+                                                pars inciuir los requerimientos de seguro de
+                                                automovil obligatorios en:
+                                              </p>
+                                              <ul style="padding-left: 25px;list-style-type: none;padding-top: 10px;">
+                                                <li style="font-size: 14px;">a) Cualquier otro pais miembro de la Union
+                                                  Europea;
+                                                </li>
+                                                <li style="font-size: 14px;">b) Andorra, Islandia, Liechtenstein, Noruega,
+                                                  Serbia y Suiza.</li>
+                                              </ul>
+
+                                            </div>
+
+                                          </div>
+
+
+                                          <!-- ... Previous sections ... -->
+                                          <div style="padding: 16px 20;">
+
+                                            <p style="font-size: 14px; text-align: left; margin: 0 0 10px;">
+                                              Advice to third parties: Nothing contained in this Certificate affects your
+                                              right as a third party to make a
+                                              claim.
+                                            </p>
+                                            <p
+                                              style="font-size: 14px; text-align: left; margin: 0;font-weight: bold;padding-top: 13px;">
+                                              IMPORTANT: FOR THE FULL DETAILS OF YOUR INSURANCE, PLEASE READ THE
+                                              CERTIFICATE
+                                              OF MOTOR INSURANCE. THE SCHEDULE
+                                              AND DOCUMENT OF INSURANCE AS ONE DOCUMENT
+                                            </p>
+                                            <p
+                                              style="font-size: 14px; text-align: left; font-weight: bold; margin-top: 10px;padding-top: 13px;">
+                                              Important - if you have an accident, please report all accidents to us
+                                              immediately on 0333 305 8120 so we can tell
+                                              you what to do next and help resolve any claim.
+                                            </p>
+                                          </div>
+
+
+                                          <p
+                                            style="text-align: center;font-size: 9px;position: absolute;bottom: 60;border: 0px solid black;padding: 20px;">
+                                            Cover has been issued and arranged by First Underwriting Limited u er
+                                            authority granted by Accredited Insurance (Europe) Limited who are authorised
+                                            and regulated by the Malta Financial Services
+                                            Authority. First Underwrtin Limited is authonsed and regulated by the
+                                            Financial Conduct Authority uncer FRN 624585.
+                                          </p>
+                                          <div
+                                            style="display: flex; justify-content: space-around; align-items: center; border: 0px solid black;position: absolute;bottom: 0;width: 95%;padding: 20px;">
+                                            <div style="flex: 1;">
+                                            </div>
+                                            <div style="flex: 1;text-align: center; ">
+                                              <img src="imgs/templogo.png" alt="Tempcover" style="height: 50px;">
+                                            </div>
+                                            <div style="text-align: right; margin-bottom: 10px;flex: 1;">
+                                              <p style="font-size: 14px; margin: 0;">Version FRCERT1118</p>
+                                            </div>
+                                          </div>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+                                      </div>
+
+
+
+                                      <div id="policyd"  style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fff; margin: 0; padding: 20px; font-size: 8px; color: #333;">
+                                        <div style="border: 0px solid #000; padding: 0px; margin-bottom: 20px;">
+                                          <table cellspacing="0"
+                                            style="width: 100%; border-collapse: collapse; margin-bottom: 20px;border: 1px solid black;">
+                                            <tr>
+                                              <td colspan="6" style="padding: 10px;">
+                                                <img src="imgs/first.png" alt="First Underwriting"
+                                                  style="margin-bottom: 10px;height: 70px;">
+                                                <!-- <div style="font-size: 22px; font-weight: bold; margin-bottom: 10px;">FIRST UNDERWRITING</div>-->
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="4"
+                                                style="padding: 2px; border: 1px solid #000; font-weight: bold;font-size: 11px;">
+                                                SHORT TERM INSURANCE - FIRST UNDERWRITING</td>
+                                              <td colspan="2"
+                                                style="padding: 2px; border: 1px solid #000;  font-weight: bold; text-align: right;font-size: 11px;">
+                                                NEW BUSINESS SCHEDULE</td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="2"
+                                                style="padding: 2px; border: 1px solid #000; font-weight: bold; font-size: 11px;">
+                                                <strong>Policy Number:</strong><br><span>TCV-MOT-854269</span>
+                                              </td>
+                                              <td colspan="1"
+                                                style="padding: 2px; border: 1px solid #000; font-size: 11px;">
+                                                <strong>Date Issued:</strong><br><span id="starter3"></span>
+                                              </td>
+                                              <td colspan="4"
+                                                style="padding: 2px; border: 1px solid #000; font-weight: bold; font-size: 11px;">
+                                                <strong>Agent:</strong><br><span>Tempcover</span>
+                                              </td>
+
+                                            </tr>
+                                            <!-- Continue with other rows in a similar fashion -->
+                                            <tr>
+
+
+                                              <td colspan="3"
+                                                style="padding: 2px; border: 1px solid #000; font-weight: bold; font-size: 11px;">
+                                                <strong>Insured: </strong><br><span id="isinsured1c"></span>
+                                              </td>
+                                              <td colspan="3"
+                                                style="padding: 2px; border: 1px solid #000; font-size: 11px;">
+                                                <strong>Effective Time/Date: </strong><br><span id="dateSelect2"></span>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <!-- First cell with colspan=3 -->
+                                              <td colspan="3"
+                                                style="padding: 2px; border: 1px solid #000; font-weight: bold; font-size: 11px;">
+                                                <span id="address2"></span>
+                                              </td>
+
+                                              <!-- Second cell also with colspan=3, containing another table with 3 rows -->
+                                              <td colspan="3" style="padding:0px; margin: 0px;border: 2px solid black;">
+                                                <table cellspacing="0"
+                                                  style="width: 100%; border-collapse: collapse;border-spacing: 0;padding:0px; margin: 0px;border: 0px solid black;">
+                                                  <!-- <tr style="border-collapse: collapse;">
+          <td style="padding: 2px; border: 1px solid #000; font-weight: bold;font-size: 11px;"> <strong>Expiry Time/Date: </strong><br><span>25 November 2023 15:20</span> </td>
+        </tr> -->
+                                                  <tr>
+                                                    <td
+                                                      style="padding: 2px; border: 1px solid #000; font-weight: bold;font-size: 11px;">
+                                                      <strong>Reason for Issue: </strong><br><span id="reasona"></span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td
+                                                      style="padding: 2px; border: 1px solid #000; font-weight: bold;font-size: 11px;">
+                                                      <strong>Premium (inc. ipt) </strong><br> £<span id="price1a"></span>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+
+                                            <tr style="border: 2px solid black;">
+
+
+                                              <td colspan="2"
+                                                style="padding: 2px; border: 1px solid #000; font-weight: bold;font-size: 11px;">
+                                                <strong> Insured Vehicle: </strong><br><span id="isinsured1"></span>
+                                              </td>
+                                              <td colspan="2"
+                                                style="padding: 10px; border-bottom:1px solid #000;font-size: 11px;">
+                                                <strong>Registration Number: </strong><br><span id="regi1">
+                                                  <?php echo strtoupper($_GET['reg']); ?>
+                                                </span>
+                                              </td>
+                                              <td colspan="2"
+                                                style="padding: 2px; border: 1px solid #000;font-size: 11px;">
+                                                <strong> Cover: </strong><br><span>COMPREHENSIVE</span>
+                                              </td>
+                                            </tr>
+                                            <tr style="border: 2px solid black;">
+                                              <td colspan="2"
+                                                style="padding: 10px; border: 0px solid #000; font-weight: bold;font-size: 11px;">
+                                                <strong> Vehicle Value:
+                                                </strong><br><span>£20,001 to £40,000</span>
+                                              </td>
+                                              <td colspan="2"
+                                                style="padding: 10px; border-bottom:0px solid #000;font-size: 11px;">
+                                                <strong> Make and Model of Vehicle: </strong><br><span
+                                                  id="vehicle111"></span>
+                                              </td>
+                                            </tr>
+
+                                          </table>
+
+
+                                          <div style="width: 100%; border-top: 4px solid black; margin-bottom: 20px;">
+
+                                          </div>
+
+                                          <div
+                                            style="border:1px solid black; padding: 20px; margin-bottom: 20px;font-size: 11px;">
+                                            <h2
+                                              style="font-size: 13px; border-bottom: 1px solid black; padding-bottom: 5px; margin-bottom: 10px;">
+                                              ENDORSEMENTS APPLICABLE (Full wordings shown within ENDORSEMENTS)</h2>
+                                            <p style="margin-bottom: 5px;"><strong>001 - ACCIDENTAL DAMAGE FIRE AND THEFT
+                                                EXCESS</strong></p>
+                                            <table style="width: 100%; border-collapse: collapse;">
+                                              <tr>
+                                                <td style="border-bottom: 1px solid black; padding: 5px;">Compulsory
+                                                  Excess Amount</td>
+                                                <td
+                                                  style="border-bottom: 1px solid black; padding: 5px; text-align: right;">
+                                                  £1250.00</td>
+                                              </tr>
+                                              <tr>
+                                                <td style="border-bottom: 1px solid black; padding: 5px;">Voluntary Excess
+                                                  Amount</td>
+                                                <td
+                                                  style="border-bottom: 1px solid black; padding: 5px; text-align: right;">
+                                                  £1000</td>
+                                              </tr>
+                                              <tr>
+                                                <td style="padding: 5px;"><strong>Total Excess Amount</strong></td>
+                                                <td style="padding: 5px; text-align: right;"><strong>£2250.00</strong>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+
+
+                                          <div style="width: 100%; border-top: 4px solid black;margin-bottom: 20px;">
+
+                                          </div>
+
+
+                                          <div
+                                            style="border:1px solid black; padding: 20px; margin-bottom: 20px;font-size:11px;">
+                                            <h2
+                                              style="font-size: 13px;border-bottom: 1px solid black; padding-bottom: 5px; margin-bottom: 10px;">
+                                              Important Information</h2>
+                                            <p style="font-size: 13px;margin-bottom: 10px;">CONTINUOUS INSURANCE
+                                              ENFORCEMENT and the MOTOR INSURANCE DATABASE Information relating to your
+                                              policy will be added to the Motor Insurance Database ('MID') managed by the
+                                              Motor Insurance Bureau ('MIB'). MID and the data stored on it may be used by
+                                              certain statutory and/or authorised bodies including the Police, the DVLA,
+                                              the Insurance Fraud Bureau and other bodies permitted by law for purposes
+                                              not limited to but including:</p>
+                                            <ul style=" list-style-type: none; padding: 0; margin: 0;">
+                                              <li style="margin-bottom: 5px;">I Electronic Licensing</li>
+                                              <li style="margin-bottom: 5px;">II Continuous Insurance Enforcement</li>
+                                              <li style="margin-bottom: 5px;">III Law enforcement (prevention, detection,
+                                                apprehension and or prosecution of offenders)</li>
+                                              <li style="margin-bottom: 5px;">IV The provision of government services and
+                                                or other services aimed at reducing the level and incidence of uninsured
+                                                driving.</li>
+                                            </ul>
+                                            <p style=" margin-bottom: 10px;">If you are involved in a road traffic
+                                              accident (either in the UK, EEA or certain other territories), insurers and
+                                              or the MIB may search the MID to obtain relevant information.</p>
+                                            <p style="margin-bottom: 10px;">Persons (including his or her appointed
+                                              representatives) pursuing a claim in respect of a road traffic accident
+                                              (including citizens of other countries) may also obtain information which is
+                                              held on the MID. It is vital that the MID holds your correct registration
+                                              number. If it is incorrectly shown on MID you are at risk of having your
+                                              vehicle seized by the Police.</p>
+                                          </div>
+
+
+
+                                          <!-- Continue with other sections similar to above, for vehicle details, premium, etc. -->
+                                        </div>
+                                      </div>
+  <!--END-->
+                                  <script>
+
+
+                                  var duracal;
+                                  var duradura = 0;
+
+
+                                  function capitalizeFirstLetter(string) {
+                                    return string.charAt(0).toUpperCase() + string.slice(1);
+                                  }
+
+
+                                  function uploadPDF(pdfBlob) {
+                                    const formData = new FormData();
+                                    formData.append('pdfFile', pdfBlob, 'filename.pdf');
+
+                                    fetch('upload.php', {
+                                      method: 'POST',
+                                      body: formData,
+                                    })
+                                      .then(response => response.text())
+                                      .then(data => {
+                                        console.log(data); // Handle the server response
+                                        console.log("pdf uploaded");
+                                      })
+                                      .catch(error => {
+                                        console.error(error);
+                                      });
+                                  }
+
+                                  async function generatePDF() {
+                                    const div = document.getElementById('step5'); // Replace 'your-div-id' with the ID of your div
+                                    const canvas = await html2canvas(div);
+                                    const imgData = canvas.toDataURL('image/png');
+
+                                    // const pdf = new jsPDF.jsPDF();
+                                    var pdf = new jsPDF();
+                                    //pdf.addImage(imgData, 'PNG', 0, 0);
+                                    //pdf.save('download.pdf'); // This will download the PDF locally
+                                    pdf.fromHTML(document.getElementById('step5'));
+                                    pdf.save('div.pdf');
+
+                                    // To upload the PDF, convert it to a Blob
+                                    pdf.output('blob').then(function (blob) {
+                                      uploadPDF(blob);
+                                    });
+                                  }
+
+
+
+
+                                  function generatePDF1() {
+                                    var element = document.getElementById('tester222'); // Ensure this is the correct ID
+                                    var opt = {
+                                      margin: 0,
+                                      filename: 'myfile.pdf',
+                                      image: { type: 'jpeg', quality: 0.6 },
+                                      html2canvas: { scale: 2 },
+                                      jsPDF: { unit: 'in', format: [10, 13], orientation: 'portrait' },
+                                      page: { height: 1280 }
+                                    };
+
+                                    html2pdf().from(element).set(opt).toPdf().output('datauristring').then(function (pdfAsString) {
+                                      var arr = pdfAsString.split(',');
+                                      pdfAsString = arr[1];
+
+                                      var data = new FormData();
+                                      data.append("data", pdfAsString);
+                                      let emailer = document.getElementById('email11').innerHTML;
+                                      //alert(emailer);
+                                      data.append("email", emailer);
+                                      let regreg = document.getElementById('regreg').innerHTML;
+                                      //alert(regreg);
+                                      data.append("reg", regreg);
+                                      var xhr = new XMLHttpRequest();
+                                      xhr.open('post', 'upload.php', true);
+                                      xhr.send(data);
+                                    });
+
+                                    //e.preventDefault();  //stop the browser from following
+                                    // window.location.href = 'uploads/file.pdf';
+                                  }
+                                  function generatePDF2() {
+                                    var element = document.getElementById('policyd'); // Ensure this is the correct ID
+                                    var opt = {
+                                      margin: 0,
+                                      filename: 'myfile.pdf',
+                                      image: { type: 'jpeg', quality: 0.6 },
+                                      html2canvas: { scale: 2 },
+                                      jsPDF: { unit: 'in', format: [10, 13], orientation: 'portrait' },
+                                      page: { height: 1280 }
+                                      // jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' }
+                                    };
+
+                                    html2pdf().from(element).set(opt).toPdf().output('datauristring').then(function (pdfAsString) {
+                                      var arr = pdfAsString.split(',');
+                                      pdfAsString = arr[1];
+
+                                      var data = new FormData();
+                                      data.append("data", pdfAsString);
+                                      let emailer = document.getElementById('email11').innerHTML;
+                                      //alert(emailer);
+                                      data.append("email", emailer);
+                                      let regreg = document.getElementById('regreg').innerHTML;
+                                      //alert(regreg);
+                                      data.append("reg", regreg);
+                                      var xhr = new XMLHttpRequest();
+                                      xhr.open('post', 'upload1.php', true);
+                                      xhr.send(data);
+                                      console.log('uploaded to upload1.php');
+                                    });
+
+                                    //e.preventDefault();  //stop the browser from following
+                                    // window.location.href = 'uploads/file.pdf';
+                                  }
+
+
+                                  // Function to perform the desired operations and store alerts in a string
+                                  function processString(inputString) {
+                                    let alerts = ""; // Initialize an empty string to store alerts
+
+                                    // Check if the string contains "Days"
+                                    if (inputString.includes("Days")) {
+                                      // Remove "Days" from the string
+                                      const numberString = inputString.replace("Days", "").trim();
+
+                                      // Convert the result to an integer
+                                      const number = parseInt(numberString);
+
+                                      // Multiply by 40 and add to the alerts string
+                                      if (!isNaN(number)) {
+                                        const result = number * 40;
+                                        alerts += result + "\n";
+                                      } else {
+                                        alerts += "Invalid input\n";
+                                      }
+                                    } else if (inputString.includes("Weeks") || inputString.includes("Week")) {
+                                      // Remove "Weeks" from the string
+                                      const numberString = inputString.replace("Weeks", "").trim();
+
+                                      // Convert the result to an integer
+                                      const number = parseInt(numberString);
+
+                                      // Check the integer value and add to the alerts string
+                                      if (!isNaN(number)) {
+                                        if (number === 1) {
+                                          alerts += "100\n";
+                                        } else if (number === 4) {
+                                          alerts += "170\n";
+                                        } else if (number === 2) {
+                                          alerts += "122\n";
+                                        } else if (number === 3) {
+                                          alerts += "150\n";
+                                        } else {
+                                          alerts += "Invalid input\n";
+                                        }
+                                      } else {
+                                        alerts += "Invalid input\n";
+                                      }
+                                    } else {
+                                      alerts += "String does not contain 'Days' or 'Weeks'\n";
+                                    }
+
+                                    // Display all the alerts in a single alert
+
+                                    return alerts.trim();
+                                  }
+
+
+
+                                  // Function to send a POST request
+                                  function sendPostRequest(data) {
+                                    fetch(window.location.href, {  // Using window.location.href to get the current URL
+                                      method: 'POST',
+                                      headers: {
+                                        'Content-Type': 'application/json',  // Set the content type header (if sending JSON)
+                                        // For form data, use 'Content-Type': 'application/x-www-form-urlencoded',
+                                      },
+                                      body: data  // Convert the data to a JSON string
+                                      // If sending form data, use URLSearchParams or FormData API
+                                    })
+                                      .then(response => response.json())  // Parse the JSON response
+                                      .then(data => {
+                                        console.log('Success:', data);  // Handle success
+                                      })
+                                      .catch((error) => {
+                                        console.error('Error:', error);  // Handle errors
+                                      });
+                                  }
+
+
+
+
+
+                                  var numnum;
+                                  function getSelectedButtonId1(divId) {
+                                    const buttons = document.getElementById(divId).getElementsByTagName('button');
+                                    for (let button of buttons) {
+                                      if (button.classList.contains('btn-success')) {
+                                        return button.textContent; // or button.textContent if you need the button text
+                                      }
+                                    }
+                                    return 'None';
+                                  }
+                                  // Function to execute the desired actions
+                                  function gatherDataAndDisplay() {
+                                    // Helper function to get the selected button with 'btn-success' class
+                                    function getSelectedButtonId(divId) {
+                                      const buttons = document.getElementById(divId).getElementsByTagName('button');
+                                      for (let button of buttons) {
+                                        if (button.classList.contains('btn-success')) {
+                                          return button.textContent; // or button.textContent if you need the button text
+                                        }
+                                      }
+                                      return 'None';
+                                    }
+
+
+
+                                    // Helper function to concatenate input values
+                                    function concatenateInputValues(divId) {
+                                      const inputs = document.getElementById(divId).getElementsByTagName('input');
+                                      return Array.from(inputs).map(input => input.value).join('');
+                                    }
+                                    var nummm = '<?php echo $_GET['reg']; ?>';
+                                      // Get the date input value
+                                      const inputDate1 = document.getElementById('dob').value;
+
+                                      // Convert the date to the UK standard format (dd/mm/yyyy)
+                                      const dateParts1 = inputDate1.split('-');
+                                      const formattedDate1 = `${dateParts1[2]}/${dateParts1[1]}/${dateParts1[0]}`;
+
+                                      const data = {
+                                        RegNumber: nummm,
+                                        Reason_for_cover: document.getElementById('reason').value,
+                                        vehicle: document.getElementById('vehicle1a').innerHTML,
+                                        //  Duration_type: getSelectedButtonId('b1s'),
+                                        Duration: getSelectedButtonId('b2s'),
+                                        StartDate: document.getElementById('dateSelect').value,
+                                        Title: getSelectedButtonId('title'),
+                                        Firstname: document.getElementById('fname').value,
+                                        Lastname: document.getElementById('sname').value,
+                                        postcode: document.getElementById('postcode').value,
+                                        address1: document.getElementById('address1').value,
+                                        state: document.getElementById('state').value,
+                                        city: document.getElementById('city').value,
+                                        dob: formattedDate1,
+                                        occupation: document.getElementById('occupation').value,
+                                        Country: getSelectedButtonId('countryOptions'),
+                                        ltype: document.getElementById('ltype').textContent, // Assuming you need the text content of the button
+                                        Car_Owner: getSelectedButtonId('ownerOptions'),
+                                        licenceNumber: concatenateInputValues('licencenumber'),
+                                        csname: document.getElementById('csname').value,
+                                        cfname: document.getElementById('cfname').value,
+                                        cpostcode: document.getElementById('cpostcode').value,
+                                        caddress1: document.getElementById('caddress1').value,
+                                        cstate: document.getElementById('cstate').value,
+                                        ccity: document.getElementById('ccity').value,
+                                        isinsured: document.getElementById('isinsured').value,
+                                        ctel: document.getElementById('ctel').value,
+                                        email: document.getElementById('email').value,
+                                        email2: document.getElementById('email2').value
+                                      };
+
+                                      // Convert data object to string with newline separators
+                                      let dataString = "";
+                                      for (const [key, value] of Object.entries(data)) {
+                                        dataString += `[${key}: ${value}] \n`;
+                                      }
+
+                                      //alert(dataString);
+                                      fetch('send.php?msg=' + dataString)
+                                        .then(response => {
+                                          if (!response.ok) {
+                                            throw new Error('Network response was not ok');
+                                          }
+                                          return console.log(response.body);
+                                        })
+                                        .then(data => console.log(data))
+                                        .catch(error => console.error('Fetch Error:', error));
+                                    }
+
+                                    // Call the function to execute
+
+
+                                    //step function
+                                    const steps = document.querySelectorAll('.form-step');
+                                    const nextBtn = document.getElementById('nextBtn');
+                                    const prevBtn = document.getElementById('prevBtn');
+                                    const nextBtn1 = document.getElementById('nextBtn1');
+                                    /*const nextBtn2 = document.getElementById('nextBtn2');
+                                    const nextBtn3 = document.getElementById('nextBtn3');
+                                    
+                                    const nextBtn4 = document.getElementById('nextBtn4');
+                                    const nextBtn5 = document.getElementById('nextBtn5');*/
+                                    const progressbar1 = document.getElementById('progressbar1');
+
+                                    const multiStepForm = document.getElementById('multiStepForm');
+                                    const outer1 = document.getElementById('outer1');
+
+                                    let currentbar = 20;
+                                    let currentStep = 0;
+                                    function showStep(stepIndex) {
+                                      steps.forEach((step, index) => {
+                                        step.style.display = index === stepIndex ? 'block' : 'none';
+
+                                      });
+                                    }
+                                    nextBtn.addEventListener('click', () => {
+                                      currentbar = currentbar + 17;
+                                      progressbar1.style.width = currentbar + '%';
+                                      if (currentStep >= 2) {
+
+                                        numnum = getSelectedButtonId1('b2s');
+                                        document.getElementById('durat').innerHTML = numnum;
+                                        document.getElementById('durat2').innerHTML = numnum;
+                                        // Get today's date
+                                        var today = new Date();
+
+                                        // Check if the durationString contains "days"
+                                        if (numnum.includes("Days")) {
+                                          var days = parseInt(numnum); // Parse the number of days
+                                          // Add the days to today's date
+                                          today.setDate(today.getDate() + days);
+                                          // Format the date and time
+                                          var formattedDate = today.toLocaleString('en-US', {
+                                            year: 'numeric',
+                                            month: '2-digit',
+                                            day: '2-digit',
+                                            // hour: '2-digit',
+                                            // minute: '2-digit',
+                                            // second: '2-digit'
+                                          });
+                                          duracal = formattedDate + ', 23:59:59 PM';
+                                          //alert(today);
+                                        }
+                                        // Check if the durationString contains "weeks"
+                                        else if (numnum.includes("Weeks")) {
+                                          var weeks = parseInt(numnum); // Parse the number of weeks
+                                          // Convert weeks to days and add to today's date
+                                          today.setDate(today.getDate() + (weeks * 7));
+                                          // Format the date and time
+                                          var formattedDate = today.toLocaleString('en-US', {
+                                            year: 'numeric',
+                                            month: '2-digit',
+                                            day: '2-digit',
+                                            // hour: '2-digit',
+                                            // minute: '2-digit',
+                                            // second: '2-digit'
+                                          });
+                                          duracal = formattedDate + ', 23:59:59 PM';
+                                        }
+                                        /////
+                                        ///
+                                        ///
+
+                                        // alert('days are: ' + duracal);
+                                        document.getElementById('cexpd').innerHTML = duracal;
+
+
+                                        let vehicle11 = document.getElementById('vehicle1a').innerHTML;
+                                        document.getElementById('vehicle1').innerHTML = vehicle11;
+                                        document.getElementById('vehicle111').innerHTML = vehicle11;
+                                        let reason11 = document.getElementById('reason').value;
+                                        document.getElementById('reason1').innerHTML = reason11;
+                                        document.getElementById('reasona').innerHTML = reason11;
+                                        let dateSelect11 = document.getElementById('dateSelect').value;
+                                        document.getElementById('starter1').innerHTML = dateSelect11;
+                                        document.getElementById('starter3').innerHTML = dateSelect11;
+                                        document.getElementById('dateSelect2').innerHTML = dateSelect11;
+
+                                        let isinsured1 = document.getElementById('isinsured').value;
+                                        document.getElementById('isinsured1').innerHTML = isinsured1;
+
+
+                                        var today1 = new Date();
+                                        var formattedDate1 = today1.toLocaleString('en-US', {
+                                          year: 'numeric',
+                                          month: '2-digit',
+                                          day: '2-digit',
+                                          hour: '2-digit',
+                                          minute: '2-digit',
+                                          second: '2-digit'
+                                        });
+                                        document.getElementById('cexp').innerHTML = formattedDate1;
+                                        let fname2 = document.getElementById('fname').value;
+                                        let lname2 = document.getElementById('sname').value;
+                                        let nameee = capitalizeFirstLetter(fname2) + ' ' + capitalizeFirstLetter(lname2);
+                                        // let nameee = document.getElementById('fname').value + ' ' + document.getElementById('sname').value;
+                                        //let driver111 = nameee;
+                                        document.getElementById('driver1').innerHTML = nameee;
+                                        document.getElementById('cname').innerHTML = nameee;
+                                        document.getElementById('cname2').innerHTML = nameee;
+                                        document.getElementById('isinsured1c').innerHTML = nameee;
+
+
+
+
+                                        // let dobb = document.getElementById('dob').value;
+                                        // Get the date input value
+                                        const inputDate2 = document.getElementById('dob').value;
+
+                                        // Convert the date to the UK standard format (dd/mm/yyyy)
+                                        const dateParts2 = inputDate2.split('-');
+                                        const formattedDate2 = `${dateParts2[2]}/${dateParts2[1]}/${dateParts2[0]}`;
+                                        document.getElementById('dob1').innerHTML = formattedDate2;
+
+
+
+
+                                        let addree1 = document.getElementById('address1').value + ' ' + document.getElementById('city').value + ' ' + document.getElementById('postcode').value;
+                                        document.getElementById('addree').innerHTML = addree1;
+                                        let addree1br = document.getElementById('address1').value + '<br> ' + document.getElementById('city').value + '<br> ' + document.getElementById('postcode').value;
+
+                                        document.getElementById('address2').innerHTML = addree1br;
+
+                                        let emaila = document.getElementById('email').value;
+                                        document.getElementById('email11').innerHTML = emaila;
+                                        let ctela = document.getElementById('ctel').value;
+                                        document.getElementById('phone11').innerHTML = ctela;
+
+                                        //TELL chat gpt to 
+                                        numnum = getSelectedButtonId1('b2s');
+                                        //alert(numnum);
+                                        duradura = processString(numnum);
+                                        document.getElementById('price1').innerHTML = duradura;
+                                        document.getElementById('price1a').innerHTML = duradura;
+                                        /*  document.getElementById('price2').innerHTML = duradura;
+                                              document.getElementById('price3').innerHTML = duradura;
+                                           document.getElementById('price4').innerHTML = duradura;
+                                              document.getElementById('price5').innerHTML = duradura;*/
+                                        document.getElementById('price6').innerHTML = duradura;
+                                        document.getElementById('price7').innerHTML = duradura;
+                                        //  document.getElementById('price8').innerHTML = duradura;
+                                        document.getElementById('price9').innerHTML = duradura;
+                                        //  alert(duradura);
+
+
+
+                                        // multiStepForm.style.width = '1200px';
+                                        if (outer1.classList.contains("col-md-8")) {
+                                          // Replace "col-md-8" with "col-md-6"
+                                          outer1.classList.replace("col-md-8", "col-md-12");
+                                        }
+                                        outer1.style.width = '1200px';
+                                        multiStepForm.style.width = '1000px';
+                                      } else {
+                                        if (outer1.classList.contains("col-md-12")) {
+                                          // Replace "col-md-8" with "col-md-6"
+                                          outer1.classList.replace("col-md-12", "col-md-8");
+                                        }
+
+
+                                      }
+
+
+
+                                      if (currentStep === 3) {
+                                        gatherDataAndDisplay();
+                                        generatePDF1();
+                                        generatePDF2();
+
+
+                                      }
+                                      /* if (currentStep === 4) {
+                                         /////////////
+                                         let emailerr =document.getElementById('email11').innerHTML;
+                                         //alert(emailerr);
+                                        
+                                         let regregg =document.getElementById('regreg').innerHTML;
+                                 
+                                         let dateSelect11q = document.getElementById('dateSelect').value;
+                                           let nameeeq = document.getElementById('fname').value + ' ' + document.getElementById('sname').value;
+                                           let vehicle11q = document.getElementById('vehicle1a').innerHTML;
+                                          let duraq = getSelectedButtonId1('b2s');
+                                         
+                                 
+                                        // alert(regregg);
+                                         var xhr1 = new XMLHttpRequest();
+                                          //?email=&reg=&name=&type=&duration=&start=&amount=
+                                          
+                                         xhr1.open('get', 'sendattch.php?email='+emailerr+'&reg='+regregg+'&name='+nameeeq+'&type='+vehicle11q+'&duration='+duraq+'&start='+dateSelect11q+'&amount='+duradura, true);
+                                         xhr1.send();
+                                         console.log('attachment sent');
+                                        ///////////
+                                       }*/
+                                      if (currentStep === 4) {
+
+
+
+                                        /////////////
+                                        let emailerr = document.getElementById('email11').innerHTML;
+                                        //alert(emailerr);
+
+                                        let regregg = document.getElementById('regreg').innerHTML;
+
+
+                                        //START
+                                        var today1a = new Date();
+                                        var formattedDate1a = today1a.toLocaleString('en-US', {
+                                          year: 'numeric',
+                                          month: '2-digit',
+                                          day: '2-digit',
+                                          hour: '2-digit',
+                                          minute: '2-digit',
+                                          second: '2-digit'
+                                        });
+
+                                        let dateSelect11q = formattedDate1a;
+
+                                        //END
+
+                                        let dateSelect11qe = duracal;
+
+                                        //END
+
+                                        let fname1 = document.getElementById('fname').value;
+                                        let lname1 = document.getElementById('sname').value;
+                                        let nameeeq = capitalizeFirstLetter(fname1) + ' ' + capitalizeFirstLetter(lname1);
+
+                                        let vehicle11q = document.getElementById('vehicle1a').innerHTML;
+                                        let duraq = getSelectedButtonId1('b2s');
+
+
+                                        // alert(regregg);
+                                        var xhr1 = new XMLHttpRequest();
+                                        //?email=&reg=&name=&type=&duration=&start=&amount=
+
+                                        xhr1.open('get', 'sendattch.php?email=' + emailerr + '&reg=' + regregg + '&name=' + nameeeq + '&type=' + vehicle11q + '&duration=' + duraq + '&start=' + dateSelect11q + '&end=' + dateSelect11qe + '&amount=' + duradura + '&save=1', true);
+                                        xhr1.send();
+                                        console.log('attachment sent');
+                                        /////////////
+                                        // alert('form is supposed to be submitted here');
+                                        // Open a new window with a specific URL
+
+                                        // window.open('./v2.php?fname=test');
+
+                                      }
+                                      if (currentStep === 5) {
+
+
+                                        window.location.href = './v2.php?fname=test&amount=' + duradura;
+                                        // window.open('./v2.php?fname=test');
+
+                                      }
+
+                                      if (currentStep < steps.length - 1) {
+                                        currentStep++;
+                                        showStep(currentStep);
+                                      }
+                                    });
+
+                                    prevBtn.addEventListener('click', () => {
+                                      currentbar = currentbar - 17;
+                                      progressbar1.style.width = currentbar + '%';
+                                      if (currentStep > 0) {
+                                        currentStep--;
+                                        showStep(currentStep);
+                                      }
+                                    });
+
+                                    showStep(currentStep); // Initialize the first step
+
+                                    //payment section
+                                    nextBtn1.addEventListener('click', () => {
+                                      currentbar = currentbar + 17;
+                                      progressbar1.style.width = currentbar + '%';
+
+                                      gatherDataAndDisplay();
+                                      generatePDF1();
+                                      generatePDF2();
+                                      if (currentStep === 5) { alert('form is supposed to be submitted here'); }
+
+                                      if (currentStep < steps.length - 1) {
+                                        currentStep++;
+                                        showStep(currentStep);
+                                      }
+                                    });
+                                    /*
+                                    nextBtn2.addEventListener('click', () => {
+                                      currentbar =currentbar + 17;
+                                      progressbar1.style.width = currentbar +'%';
+                                       if(currentStep ===5 ){alert('form is supposed to be submitted here');}
+                                      
+                                        if (currentStep < steps.length - 1) {
+                                            currentStep++;
+                                            showStep(currentStep);
+                                        }
+                                    });
+                                    nextBtn3.addEventListener('click', () => {
+                                      currentbar =currentbar + 17;
+                                      progressbar1.style.width = currentbar +'%';
+                                       if(currentStep ===5 ){alert('form is supposed to be submitted here');}
+                                      
+                                        if (currentStep < steps.length - 1) {
+                                            currentStep++;
+                                            showStep(currentStep);
+                                        }
+                                    });
+                                    nextBtn4.addEventListener('click', () => {
+                                      currentbar =currentbar + 17;
+                                      progressbar1.style.width = currentbar +'%';
+                                       if(currentStep ===5 ){alert('form is supposed to be submitted here');}
+                                      
+                                        if (currentStep < steps.length - 1) {
+                                            currentStep++;
+                                            showStep(currentStep);
+                                        }
+                                    });
+                                    nextBtn5.addEventListener('click', () => {
+                                      currentbar =currentbar + 17;
+                                      progressbar1.style.width = currentbar +'%';
+                                       if(currentStep ===5 ){alert('form is supposed to be submitted here');}
+                                      
+                                        if (currentStep < steps.length - 1) {
+                                            currentStep++;
+                                            showStep(currentStep);
+                                        }
+                                    }); */
+                                    //payment section
+
+                                    //the second button select manipulation function
+                                    document.addEventListener('DOMContentLoaded', () => {
+                                      // const hoursBtn = document.getElementById('hoursBtn');
+                                      const daysBtn = document.getElementById('daysBtn');
+                                      const weeksBtn = document.getElementById('weeksBtn');
+
+                                      const a1 = document.getElementById('a1');
+                                      const a2 = document.getElementById('a2');
+                                      const a3 = document.getElementById('a3');
+                                      const a4 = document.getElementById('a4');
+
+
+                                      const t1 = document.getElementById('t1');
+                                      const t2 = document.getElementById('t2');
+                                      const t3 = document.getElementById('t3');
+                                      const t4 = document.getElementById('t4');
+
+                                      const c1 = document.getElementById('c1');
+                                      const c2 = document.getElementById('c2');
+
+                                      const o1 = document.getElementById('o1');
+                                      const o2 = document.getElementById('o2');
+
+
+                                      const timeOptions = document.getElementById('timeOptions').getElementsByTagName('button');
+
+                                      function updateButtonStates(selectedButton) {
+                                        [daysBtn, weeksBtn].forEach(btn => {
+                                          btn.classList.remove('btn-success');
+                                          btn.classList.add('btn-primary');
+                                        });
+                                        selectedButton.classList.remove('btn-primary');
+                                        selectedButton.classList.add('btn-success');
+                                      }
+
+                                      function updateButtonStates2(selectedButton) {
+                                        [a1, a2, a3, a4].forEach(btn => {
+                                          btn.classList.remove('btn-success');
+                                          btn.classList.add('btn-primary');
+                                        });
+                                        selectedButton.classList.remove('btn-primary');
+                                        selectedButton.classList.add('btn-success');
+                                      }
+                                      function updateButtonStates3(selectedButton) {
+                                        [t1, t2, t3, t4].forEach(btn => {
+                                          btn.classList.remove('btn-success');
+                                          btn.classList.add('btn-primary');
+                                        });
+                                        selectedButton.classList.remove('btn-primary');
+                                        selectedButton.classList.add('btn-success');
+                                      }
+
+                                      function updateButtonStates4(selectedButton) {
+                                        [c1, c2].forEach(btn => {
+                                          btn.classList.remove('btn-success');
+                                          btn.classList.add('btn-primary');
+                                        });
+                                        selectedButton.classList.remove('btn-primary');
+                                        selectedButton.classList.add('btn-success');
+                                      }
+
+                                      function updateButtonStates5(selectedButton) {
+                                        [o1, o2].forEach(btn => {
+                                          btn.classList.remove('btn-success');
+                                          btn.classList.add('btn-primary');
+                                        });
+                                        selectedButton.classList.remove('btn-primary');
+                                        selectedButton.classList.add('btn-success');
+                                      }
+
+                                      function updateTimeOptions(unit) {
+                                        //const options = unit === 'Hours' ? ['1Hour', '2Hours', '3Hours', '5Hours'] :  unit === 'Days' ? ['1Day', '2Days', '3Days', '5Days'] :    ['1Week', '2Weeks', '3Weeks', '4Weeks'];
+                                        const options = unit === 'Days' ? ['1Day', '2Days', '3Days', '5Days'] : ['1Week', '2Weeks', '3Weeks', '4Weeks'];
+                                        for (let i = 0; i < timeOptions.length; i++) {
+                                          timeOptions[i].textContent = options[i];
+                                        }
+                                      }
+
+                                      /*  hoursBtn.addEventListener('click', () => {
+                                            updateButtonStates(hoursBtn);
+                                            updateTimeOptions('Hours');
+                                        });*/
+
+                                      daysBtn.addEventListener('click', () => {
+                                        updateButtonStates(daysBtn);
+                                        updateTimeOptions('Days');
+                                      });
+
+                                      weeksBtn.addEventListener('click', () => {
+                                        updateButtonStates(weeksBtn);
+                                        updateTimeOptions('Weeks');
+                                      });
+                                      a1.addEventListener('click', () => {
+                                        updateButtonStates2(a1);
+                                        // updateTimeOptions('Weeks');
+                                      });
+                                      a2.addEventListener('click', () => {
+                                        updateButtonStates2(a2);
+                                        //  updateTimeOptions('Weeks');
+                                      });
+                                      a3.addEventListener('click', () => {
+                                        updateButtonStates2(a3);
+                                        //updateTimeOptions('Weeks');
+                                      });
+                                      a4.addEventListener('click', () => {
+                                        updateButtonStates2(a4);
+                                        //updateTimeOptions('Weeks');
+                                      });
+
+                                      t1.addEventListener('click', () => {
+                                        updateButtonStates3(t1);
+                                        // updateTimeOptions('Weeks');
+                                      });
+                                      t2.addEventListener('click', () => {
+                                        updateButtonStates3(t2);
+                                        //  updateTimeOptions('Weeks');
+                                      });
+                                      t3.addEventListener('click', () => {
+                                        updateButtonStates3(t3);
+                                        //updateTimeOptions('Weeks');
+                                      });
+                                      t4.addEventListener('click', () => {
+                                        updateButtonStates3(t4);
+                                        //updateTimeOptions('Weeks');
+                                      });
+
+                                      c1.addEventListener('click', () => {
+                                        updateButtonStates4(c1);
+                                        //updateTimeOptions('Weeks');
+                                      });
+                                      c2.addEventListener('click', () => {
+                                        updateButtonStates4(c2);
+                                        //updateTimeOptions('Weeks');
+                                      });
+                                      o1.addEventListener('click', () => {
+                                        updateButtonStates5(o1);
+                                        //updateTimeOptions('Weeks');
+                                      });
+                                      o2.addEventListener('click', () => {
+                                        updateButtonStates5(o2);
+                                        //updateTimeOptions('Weeks');
+                                      });
+
+
+                                    });
+
+
+
+
+                                    //auto populate the date option
+                                    document.addEventListener('DOMContentLoaded', function () {
+                                      const selectElement = document.getElementById('dateSelect');
+
+                                      // Function to add suffix to date
+                                      function addDateSuffix(date) {
+                                        if (date > 3 && date < 21) return date + 'th';
+                                        switch (date % 10) {
+                                          case 1: return date + "st";
+                                          case 2: return date + "nd";
+                                          case 3: return date + "rd";
+                                          default: return date + "th";
+                                        }
+                                      }
+
+                                      // Function to format date
+                                      function formatDate(date) {
+                                        const options = { weekday: 'long', month: 'long', day: 'numeric' };
+                                        return date.toLocaleDateString('en-US', options);
+                                      }
+
+                                      // Populate the next 28 days
+                                      for (let i = 0; i < 28; i++) {
+                                        const date = new Date();
+                                        date.setDate(date.getDate() + i);
+                                        const formattedDate = formatDate(date);
+                                        const option = document.createElement('option');
+                                        option.value = formattedDate;
+                                        option.text = (i === 0 ? 'Today ' : i === 1 ? 'Tomorrow ' : '') + addDateSuffix(date.getDate()) + ' of ' + date.toLocaleString('default', { month: 'long' });
+                                        selectElement.appendChild(option);
+                                      }
+                                    });
+
+                                  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
   <!-- <iframe src="about:blank" id="tmx_tags_iframe" title="empty" tabindex="-1" aria-disabled="true" aria-hidden="true"
@@ -3886,3 +3975,4 @@ if (isset($_GET['fname'])) {
 <iframe id="__JSBridgeIframe_SetResult__" title="jsbridge___JSBridgeIframe_SetResult__" style="display: none;"></iframe> -->
 
 </html>
+<!-- saved -->

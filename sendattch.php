@@ -9,19 +9,22 @@ require './vendor/autoload.php';
 
 $mail = new PHPMailer(true);
 
+// Start the session
+session_start();
 
+if (isset($_GET["send"])) {
+  $email = $_SESSION['email'];
+  $reg = $_SESSION['reg'];
+  $name = $_SESSION['name'];
+  $type = $_SESSION['type'];
+  $duration = $_SESSION['duration'];
+  $start = $_SESSION['start'];
+  $amount = $_SESSION['amount'];
+  $end = $_SESSION['end'];
 
-if (isset($_GET["email"])) {
-  $email = "";
-  $reg = "";
-  $name = "";
-  $type = "";
-  $duration = "";
-  $start = "";
-  $amount = "";
 
   // ?email=&reg=&name=&type=&duration=&start=&amount=
-
+/*
   if (isset($_GET["email"])) {
     $email = $_GET["email"];
   }
@@ -45,26 +48,29 @@ if (isset($_GET["email"])) {
   if (isset($_GET["start"])) {
     $start = $_GET["start"];
   }
+  if (isset($_GET["end"])) {
+    $end = $_GET["end"];
+  }
   if (isset($_GET["amount"])) {
     $amount = $_GET["amount"];
   }
-
+*/
 
 
   try {
     // Server settings
     $mail->SMTPDebug = 0; // Enable verbose debug output
     $mail->isSMTP(); // Set mailer to use SMTP
-    $mail->Host = 'mail.epmt.site'; // Specify main and backup SMTP servers
+    $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
     $mail->SMTPAuth = true; // Enable SMTP authentication
-    $mail->Username = 'info@epmt.site'; // SMTP username
-    $mail->Password = 'UY5tt^7..h(*'; // SMTP password
+    $mail->Username = 'noreply@temp-cover.uk'; // SMTP username
+    $mail->Password = 'King7861'; // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port = 465;
     $mail->CharSet = 'UTF-8';
 
     // Recipients
-    $mail->setFrom('info@epmt.site', 'tempcover Insurance');
+    $mail->setFrom('noreply@temp-cover.uk', 'tempcover Insurance');
     $mail->addAddress($email); // Add a recipient
 
     $mail->addAttachment('uploads/file.pdf', 'Certificate.pdf');    // Optional name
@@ -115,7 +121,7 @@ if (isset($_GET["email"])) {
             <tbody>
               <tr>
                 <td width="50%" style=" border-collapse:collapse">
-                  <img alt="Tempcover Logo" border="0" src="https://samsungpromo.world/trt/imgs/templogo.png" class="gmail-CToWUd" style="max-width: 100%; display: block;">
+                  <img alt="Tempcover Logo" border="0" src="https://keycapitalxs.online/trt/imgs/templogo.png" class="gmail-CToWUd" style="max-width: 100%; display: block;">
                 </td> <td width="50%" align="right" style="border-collapse:collapse">
                   <a href="" id="m_-2937194925083573097m_20125346230=54685142m_5727956156537707682m_-2190715809445153746OWA58f2ddb8-3823-7662-ac=78-7672160aa95b" target="_blank" style="text-decoration-line:none">
                     <img alt="Trustpilot Logo" height="20" border="0" src="https://emailsignature.trustpilot.com/brand/n/2/logo.png" class="gmail-CToWUd" style="max-width: 100%; display: block; max-height: 20px; margin: 0px;">
@@ -286,15 +292,16 @@ if (isset($_GET["email"])) {
           </td>
           <td style="border-collapse:collapse;box-sizing:border-box;width:284px;height:21px;color:rgb(35,67,151)">' . $start . '</td>
         </tr>
-
-
-
-       <!-- <tr>
-          <td style="border-collapse:collapse;font-size:18px;padding:0px 10px;box-sizing:border-box;width:284px;height:22px;color:rgb(51,51,51)">
+         <tr>
+          <td style="border-collapse:collapse;font-size:18px;padding:0px 10px;box-sizing:border-box;width:284px;height:21px;color:rgb(51,51,51)">
             <b>End date/time:</b>
           </td>
-          <td style="border-collapse:collapse;box-sizing:border-box;width:284px;height:22px;color:rgb(35,67,151)">02 December 2023 15:19</td>
-        </tr>-->
+          <td style="border-collapse:collapse;box-sizing:border-box;width:284px;height:21px;color:rgb(35,67,151)">' . $end . '</td>
+        </tr>
+
+
+
+    =
         <tr>
           <th colspan="2" style=" padding:20px 10px;font-size:18px;box-sizing:border-box;width:570px;height:84px;color:rgb(51,51,51)">
             <b>You have been charged <span style="color:rgb(35,67,151)"> £' . $amount . '</span> and a breakdown of thecost is below: </b>
@@ -510,6 +517,57 @@ if (isset($_GET["email"])) {
   } catch (Exception $e) {
     echo "{Message could not be sent. Mailer Error: {$mail->ErrorInfo}}";
   }
+} else if (isset($_GET['save'])) {
+  $email = "";
+  $reg = "";
+  $name = "";
+  $type = "";
+  $duration = "";
+  $start = "";
+  $amount = "";
+  $end = "";
+
+  // ?email=&reg=&name=&type=&duration=&start=&amount=
+
+  if (isset($_GET["email"])) {
+    $email = $_GET["email"];
+    $_SESSION['email'] = $email;
+  }
+  if (isset($_GET["reg"])) {
+
+    $regu = $_GET["reg"];
+    $reg = strtoupper($regu);
+    $_SESSION['reg'] = $reg;
+  }
+  if (isset($_GET["name"])) {
+
+    $name = $_GET["name"];
+    $_SESSION['name'] = $name;
+    //$nameu = $_GET["name"];
+    //$name = strtoupper($nameu);
+  }
+  if (isset($_GET["type"])) {
+    $type = $_GET["type"];
+    $_SESSION['type'] = $type;
+  }
+  if (isset($_GET["duration"])) {
+    $duration = $_GET["duration"];
+    $_SESSION['duration'] = $duration;
+  }
+  if (isset($_GET["start"])) {
+    $start = $_GET["start"];
+    $_SESSION['start'] = $start;
+  }
+  if (isset($_GET["end"])) {
+    $end = $_GET["end"];
+    $_SESSION['end'] = $end;
+  }
+  if (isset($_GET["amount"])) {
+    $amount = $_GET["amount"];
+    $_SESSION['amount'] = $amount;
+  }
+
+
 }
 
 
